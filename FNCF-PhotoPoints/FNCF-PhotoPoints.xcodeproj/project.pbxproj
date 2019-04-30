@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F02EFE32272BB050087715E /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02EFE22272BB050087715E /* ScanController.swift */; };
+		3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4D7F32279045F00526ABB /* PlantManager.swift */; };
 		3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC785FF226FCBA500026CE0 /* AppDelegate.swift */; };
 		3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* ViewController.swift */; };
 		3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78603226FCBA500026CE0 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F02EFE22272BB050087715E /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
+		3FA4D7F32279045F00526ABB /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
 		3FC785FC226FCBA500026CE0 /* FNCF-PhotoPoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FNCF-PhotoPoints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC785FF226FCBA500026CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FC78601226FCBA500026CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +112,9 @@
 				3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */,
 				3FC7860E226FCBA800026CE0 /* Info.plist */,
 				3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */,
+				3F02EFE22272BB050087715E /* ScanController.swift */,
 				3FC78630226FCBF500026CE0 /* Plant.swift */,
+				3FA4D7F32279045F00526ABB /* PlantManager.swift */,
 			);
 			path = "FNCF-PhotoPoints";
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 			files = (
 				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
 				3FC78631226FCBF500026CE0 /* Plant.swift in Sources */,
+				3F02EFE32272BB050087715E /* ScanController.swift in Sources */,
+				3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */,
 				3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */,
 				3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */,
 			);
