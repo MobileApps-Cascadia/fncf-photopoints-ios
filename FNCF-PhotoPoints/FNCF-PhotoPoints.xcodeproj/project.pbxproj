@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FBAFB06227814A1006820FE /* SubmissionRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB05227814A1006820FE /* SubmissionRepo.swift */; };
+		3FBAFB08227814BC006820FE /* SubmissionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB07227814BC006820FE /* SubmissionMock.swift */; };
+		3FBAFB0A227815E1006820FE /* SubmissionMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */; };
+		3FBAFB0C22781B27006820FE /* SubmissionRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */; };
 		3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC785FF226FCBA500026CE0 /* AppDelegate.swift */; };
 		3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* ViewController.swift */; };
 		3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78603226FCBA500026CE0 /* Main.storyboard */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FBAFB05227814A1006820FE /* SubmissionRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionRepo.swift; sourceTree = "<group>"; };
+		3FBAFB07227814BC006820FE /* SubmissionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionMock.swift; sourceTree = "<group>"; };
+		3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionMockTest.swift; sourceTree = "<group>"; };
+		3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionRepo.swift; sourceTree = "<group>"; };
 		3FC785FC226FCBA500026CE0 /* FNCF-PhotoPoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FNCF-PhotoPoints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC785FF226FCBA500026CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FC78601226FCBA500026CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FBAFB0422781483006820FE /* SubmissionMock */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB05227814A1006820FE /* SubmissionRepo.swift */,
+				3FBAFB07227814BC006820FE /* SubmissionMock.swift */,
+			);
+			path = SubmissionMock;
+			sourceTree = "<group>";
+		};
 		3FC785F3226FCBA500026CE0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +118,7 @@
 		3FC785FE226FCBA500026CE0 /* FNCF-PhotoPoints */ = {
 			isa = PBXGroup;
 			children = (
+				3FBAFB0422781483006820FE /* SubmissionMock */,
 				3FC785FF226FCBA500026CE0 /* AppDelegate.swift */,
 				3FC78601226FCBA500026CE0 /* ViewController.swift */,
 				3FC78603226FCBA500026CE0 /* Main.storyboard */,
@@ -118,6 +136,8 @@
 			children = (
 				3FC78617226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift */,
 				3FC78619226FCBA800026CE0 /* Info.plist */,
+				3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */,
+				3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */,
 			);
 			path = "FNCF-PhotoPointsTests";
 			sourceTree = "<group>";
@@ -265,7 +285,9 @@
 				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
 				3FC78631226FCBF500026CE0 /* Plant.swift in Sources */,
 				3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */,
+				3FBAFB08227814BC006820FE /* SubmissionMock.swift in Sources */,
 				3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */,
+				3FBAFB06227814A1006820FE /* SubmissionRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC78618226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift in Sources */,
+				3FBAFB0C22781B27006820FE /* SubmissionRepo.swift in Sources */,
+				3FBAFB0A227815E1006820FE /* SubmissionMockTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
