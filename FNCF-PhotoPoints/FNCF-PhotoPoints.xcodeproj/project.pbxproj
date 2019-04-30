@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D222766C5400E077E5 /* PlantFormViewController.swift */; };
+		3F3004D5227670E400E077E5 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D4227670E400E077E5 /* ScannerViewController.swift */; };
+		3F3004D722775F5300E077E5 /* StreamFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D622775F5300E077E5 /* StreamFormViewController.swift */; };
+		3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D82278B52E00E077E5 /* PlantListViewController.swift */; };
 		3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC785FF226FCBA500026CE0 /* AppDelegate.swift */; };
-		3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* ViewController.swift */; };
+		3FC78602226FCBA500026CE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* HomeViewController.swift */; };
 		3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78603226FCBA500026CE0 /* Main.storyboard */; };
 		3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */; };
 		3FC7860A226FCBA800026CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78609226FCBA800026CE0 /* Assets.xcassets */; };
@@ -36,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3004D222766C5400E077E5 /* PlantFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFormViewController.swift; sourceTree = "<group>"; };
+		3F3004D4227670E400E077E5 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		3F3004D622775F5300E077E5 /* StreamFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamFormViewController.swift; sourceTree = "<group>"; };
+		3F3004D82278B52E00E077E5 /* PlantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListViewController.swift; sourceTree = "<group>"; };
 		3FC785FC226FCBA500026CE0 /* FNCF-PhotoPoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FNCF-PhotoPoints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC785FF226FCBA500026CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FC78601226FCBA500026CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FC78601226FCBA500026CE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3FC78604226FCBA500026CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FC78607226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FNCF_PhotoPoints.xcdatamodel; sourceTree = "<group>"; };
 		3FC78609226FCBA800026CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,8 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				3FC785FF226FCBA500026CE0 /* AppDelegate.swift */,
-				3FC78601226FCBA500026CE0 /* ViewController.swift */,
 				3FC78603226FCBA500026CE0 /* Main.storyboard */,
+				3F3004D82278B52E00E077E5 /* PlantListViewController.swift */,
+				3F3004D622775F5300E077E5 /* StreamFormViewController.swift */,
+				3F3004D4227670E400E077E5 /* ScannerViewController.swift */,
+				3FC78601226FCBA500026CE0 /* HomeViewController.swift */,
+				3F3004D222766C5400E077E5 /* PlantFormViewController.swift */,
 				3FC78609226FCBA800026CE0 /* Assets.xcassets */,
 				3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */,
 				3FC7860E226FCBA800026CE0 /* Info.plist */,
@@ -262,7 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
+				3FC78602226FCBA500026CE0 /* HomeViewController.swift in Sources */,
+				3F3004D5227670E400E077E5 /* ScannerViewController.swift in Sources */,
+				3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */,
+				3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */,
+				3F3004D722775F5300E077E5 /* StreamFormViewController.swift in Sources */,
 				3FC78631226FCBF500026CE0 /* Plant.swift in Sources */,
 				3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */,
 				3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */,
