@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yc-db-pca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="98"/>
+            <point key="canvasLocation" x="-2090" y="147"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -326,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yut-BD-3Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166.66666666666669" y="97.767857142857139"/>
+            <point key="canvasLocation" x="958" y="-716"/>
         </scene>
         <!--Plant List-->
         <scene sceneID="BQb-Y9-jUq">
@@ -358,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hT3-TD-rc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601" y="98"/>
+            <point key="canvasLocation" x="2843" y="101"/>
         </scene>
         <!--Scan Controller-->
         <scene sceneID="xo7-eA-0ix">
@@ -404,7 +404,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anS-of-ji8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3xd-eW-t79" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1065.217391304348" y="94.419642857142847"/>
+            <point key="canvasLocation" x="1193" y="1028"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5ut-Tb-rN7">
@@ -463,10 +463,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiS-O9-73X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689.8550724637682" y="87.723214285714278"/>
+            <point key="canvasLocation" x="3296" y="-968"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="X5F-To-HAt"/>
+        <segue reference="zJa-ih-RRG"/>
+        <segue reference="Dqa-Z2-c0J"/>
     </inferredMetricsTieBreakers>
 </document>
