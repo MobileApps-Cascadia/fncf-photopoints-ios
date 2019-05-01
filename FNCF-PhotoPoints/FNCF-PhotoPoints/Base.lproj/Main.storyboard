@@ -62,21 +62,6 @@
                                 <rect key="frame" x="201" y="63" width="193" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-Zm-wih">
-                                <rect key="frame" x="20" y="467" width="179" height="132"/>
-                                <color key="backgroundColor" red="0.13561910390853882" green="0.33305549621582031" blue="0.48629593849182129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="132" id="27Z-lO-Ar5"/>
-                                    <constraint firstAttribute="width" constant="179" id="tP3-y9-6cX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Submit Plant Info">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ifm-Ng-bih" kind="show" id="zJa-ih-RRG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR9-zg-bjE">
                                 <rect key="frame" x="215" y="467" width="179" height="132"/>
                                 <color key="backgroundColor" red="0.13561910390853882" green="0.33305549621582031" blue="0.48629593849182129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -132,6 +117,21 @@
                                 </state>
                                 <connections>
                                     <segue destination="YAV-z0-Lgb" kind="show" id="gUZ-iy-4JT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-Zm-wih">
+                                <rect key="frame" x="20" y="466" width="179" height="132"/>
+                                <color key="backgroundColor" red="0.13561910390853882" green="0.33305549621582031" blue="0.48629593849182129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="27Z-lO-Ar5"/>
+                                    <constraint firstAttribute="width" constant="179" id="tP3-y9-6cX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Submit Plant Info">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ifm-Ng-bih" kind="show" id="zJa-ih-RRG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -238,7 +238,6 @@
         <!--PlantForm-->
         <scene sceneID="XIL-B7-W9G">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yut-BD-3Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="PlantForm" id="ifm-Ng-bih" customClass="PlantFormViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VC2-kO-v10">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -309,6 +308,7 @@
                         <viewLayoutGuide key="safeArea" id="TOv-BF-LOS"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yut-BD-3Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="166.66666666666669" y="97.767857142857139"/>
         </scene>
