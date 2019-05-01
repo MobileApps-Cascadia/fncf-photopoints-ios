@@ -38,7 +38,7 @@ class SubmissionRepo: XCTestCase {
     }
 
     
-    func test_showMovie() {
+    func test_showPhotoPoint() {
         
         PhotoTester.add(newPhoto: testPhoto)
         
