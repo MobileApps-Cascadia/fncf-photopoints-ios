@@ -143,7 +143,8 @@
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYC-Ce-veR">
                                                     <rect key="frame" x="0.0" y="150" width="280" height="30"/>
-                                                    <state key="normal" title="Button">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.096858494718309859" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Submit">
                                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                 </button>
@@ -153,7 +154,7 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.25094079971313477" green="0.37066403031349182" blue="0.24703991413116455" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstItem="5iJ-Px-CUn" firstAttribute="top" secondItem="l1H-7e-HAT" secondAttribute="top" constant="58" id="N8E-wu-MX8"/>
                                         <constraint firstAttribute="trailing" secondItem="5iJ-Px-CUn" secondAttribute="trailing" constant="19" id="lum-Ty-yAW"/>
@@ -174,10 +175,10 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.25349083771326952" green="0.37052031347788672" blue="0.24845637252433794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="50"/>
+                                            <real key="value" value="28"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
@@ -479,6 +480,6 @@
         <image name="Icon-App-76x76" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X5F-To-HAt"/>
+        <segue reference="1rJ-qP-Hxd"/>
     </inferredMetricsTieBreakers>
 </document>
