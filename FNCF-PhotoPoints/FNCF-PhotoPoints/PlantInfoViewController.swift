@@ -12,24 +12,28 @@ class PlantInfoViewController: UIViewController {
     
     @IBOutlet var plantNameLabel: UILabel!
     
-    var plant: Plant
+    let plantList = ["Douglas Fir", "Redwood", "Cedar"]
     
-    var myManager = PlantManager()
+    //var plant: Plant
     
-    func getPlantName(){
-        plant = myManager.getPlantByName(name: "Douglas Fir")
-    }
+    //var myManager = PlantManager()
+    
+    //func getPlantName(){
+        //plant = myManager.getPlantByName(name: "Douglas Fir")
+    //}
     
     func getName() -> String {
         
         //return PlantManager.getPlantByName(name: "Douglas Fir")
+        return ""
     }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        var plantManager = PlantManager()
+        //plantNameLabel.text = plantList[0]
         
-        plantNameLabel.text = PlantManager.getPlantByName(name: "Douglas Fir")
-        
+        plantNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").latinName
     }
 }
