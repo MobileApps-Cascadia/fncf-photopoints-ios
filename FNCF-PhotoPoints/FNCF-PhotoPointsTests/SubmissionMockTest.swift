@@ -36,13 +36,13 @@ class SubmissionMockTest: XCTestCase {
     let id : Int
     */
     func testInit_PhotoInfo() {
-        let testPhoto = PhotoSubmission(PhotoName: "Stream 1" , Comments: "Lots of wind", id: 20)
+        let testPhoto = StreamSubmission(Date: "Stream 1" , Weather: "Lots of wind", StreamHeight: "20")
         
    
         XCTAssertNotNil(testPhoto)
-        XCTAssertEqual(testPhoto.PhotoName, "Stream 1")
-        XCTAssertEqual(testPhoto.Comments, "Lots of wind")
-        XCTAssertNotNil(testPhoto.id)
+        XCTAssertEqual(testPhoto.Date, "Stream 1")
+        XCTAssertEqual(testPhoto.Weather, "Lots of wind")
+        XCTAssertNotNil(testPhoto.StreamHeight)
     }
 
 }
