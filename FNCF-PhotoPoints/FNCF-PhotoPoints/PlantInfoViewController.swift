@@ -12,6 +12,8 @@ class PlantInfoViewController: UIViewController {
     
     @IBOutlet var plantNameLabel: UILabel!
     @IBOutlet var latinNameLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func viewDidLoad() {
         
@@ -21,5 +23,7 @@ class PlantInfoViewController: UIViewController {
         plantNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").name
         
         latinNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").latinName
+        
+        descriptionLabel.text = plantManager.getPlantByName(name: "Douglas Fir").desc
     }
 }
