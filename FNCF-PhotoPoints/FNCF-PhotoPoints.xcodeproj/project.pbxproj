@@ -12,6 +12,7 @@
 		3F3004D5227670E400E077E5 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D4227670E400E077E5 /* ScannerViewController.swift */; };
 		3F3004D722775F5300E077E5 /* StreamFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D622775F5300E077E5 /* StreamFormViewController.swift */; };
 		3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D82278B52E00E077E5 /* PlantListViewController.swift */; };
+		3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */; };
 		3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4D7F32279045F00526ABB /* PlantManager.swift */; };
 		3FBAFB06227814A1006820FE /* SubmissionRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB05227814A1006820FE /* SubmissionRepo.swift */; };
 		3FBAFB08227814BC006820FE /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB07227814BC006820FE /* Submission.swift */; };
@@ -53,6 +54,7 @@
 		3F3004D4227670E400E077E5 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		3F3004D622775F5300E077E5 /* StreamFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamFormViewController.swift; sourceTree = "<group>"; };
 		3F3004D82278B52E00E077E5 /* PlantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListViewController.swift; sourceTree = "<group>"; };
+		3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoViewController.swift; sourceTree = "<group>"; };
 		3FA4D7F32279045F00526ABB /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
 		3FBAFB05227814A1006820FE /* SubmissionRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionRepo.swift; sourceTree = "<group>"; };
 		3FBAFB07227814BC006820FE /* Submission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submission.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				3F02EFE22272BB050087715E /* ScanController.swift */,
 				3FC78630226FCBF500026CE0 /* Plant.swift */,
 				3FA4D7F32279045F00526ABB /* PlantManager.swift */,
+				3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */,
 			);
 			path = "FNCF-PhotoPoints";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
 				3F3004D5227670E400E077E5 /* ScannerViewController.swift in Sources */,
 				3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */,
+				3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */,
 				3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */,
 				3F3004D722775F5300E077E5 /* StreamFormViewController.swift in Sources */,
 				3FC78631226FCBF500026CE0 /* Plant.swift in Sources */,
