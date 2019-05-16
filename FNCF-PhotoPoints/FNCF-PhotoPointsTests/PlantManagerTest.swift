@@ -1,26 +1,24 @@
 //
-//  SubmissionRepo.swift
+//  PlantManagerTest.swift
 //  FNCF-PhotoPointsTests
 //
-//  Created by Student Account on 4/29/19.
+//  Created by Student Account on 5/7/19.
 //  Copyright © 2019 Cascadia-Mobile. All rights reserved.
 //
 
 import XCTest
 @testable import FNCF_PhotoPoints
 
-class SubmissionRepo: XCTestCase {
-
+class PlantManagerTest: XCTestCase {
+   
+    var MyManager = PlantManager();
     
-    var PhotoTester: PhotoRepository!
-    
-    let testPhoto = StreamSubmission( Date: "Stream 1", Weather: "things", StreamHeight: "20")
+    //var MyPlant = Plant();
     
     
-    let testAgainst = StreamSubmission (Date: "Stream 1", Weather: "Things", StreamHeight: "20")
     
     override func setUp() {
-        PhotoTester = PhotoDataRepository()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
@@ -38,14 +36,17 @@ class SubmissionRepo: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
-    
-    func test_AddPhoto() {
+
+    func test_ShowPlant(){
+       
+        var MyPlant: Plant;
         
-        PhotoTester.add(newPhoto: testPhoto)
+        MyPlant = MyManager.getPlantByName(name: "Cascara");
         
-        XCTAssertEqual(PhotoTester.get(identifier: 0)?.Date, testAgainst.Date)
-            //this second assert is to determine if the value was saved into the repository.
+        
+        
+        
+        //var MyPlant = PlantManager.getPlantByName(name: "Paper Birch");
         
     }
 }
