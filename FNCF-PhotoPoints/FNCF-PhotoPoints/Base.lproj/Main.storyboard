@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fhy-Jh-Y5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37.681159420289859" y="-454.01785714285711"/>
+            <point key="canvasLocation" x="-904" y="349"/>
         </scene>
         <!--StreamForm-->
         <scene sceneID="7Fq-lZ-biP">
@@ -219,49 +219,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-lQ-UQM">
-                                <rect key="frame" x="51" y="441" width="142" height="30"/>
-=======
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-lQ-UQM">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-lQ-UQM">
                                 <rect key="frame" x="29" y="289" width="142" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> develop
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-<<<<<<< HEAD
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-C1-HTf">
-                                <rect key="frame" x="51" y="488" width="283" height="30"/>
-=======
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-C1-HTf">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-C1-HTf">
                                 <rect key="frame" x="29" y="337" width="283" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> develop
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-<<<<<<< HEAD
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stream height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-8d-2Ai">
-                                <rect key="frame" x="51" y="538" width="278" height="30"/>
-=======
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stream height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-8d-2Ai">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stream height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-8d-2Ai">
                                 <rect key="frame" x="29" y="386" width="278" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> develop
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-<<<<<<< HEAD
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9iB-lW-Qs1">
-                                <rect key="frame" x="187" y="620" width="185" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="LvD-MI-f5i"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY8-Sh-PIk">
                                 <rect key="frame" x="42" y="696" width="119" height="52"/>
                                 <color key="backgroundColor" red="0.254196107" green="0.33404923250000002" blue="0.50496454960000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -269,10 +244,9 @@
                                     <constraint firstAttribute="width" constant="119" id="EY5-vF-aPw"/>
                                     <constraint firstAttribute="height" constant="52" id="YYA-hX-pZP"/>
                                 </constraints>
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX7-kW-62V">
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX7-kW-62V">
                                 <rect key="frame" x="29" y="108" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="X5F-To-HAt"/>
@@ -282,7 +256,6 @@
                                 <rect key="frame" x="42" y="776" width="119" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26692104339599609" green="0.34485399723052979" blue="0.50590217113494873" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
->>>>>>> develop
                                 <color key="tintColor" red="0.25192472170000002" green="0.64211705279999998" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -291,11 +264,6 @@
                                     <action selector="SubmitInfo:" destination="Gmc-1D-1rp" eventType="touchUpInside" id="hOR-Hr-I4p"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX7-kW-62V">
-                                <rect key="frame" x="29" y="108" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-=======
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-3x-eVZ">
                                 <rect key="frame" x="235" y="776" width="119" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -304,14 +272,12 @@
                                 <state key="normal" title="Open Camera">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
->>>>>>> develop
                                 <connections>
                                     <action selector="OpenCamera:" destination="Gmc-1D-1rp" eventType="touchUpInside" id="mU6-dl-av2"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iB-lW-Qs1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iB-lW-Qs1">
                                 <rect key="frame" x="107" y="566" width="185" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -344,11 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEL-fi-ov9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="-904" y="-1175"/>
-=======
-            <point key="canvasLocation" x="-1430.4347826086957" y="929.46428571428567"/>
->>>>>>> develop
+            <point key="canvasLocation" x="2391" y="-453"/>
         </scene>
         <!--PlantForm-->
         <scene sceneID="XIL-B7-W9G">
@@ -472,11 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yut-BD-3Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="-1726" y="-453"/>
-=======
-            <point key="canvasLocation" x="-355" y="929"/>
->>>>>>> develop
+            <point key="canvasLocation" x="1587" y="-453"/>
         </scene>
         <!--Plant List-->
         <scene sceneID="BQb-Y9-jUq">
@@ -516,7 +474,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hT3-TD-rc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-59" y="-1175"/>
+            <point key="canvasLocation" x="-17" y="-453"/>
         </scene>
         <!--Plant Info View Controller-->
         <scene sceneID="HLe-oe-xsH">
@@ -591,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EvN-P0-hq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3776.811594202899" y="99.776785714285708"/>
+            <point key="canvasLocation" x="846" y="-453"/>
         </scene>
         <!--Scan Controller-->
         <scene sceneID="xo7-eA-0ix">
@@ -640,26 +598,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anS-of-ji8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3xd-eW-t79" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="-904" y="258"/>
-=======
-            <point key="canvasLocation" x="1193" y="1028"/>
->>>>>>> develop
+            <point key="canvasLocation" x="-904" y="1047"/>
         </scene>
     </scenes>
     <resources>
         <image name="Icon-App-76x76" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="1rJ-qP-Hxd"/>
-=======
-<<<<<<< HEAD
-        <segue reference="WIF-fm-xVV"/>
-        <segue reference="3H9-9e-2D6"/>
-=======
-        <segue reference="gus-GW-QTg"/>
->>>>>>> develop
->>>>>>> develop
+        <segue reference="B9d-C9-fnP"/>
+        <segue reference="X5F-To-HAt"/>
     </inferredMetricsTieBreakers>
 </document>
