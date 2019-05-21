@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         print(pm.getPlantByID(id: 4).desc)
         print(pm.getPlantByID(id: 5).desc)
         
-        }
+        
     }
     
     

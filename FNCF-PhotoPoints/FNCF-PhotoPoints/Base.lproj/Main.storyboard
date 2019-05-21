@@ -72,15 +72,6 @@
                                     <segue destination="t2x-YZ-pdH" kind="show" id="B9d-C9-fnP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8p-4q-dBq">
-                                <rect key="frame" x="125" y="723" width="165" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -156,6 +147,10 @@
                                                     <state key="normal" title="Submit">
                                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="submitBtn:" destination="T7l-Nd-cvh" eventType="touchUpInside" id="won-vy-aeX"/>
+                                                        <segue destination="mtr-Wa-wQd" kind="show" id="c7T-Ad-2TG"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -617,6 +612,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Cm1-v2-rbk"/>
         <segue reference="B9d-C9-fnP"/>
-        <segue reference="1rJ-qP-Hxd"/>
+        <segue reference="3H9-9e-2D6"/>
     </inferredMetricsTieBreakers>
 </document>
