@@ -72,6 +72,15 @@
                                     <segue destination="t2x-YZ-pdH" kind="show" id="B9d-C9-fnP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8p-4q-dBq">
+                                <rect key="frame" x="125" y="723" width="165" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -593,6 +602,7 @@
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="6xs-nu-bIZ" id="37D-mi-4Qo"/>
+                        <segue destination="JX5-Xp-8jh" kind="show" identifier="plantInfoSegue" id="Cm1-v2-rbk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anS-of-ji8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -605,7 +615,8 @@
         <image name="Icon-App-76x76" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Cm1-v2-rbk"/>
         <segue reference="B9d-C9-fnP"/>
-        <segue reference="X5F-To-HAt"/>
+        <segue reference="1rJ-qP-Hxd"/>
     </inferredMetricsTieBreakers>
 </document>

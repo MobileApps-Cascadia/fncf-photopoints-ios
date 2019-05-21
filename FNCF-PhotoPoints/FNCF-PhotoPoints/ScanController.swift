@@ -15,7 +15,14 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     
+    let pm = PlantManager()
+    var plant: Plant!
+    
     @IBOutlet var messageLabel:UILabel!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,8 +100,36 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             //For now just display the extracted value
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
+                
+                //get the plant by name from QR Code
+                //TODO: If QR Codes are not the plant name in "Xxxxx Xxxx" format then this logic needs to be changed
+                plant = pm.getPlantByName(name: metadataObj.stringValue!)
+                
+                //check that the plant was found, if it wasnt then plant.id = -1
+                if(plant.plantID != -1)
+                {
+                    //Plant was found
+                    //Call segue to plant list
+                    DispatchQueue.main.async {
+                        self.performSegue(withIdentifier: "plantInfoSegue", sender: self.plant)
+                    }
+                }
+                else{
+                    let alertController = UIAlertController(title: "Scan Error", message:
+                        "Failed to retrieve plant info from QR Code value", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                    self.present(alertController, animated: true, completion: nil)
+                }
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "plantInfoSegue"){
+            let vc = segue.destination as! PlantInfoViewController
+            vc.myPlant = plant
+        }
+    }
+    
 }
 
