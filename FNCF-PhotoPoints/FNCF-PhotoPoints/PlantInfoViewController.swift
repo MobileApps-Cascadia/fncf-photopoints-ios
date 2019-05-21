@@ -16,6 +16,7 @@ class PlantInfoViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var myPlant: Plant!
+    let plantManager = PlantManager()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -24,7 +25,11 @@ class PlantInfoViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let plantManager = PlantManager()
+        
+        if(myPlant == nil)
+        {
+            myPlant = Plant(plantID: -1, name: "failed to get plant", latinName: "failed to get plant", desc: "failed to get plant")
+        }
         
         plantNameLabel.text = myPlant.name
         

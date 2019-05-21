@@ -15,6 +15,9 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func submitBtn(_ sender: Any) {
+        //Insert credential logic here
+    }
     @IBAction func dismissPopup(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
