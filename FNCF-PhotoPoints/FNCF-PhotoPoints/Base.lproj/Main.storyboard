@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="85X-2p-6tn">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,55 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Plant Table View Controller-->
+        <scene sceneID="neX-ny-v0g">
+            <objects>
+                <tableViewController id="9KQ-Js-PEZ" customClass="PlantTableViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dWT-yX-YJu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlantTableViewCell" rowHeight="100" id="U14-ez-TvS" customClass="PlantTableViewCell" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U14-ez-TvS" id="GHi-fA-PbY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plantNameLbl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgi-eo-fbz">
+                                            <rect key="frame" x="122" y="11" width="272" height="78"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="272" id="0Cz-jB-gEy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Pgi-eo-fbz" firstAttribute="bottom" secondItem="GHi-fA-PbY" secondAttribute="bottomMargin" id="4Pj-Eu-rPf"/>
+                                        <constraint firstItem="Pgi-eo-fbz" firstAttribute="top" secondItem="GHi-fA-PbY" secondAttribute="topMargin" id="LA7-Gd-ZYC"/>
+                                        <constraint firstItem="Pgi-eo-fbz" firstAttribute="trailing" secondItem="GHi-fA-PbY" secondAttribute="trailingMargin" id="Tqu-sl-bF4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="plantNameLbl" destination="Pgi-eo-fbz" id="Ugo-w0-Y44"/>
+                                    <segue destination="JX5-Xp-8jh" kind="show" identifier="plantInfoSegue" id="Gr0-n2-Bk6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9KQ-Js-PEZ" id="mvg-EJ-1rE"/>
+                            <outlet property="delegate" destination="9KQ-Js-PEZ" id="anF-5p-Rrp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="0BZ-2V-wKg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVl-Qq-Fdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="-453"/>
+        </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -27,7 +76,7 @@
                                 </constraints>
                             </imageView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-2Q-9Sn">
-                                <rect key="frame" x="201" y="63" width="193" height="56"/>
+                                <rect key="frame" x="201" y="107" width="193" height="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE">
@@ -69,7 +118,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="t2x-YZ-pdH" kind="show" id="B9d-C9-fnP"/>
+                                    <segue destination="9KQ-Js-PEZ" kind="show" id="sVa-x5-azg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,10 +144,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Hyn-d0-VC5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-904.34782608695662" y="-453.34821428571428"/>
+            <point key="canvasLocation" x="5.7971014492753632" y="-453.34821428571428"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6Mj-pW-ba0">
@@ -253,7 +303,7 @@
                                 <rect key="frame" x="29" y="108" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="X5F-To-HAt"/>
+                                    <segue destination="85X-2p-6tn" kind="show" id="X5F-To-HAt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqM-iK-0ha">
@@ -314,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEL-fi-ov9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2391" y="-453"/>
+            <point key="canvasLocation" x="2561" y="-1208"/>
         </scene>
         <!--PlantForm-->
         <scene sceneID="XIL-B7-W9G">
@@ -386,7 +436,7 @@
                                 <rect key="frame" x="54" y="100" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="gus-GW-QTg"/>
+                                    <segue destination="85X-2p-6tn" kind="show" id="gus-GW-QTg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-nA-sHH">
@@ -438,47 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yut-BD-3Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1587" y="-453"/>
-        </scene>
-        <!--Plant List-->
-        <scene sceneID="BQb-Y9-jUq">
-            <objects>
-                <viewController title="Plant List" id="t2x-YZ-pdH" customClass="PlantListViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tbu-ul-0ar">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plant List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l41-hK-37c">
-                                <rect key="frame" x="172" y="135" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eby-bD-N67">
-                                <rect key="frame" x="56" y="101" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="3H9-9e-2D6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wR-Gh-Yaj">
-                                <rect key="frame" x="60" y="209" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Douglas Fir"/>
-                                <connections>
-                                    <segue destination="JX5-Xp-8jh" kind="show" id="FBu-xI-QUu"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Hik-fO-Q0r"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hT3-TD-rc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-17" y="-453"/>
+            <point key="canvasLocation" x="1754" y="-1208"/>
         </scene>
         <!--Plant Info View Controller-->
         <scene sceneID="HLe-oe-xsH">
@@ -488,13 +498,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rj1-U7-MDA">
-                                <rect key="frame" x="55" y="91" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="t2x-YZ-pdH" kind="show" id="WIF-fm-xVV"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBc-o7-3hc">
                                 <rect key="frame" x="69" y="155" width="77" height="36"/>
                                 <constraints>
@@ -533,12 +536,10 @@
                         <constraints>
                             <constraint firstItem="iPl-rT-wza" firstAttribute="top" secondItem="NGl-un-V9K" secondAttribute="bottom" constant="8" symbolic="YES" id="6K4-1F-MFb"/>
                             <constraint firstItem="iPl-rT-wza" firstAttribute="leading" secondItem="K5o-O7-jub" secondAttribute="leadingMargin" id="7YH-Mc-TdK"/>
-                            <constraint firstItem="Rj1-U7-MDA" firstAttribute="leading" secondItem="8mU-lf-atd" secondAttribute="leading" constant="55" id="8mC-SO-Iku"/>
                             <constraint firstItem="NGl-un-V9K" firstAttribute="top" secondItem="VBc-o7-3hc" secondAttribute="bottom" constant="8" symbolic="YES" id="CjF-0d-JfJ"/>
                             <constraint firstItem="VBc-o7-3hc" firstAttribute="top" secondItem="K5o-O7-jub" secondAttribute="top" constant="155" id="FCd-1R-mNe"/>
                             <constraint firstItem="VBc-o7-3hc" firstAttribute="leading" secondItem="NGl-un-V9K" secondAttribute="leading" id="Oa5-QG-Ewg"/>
                             <constraint firstItem="iPl-rT-wza" firstAttribute="trailing" secondItem="K5o-O7-jub" secondAttribute="trailingMargin" id="aTG-cg-Hnf"/>
-                            <constraint firstItem="VBc-o7-3hc" firstAttribute="top" secondItem="Rj1-U7-MDA" secondAttribute="bottom" constant="34" id="hSX-bQ-yxh"/>
                             <constraint firstItem="iPl-rT-wza" firstAttribute="bottom" secondItem="8mU-lf-atd" secondAttribute="bottom" id="niL-3N-bZl"/>
                             <constraint firstItem="VBc-o7-3hc" firstAttribute="leading" secondItem="8mU-lf-atd" secondAttribute="leading" constant="69" id="rhd-gc-IFc"/>
                         </constraints>
@@ -553,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EvN-P0-hq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="-453"/>
+            <point key="canvasLocation" x="1755" y="-453"/>
         </scene>
         <!--Scan Controller-->
         <scene sceneID="xo7-eA-0ix">
@@ -585,7 +586,7 @@
                                                 </connections>
                                             </button>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="1rJ-qP-Hxd"/>
+                                                <segue destination="85X-2p-6tn" kind="show" id="1rJ-qP-Hxd"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -605,13 +606,30 @@
             </objects>
             <point key="canvasLocation" x="-904" y="1047"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="COo-l2-vbu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="85X-2p-6tn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jpC-Ys-KU4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ato-dF-ASk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vbz-sE-xh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-904.34782608695662" y="-453.34821428571428"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Icon-App-76x76" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cm1-v2-rbk"/>
-        <segue reference="B9d-C9-fnP"/>
-        <segue reference="3H9-9e-2D6"/>
+        <segue reference="1rJ-qP-Hxd"/>
+        <segue reference="Gr0-n2-Bk6"/>
     </inferredMetricsTieBreakers>
 </document>
