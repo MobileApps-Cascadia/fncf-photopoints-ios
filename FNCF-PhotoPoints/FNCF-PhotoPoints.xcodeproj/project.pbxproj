@@ -30,6 +30,14 @@
 		3FC78631226FCBF500026CE0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78630226FCBF500026CE0 /* Plant.swift */; };
 		3FDEE39522823C77008D408A /* PlantManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEE39422823C77008D408A /* PlantManagerTest.swift */; };
 		3FDEE397228679E9008D408A /* PlantSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEE396228679E9008D408A /* PlantSubmission.swift */; };
+		3FE8EF5A2294BB38001CB4B9 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */; };
+		3FE8EF5C2294C6C4001CB4B9 /* scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF5B2294C6C4001CB4B9 /* scanner.storyboard */; };
+		3FE8EF5E2294CBBD001CB4B9 /* PlantList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF5D2294CBBD001CB4B9 /* PlantList.storyboard */; };
+		3FE8EF602294CFF4001CB4B9 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */; };
+		3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */; };
+		3FE8EF6422965AA3001CB4B9 /* PlantInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6322965AA3001CB4B9 /* PlantInfo.storyboard */; };
+		3FE8EF6622965EDE001CB4B9 /* PlantForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */; };
+		3FE8EF6822966326001CB4B9 /* StreamForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6722966326001CB4B9 /* StreamForm.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +87,14 @@
 		3FC78630226FCBF500026CE0 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		3FDEE39422823C77008D408A /* PlantManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManagerTest.swift; sourceTree = "<group>"; };
 		3FDEE396228679E9008D408A /* PlantSubmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSubmission.swift; sourceTree = "<group>"; };
+		3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		3FE8EF5B2294C6C4001CB4B9 /* scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = scanner.storyboard; sourceTree = "<group>"; };
+		3FE8EF5D2294CBBD001CB4B9 /* PlantList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantList.storyboard; sourceTree = "<group>"; };
+		3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		3FE8EF6322965AA3001CB4B9 /* PlantInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantInfo.storyboard; sourceTree = "<group>"; };
+		3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantForm.storyboard; sourceTree = "<group>"; };
+		3FE8EF6722966326001CB4B9 /* StreamForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StreamForm.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,19 +167,27 @@
 				3FBAFB0422781483006820FE /* SubmissionMock */,
 				3FC785FF226FCBA500026CE0 /* AppDelegate.swift */,
 				3FC78603226FCBA500026CE0 /* Main.storyboard */,
+				3FE8EF5D2294CBBD001CB4B9 /* PlantList.storyboard */,
 				3F3004D82278B52E00E077E5 /* PlantListViewController.swift */,
+				3FE8EF6722966326001CB4B9 /* StreamForm.storyboard */,
 				3F3004D622775F5300E077E5 /* StreamFormViewController.swift */,
 				3FC78601226FCBA500026CE0 /* HomeViewController.swift */,
+				3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */,
 				3F3004D222766C5400E077E5 /* PlantFormViewController.swift */,
-				3FC78609226FCBA800026CE0 /* Assets.xcassets */,
 				3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */,
 				3FC7860E226FCBA800026CE0 /* Info.plist */,
 				3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */,
+				3FE8EF5B2294C6C4001CB4B9 /* scanner.storyboard */,
 				3F02EFE22272BB050087715E /* ScanController.swift */,
 				3FC78630226FCBF500026CE0 /* Plant.swift */,
 				3FA4D7F32279045F00526ABB /* PlantManager.swift */,
+				3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */,
 				3F79FA3922820392005C71C4 /* SignUpViewController.swift */,
+				3FE8EF6322965AA3001CB4B9 /* PlantInfo.storyboard */,
 				3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */,
+				3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */,
+				3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */,
+				3FC78609226FCBA800026CE0 /* Assets.xcassets */,
 			);
 			path = "FNCF-PhotoPoints";
 			sourceTree = "<group>";
@@ -295,6 +319,13 @@
 			files = (
 				3FC7860D226FCBA800026CE0 /* LaunchScreen.storyboard in Resources */,
 				3FC7860A226FCBA800026CE0 /* Assets.xcassets in Resources */,
+				3FE8EF5A2294BB38001CB4B9 /* SignUp.storyboard in Resources */,
+				3FE8EF6622965EDE001CB4B9 /* PlantForm.storyboard in Resources */,
+				3FE8EF6822966326001CB4B9 /* StreamForm.storyboard in Resources */,
+				3FE8EF5C2294C6C4001CB4B9 /* scanner.storyboard in Resources */,
+				3FE8EF5E2294CBBD001CB4B9 /* PlantList.storyboard in Resources */,
+				3FE8EF602294CFF4001CB4B9 /* Gallery.storyboard in Resources */,
+				3FE8EF6422965AA3001CB4B9 /* PlantInfo.storyboard in Resources */,
 				3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC78602226FCBA500026CE0 /* HomeViewController.swift in Sources */,
+				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
 				3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */,
 				3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */,
 				3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */,
@@ -331,7 +363,7 @@
 				3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */,
 				3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */,
 				3F79FA38227F7D06005C71C4 /* DesignableView.swift in Sources */,
-				3FBAFB08227814BC006820FE /* SubmissionMock.swift in Sources */,
+				3FBAFB08227814BC006820FE /* Submission.swift in Sources */,
 				3FBAFB08227814BC006820FE /* Submission.swift in Sources */,
 				3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */,
 				3F79FA3A22820392005C71C4 /* SignUpViewController.swift in Sources */,
