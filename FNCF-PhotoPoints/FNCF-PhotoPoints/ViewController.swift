@@ -46,28 +46,26 @@ class ViewController: UIViewController {
         if sender.currentTitleColor == UIColor.white{
             UIView.animate(withDuration: 0.5, animations: {
                 //animation here
+                self.PlantListButton.alpha = 1
+                self.ScannerButton.alpha = 1
+                self.GalleryButton.alpha = 1
+                
                 self.PlantListButton.center = self.PlantListButtonCenter
-                self.PlantListButton.setTitleColor(UIColor.white, for: .normal)
-                self.PlantListButton.layer.borderColor = UIColor.white.cgColor
                 self.GalleryButton.center = self.GalleryButtonCenter
-                self.GalleryButton.setTitleColor(UIColor.white, for: .normal)
-                self.GalleryButton.layer.borderColor = UIColor.white.cgColor
                 self.ScannerButton.center = self.ScannerButtonCenter
-                self.ScannerButton.setTitleColor(UIColor.white, for: .normal)
-                self.ScannerButton.layer.borderColor = UIColor.white.cgColor
+                
             })
         }else{
             UIView.animate(withDuration: 0.5, animations: {
                 //collapse Buttons
+                self.GalleryButton.alpha = 0
+                self.ScannerButton.alpha = 0
+                self.PlantListButton.alpha = 0
+                
                 self.PlantListButton.center = self.MenuButton.center
-                self.PlantListButton.setTitleColor(UIColor.clear, for: .normal)
-                self.PlantListButton.layer.borderColor = UIColor.clear.cgColor
                 self.GalleryButton.center = self.MenuButton.center
-                self.GalleryButton.setTitleColor(UIColor.clear, for: .normal)
-                self.GalleryButton.layer.borderColor = UIColor.clear.cgColor
                 self.ScannerButton.center = self.MenuButton.center
-                self.ScannerButton.setTitleColor(UIColor.clear, for: .normal)
-                self.ScannerButton.layer.borderColor = UIColor.clear.cgColor
+               
              })
         }
         

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ios_appBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ckY-QJ-LnA">
-                                <rect key="frame" x="0.0" y="0.0" width="621" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -30,7 +30,7 @@
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="58" y="627" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -59,12 +59,9 @@
                                     <constraint firstAttribute="width" constant="370" id="yfq-tH-2Tr"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-xD-WUP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-xD-WUP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="816" width="138" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="771-YM-lPL"/>
-                                    <constraint firstAttribute="width" constant="138" id="Jua-E8-ghX"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scanner">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -80,12 +77,9 @@
                                     <segue destination="TZ2-Yq-KiY" kind="show" id="IAL-JV-J5g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-od-DGG" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-od-DGG" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="138" y="816" width="138" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="crf-1p-cAU"/>
-                                    <constraint firstAttribute="height" constant="30" id="gpw-Pm-k4H"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="StreamForm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -101,11 +95,9 @@
                                     <segue destination="e9M-LM-Sgp" kind="show" id="UZz-82-C0p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-lV-NtJ" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-lV-NtJ" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="276" y="816" width="138" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="E8v-LH-aAP"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PlantForm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -143,7 +135,7 @@
                                     <action selector="MenuClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnM-59-LiO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-hL-Jhw" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-hL-Jhw" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="167" y="551" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -165,7 +157,7 @@
                                     <segue destination="RH2-l7-vWy" kind="show" id="7hd-E2-NIs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-4v-5LP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-4v-5LP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="276" y="627" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -191,17 +183,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mJ-wf-5mL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cO8-od-DGG" secondAttribute="bottom" constant="16" id="4on-I7-i42"/>
-                            <constraint firstItem="eCg-lV-NtJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gtb-wU-GCu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6F1-2Q-9Sn" secondAttribute="trailing" constant="20" id="LNa-DI-iMo"/>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="6F1-2Q-9Sn" secondAttribute="bottom" constant="154" id="QKb-ZU-Kq6"/>
-                            <constraint firstItem="eCg-lV-NtJ" firstAttribute="leading" secondItem="cO8-od-DGG" secondAttribute="trailing" id="TH2-04-l5A"/>
-                            <constraint firstItem="koJ-xD-WUP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dZu-DB-zEQ"/>
                             <constraint firstItem="6F1-2Q-9Sn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hOy-sh-NiW"/>
                             <constraint firstItem="6F1-2Q-9Sn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="mV3-hp-lVX"/>
-                            <constraint firstItem="cO8-od-DGG" firstAttribute="leading" secondItem="koJ-xD-WUP" secondAttribute="trailing" id="rW0-l3-A8C"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="koJ-xD-WUP" secondAttribute="bottom" constant="16" id="u7R-T9-zar"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eCg-lV-NtJ" secondAttribute="bottom" constant="16" id="xpB-rc-ATC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -266,7 +251,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FONCF_TITLE" width="746" height="514"/>
-        <image name="ios_appBackground" width="621.5" height="1104"/>
+        <image name="FONCF_TITLE" width="497.33334350585938" height="342.66665649414062"/>
+        <image name="ios_appBackground" width="414.33334350585938" height="736"/>
     </resources>
 </document>
