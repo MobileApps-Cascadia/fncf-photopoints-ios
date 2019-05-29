@@ -13,7 +13,7 @@
         <!--Scan Controller-->
         <scene sceneID="3MP-OP-32O">
             <objects>
-                <viewController storyboardIdentifier="ScanController" title="Scan Controller" id="BEo-I3-rJZ" customClass="QRScanner" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScannerStoryboard" title="Scan Controller" id="BEo-I3-rJZ" customClass="QRScanner" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qTd-5v-AnI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfg-03-PHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="JDr-Ke-cxl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-904" y="1047"/>
+            <point key="canvasLocation" x="-894" y="1002"/>
         </scene>
         <!--mainStoryboard-->
         <scene sceneID="jHj-Gm-gXA">

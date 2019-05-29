@@ -21,7 +21,7 @@
 		3FBAFB0A227815E1006820FE /* SubmissionMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */; };
 		3FBAFB0C22781B27006820FE /* SubmissionRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */; };
 		3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC785FF226FCBA500026CE0 /* AppDelegate.swift */; };
-		3FC78602226FCBA500026CE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* HomeViewController.swift */; };
+		3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* ViewController.swift */; };
 		3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78603226FCBA500026CE0 /* Main.storyboard */; };
 		3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */; };
 		3FC7860A226FCBA800026CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78609226FCBA800026CE0 /* Assets.xcassets */; };
@@ -74,7 +74,7 @@
 		3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionRepo.swift; sourceTree = "<group>"; };
 		3FC785FC226FCBA500026CE0 /* FNCF-PhotoPoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FNCF-PhotoPoints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC785FF226FCBA500026CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FC78601226FCBA500026CE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3FC78601226FCBA500026CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FC78604226FCBA500026CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FC78607226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FNCF_PhotoPoints.xcdatamodel; sourceTree = "<group>"; };
 		3FC78609226FCBA800026CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				3F3004D82278B52E00E077E5 /* PlantListViewController.swift */,
 				3FE8EF6722966326001CB4B9 /* StreamForm.storyboard */,
 				3F3004D622775F5300E077E5 /* StreamFormViewController.swift */,
-				3FC78601226FCBA500026CE0 /* HomeViewController.swift */,
+				3FC78601226FCBA500026CE0 /* ViewController.swift */,
 				3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */,
 				3F3004D222766C5400E077E5 /* PlantFormViewController.swift */,
 				3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */,
@@ -355,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */,
-				3FC78602226FCBA500026CE0 /* HomeViewController.swift in Sources */,
+				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
 				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
 				3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */,
 				3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */,
@@ -550,12 +550,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "FNCF-PhotoPoints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.FNCF-PhotoPoints";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cascadia.mobas.ncfphotopoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,12 +568,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "FNCF-PhotoPoints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.FNCF-PhotoPoints";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cascadia.mobas.ncfphotopoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

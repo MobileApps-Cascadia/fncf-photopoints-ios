@@ -17,6 +17,7 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     @IBOutlet var messageLabel:UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
