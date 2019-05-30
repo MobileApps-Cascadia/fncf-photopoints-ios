@@ -57,7 +57,7 @@ public class PhotoDataRepository:PhotoRepository{
     
     private var PlantInfo = [PlantSubmission]()
     private var Photoinfo = [StreamSubmission]()
-    
+ 
     
 }
 

@@ -12,14 +12,21 @@ struct StreamSubmission {
     let Date: String
     let Weather: String
     let StreamHeight : String
+  //  var Images: [NSObject] = []
     
     
     
     
-    init(Date: String, Weather: String , StreamHeight: String) {
+    
+    
+    
+    init(Date: String, Weather: String , StreamHeight: String /*, images: [NSObject] */) {
         self.Date = Date
         self.Weather = Weather
         self.StreamHeight = StreamHeight
+      //  Images.append(images as NSObject);
+        
+    
     }
     
 }
