@@ -118,6 +118,15 @@
 			path = IBDesignables;
 			sourceTree = "<group>";
 		};
+		3FA32F7F22A0C10100A90754 /* UiTableView */ = {
+			isa = PBXGroup;
+			children = (
+				3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */,
+				3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */,
+			);
+			path = UiTableView;
+			sourceTree = "<group>";
+		};
 		3FBAFB0422781483006820FE /* SubmissionMock */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +160,7 @@
 		3FC785FE226FCBA500026CE0 /* FNCF-PhotoPoints */ = {
 			isa = PBXGroup;
 			children = (
+				3FA32F7F22A0C10100A90754 /* UiTableView */,
 				3F79FA36227F7C6E005C71C4 /* IBDesignables */,
 				3FBAFB0422781483006820FE /* SubmissionMock */,
 				3FC785FF226FCBA500026CE0 /* AppDelegate.swift */,
@@ -166,8 +176,6 @@
 				3F02EFE22272BB050087715E /* ScanController.swift */,
 				3FC78630226FCBF500026CE0 /* Plant.swift */,
 				3FA4D7F32279045F00526ABB /* PlantManager.swift */,
-				3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */,
-				3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */,
 				3F3004D82278B52E00E077E5 /* PlantListViewController.swift */,
 				3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */,
 			);
@@ -522,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C49JYS4PJ2;
 				INFOPLIST_FILE = "FNCF-PhotoPoints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C49JYS4PJ2;
 				INFOPLIST_FILE = "FNCF-PhotoPoints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
