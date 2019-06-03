@@ -22,9 +22,12 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     @IBOutlet var messageLabel:UILabel!
     
+<<<<<<< HEAD
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+=======
+>>>>>>> chris-issue23
     
     override func viewDidLoad() {
         super.viewDidLoad()

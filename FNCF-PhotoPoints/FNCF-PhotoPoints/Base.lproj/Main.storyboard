@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="85X-2p-6tn">
     <device id="retina6_1" orientation="portrait">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+>>>>>>> chris-issue23
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -62,62 +67,74 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainStoryboard" title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ckY-QJ-LnA">
-                                <rect key="frame" x="20" y="137" width="374" height="321"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ios_appBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ckY-QJ-LnA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search Plant List" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-2Q-9Sn">
+                                <rect key="frame" x="20" y="63" width="374" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="321" id="IT4-I7-CjN"/>
-                                    <constraint firstAttribute="width" constant="374" id="nnO-fr-vkP"/>
+                                    <constraint firstAttribute="width" constant="374" id="5CR-ze-ljP"/>
                                 </constraints>
+<<<<<<< HEAD
                             </imageView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-2Q-9Sn">
                                 <rect key="frame" x="201" y="107" width="193" height="12"/>
+=======
+>>>>>>> chris-issue23
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE">
-                                <rect key="frame" x="219" y="477" width="175" height="132"/>
-                                <color key="backgroundColor" red="0.13561910390853882" green="0.33305549621582031" blue="0.48629593849182129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="AIw-Yp-6ym"/>
-                                    <constraint firstAttribute="height" constant="132" id="XGX-b5-d7S"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="58" y="627" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Gallery">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-4v-5LP">
-                                <rect key="frame" x="117.5" y="625" width="179" height="70"/>
-                                <color key="backgroundColor" red="0.08810438246910586" green="0.22210017019640393" blue="0.32559321828456744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="179" id="MVP-NM-bxZ"/>
-                                    <constraint firstAttribute="height" constant="70" id="cV3-3e-h7P"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Scanner">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="T7l-Nd-cvh" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="H0d-Kw-7jD"/>
+                                    <segue destination="7nv-yX-YSX" kind="show" id="tbb-fD-kFi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-hL-Jhw">
-                                <rect key="frame" x="20" y="476" width="175" height="132"/>
-                                <color key="backgroundColor" red="0.13561910390000001" green="0.33305549620000002" blue="0.48629593850000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FONCF_TITLE" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-gQ-6QB">
+                                <rect key="frame" x="22" y="273" width="370" height="218"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="132" id="9eI-5K-jbs"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="rTp-sZ-PS5"/>
+                                    <constraint firstAttribute="height" constant="218" id="bMc-Vu-rh8"/>
+                                    <constraint firstAttribute="width" constant="370" id="yfq-tH-2Tr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Plant List">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-xD-WUP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="816" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scanner">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
+<<<<<<< HEAD
                                     <segue destination="9KQ-Js-PEZ" kind="show" id="sVa-x5-azg"/>
                                 </connections>
                             </button>
@@ -304,32 +321,70 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="85X-2p-6tn" kind="show" id="X5F-To-HAt"/>
+=======
+                                    <segue destination="TZ2-Yq-KiY" kind="show" id="IAL-JV-J5g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqM-iK-0ha">
-                                <rect key="frame" x="42" y="776" width="119" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26692104339599609" green="0.34485399723052979" blue="0.50590217113494873" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.25192472170000002" green="0.64211705279999998" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-od-DGG" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="138" y="816" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="StreamForm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="SubmitInfo:" destination="Gmc-1D-1rp" eventType="touchUpInside" id="hOR-Hr-I4p"/>
+                                    <segue destination="e9M-LM-Sgp" kind="show" id="UZz-82-C0p"/>
+>>>>>>> chris-issue23
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-3x-eVZ">
-                                <rect key="frame" x="235" y="776" width="119" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2669210434" green="0.34485399719999998" blue="0.50590217110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.25192472170000002" green="0.64211705279999998" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Open Camera">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-lV-NtJ" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="276" y="816" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PlantForm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="OpenCamera:" destination="Gmc-1D-1rp" eventType="touchUpInside" id="mU6-dl-av2"/>
+                                    <segue destination="xmh-yQ-Rdu" kind="show" id="mri-bw-9iB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USk-TV-lGz" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="167" y="689" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="MenuClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnM-59-LiO"/>
+                                </connections>
+                            </button>
+<<<<<<< HEAD
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iB-lW-Qs1">
                                 <rect key="frame" x="107" y="566" width="185" height="128"/>
                             </imageView>
@@ -395,36 +450,31 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Foliage?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpj-Gb-GGh">
                                 <rect key="frame" x="54" y="314" width="321" height="30"/>
                                 <nil key="textColor"/>
+=======
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-hL-Jhw" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="167" y="551" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+>>>>>>> chris-issue23
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="more observations" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B4S-kM-roA">
-                                <rect key="frame" x="54" y="374" width="321" height="211"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J7X-Gf-DdP">
-                                <rect key="frame" x="190" y="614" width="185" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="e1O-Hc-d36"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMc-CY-T6X">
-                                <rect key="frame" x="54" y="690" width="119" height="52"/>
-                                <color key="backgroundColor" red="0.25419610701393197" green="0.33404923249430718" blue="0.50496454960103621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="6oN-kT-pKu"/>
-                                    <constraint firstAttribute="width" constant="119" id="eSG-2n-DPe"/>
-                                </constraints>
-                                <color key="tintColor" red="0.25192472170000002" green="0.64211705279999998" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Plant List">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="SubmitData:" destination="ifm-Ng-bih" eventType="touchUpInside" id="Z5i-pJ-izw"/>
+                                    <segue destination="RH2-l7-vWy" kind="show" id="7hd-E2-NIs"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKb-qy-KR6">
                                 <rect key="frame" x="100" y="870" width="185" height="128"/>
                                 <constraints>
@@ -445,54 +495,68 @@
                                 <color key="backgroundColor" red="0.254196107" green="0.33404923250000002" blue="0.50496454960000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.25192472170000002" green="0.64211705279999998" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Camera">
+=======
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-4v-5LP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="276" y="627" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Scanner">
+>>>>>>> chris-issue23
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="SubmitLogic:" destination="ifm-Ng-bih" eventType="touchUpInside" id="0Qu-9N-8ky"/>
+                                    <segue destination="eJa-k7-5n9" kind="presentation" id="Onu-e1-OOW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ofD-3D-KWc" firstAttribute="top" secondItem="x6b-ZR-zjS" secondAttribute="bottom" constant="8" symbolic="YES" id="101-A3-xet"/>
-                            <constraint firstItem="x6b-ZR-zjS" firstAttribute="top" secondItem="Mfv-dx-GIy" secondAttribute="bottom" constant="55" id="12g-6v-aNR"/>
-                            <constraint firstItem="dpj-Gb-GGh" firstAttribute="trailing" secondItem="B4S-kM-roA" secondAttribute="trailing" id="4TY-0X-kXM"/>
-                            <constraint firstItem="3dR-z8-Frg" firstAttribute="top" secondItem="TOv-BF-LOS" secondAttribute="top" constant="56" id="592-nr-8yP"/>
-                            <constraint firstItem="zKb-qy-KR6" firstAttribute="top" secondItem="TOv-BF-LOS" secondAttribute="bottom" constant="8" symbolic="YES" id="7qO-nf-Pfi"/>
-                            <constraint firstItem="WMc-CY-T6X" firstAttribute="bottom" secondItem="J7X-Gf-DdP" secondAttribute="bottom" id="A0W-aY-uT7"/>
-                            <constraint firstItem="x6b-ZR-zjS" firstAttribute="leading" secondItem="ofD-3D-KWc" secondAttribute="leading" id="BLV-TH-Cl0"/>
-                            <constraint firstItem="3dR-z8-Frg" firstAttribute="leading" secondItem="x6b-ZR-zjS" secondAttribute="leading" id="DbR-0W-NlQ"/>
-                            <constraint firstItem="B4S-kM-roA" firstAttribute="leading" secondItem="WMc-CY-T6X" secondAttribute="leading" id="NIr-dG-okN"/>
-                            <constraint firstItem="TOv-BF-LOS" firstAttribute="trailing" secondItem="x6b-ZR-zjS" secondAttribute="trailing" constant="265" id="OaB-lW-Tno"/>
-                            <constraint firstItem="B4S-kM-roA" firstAttribute="top" secondItem="dpj-Gb-GGh" secondAttribute="bottom" constant="30" id="Rpp-Ts-5CV"/>
-                            <constraint firstItem="TOv-BF-LOS" firstAttribute="trailing" secondItem="ofD-3D-KWc" secondAttribute="trailing" constant="39" id="Y61-Lx-p1r"/>
-                            <constraint firstItem="TOv-BF-LOS" firstAttribute="bottom" secondItem="WMc-CY-T6X" secondAttribute="bottom" constant="120" id="ZtB-k2-JnX"/>
-                            <constraint firstItem="dpj-Gb-GGh" firstAttribute="leading" secondItem="B4S-kM-roA" secondAttribute="leading" id="cDY-ye-fbs"/>
-                            <constraint firstItem="J7X-Gf-DdP" firstAttribute="leading" secondItem="WMc-CY-T6X" secondAttribute="trailing" constant="17" id="e4N-Qt-9qc"/>
-                            <constraint firstItem="Mfv-dx-GIy" firstAttribute="leading" secondItem="TOv-BF-LOS" secondAttribute="leading" constant="59" id="en2-ao-Sph"/>
-                            <constraint firstItem="B4S-kM-roA" firstAttribute="trailing" secondItem="J7X-Gf-DdP" secondAttribute="trailing" id="l3h-HH-ohx"/>
-                            <constraint firstItem="J7X-Gf-DdP" firstAttribute="top" secondItem="B4S-kM-roA" secondAttribute="bottom" constant="29" id="o6P-nM-FJy"/>
-                            <constraint firstItem="ofD-3D-KWc" firstAttribute="trailing" secondItem="dpj-Gb-GGh" secondAttribute="trailing" id="pc7-0r-hDA"/>
-                            <constraint firstItem="Mfv-dx-GIy" firstAttribute="top" secondItem="3dR-z8-Frg" secondAttribute="bottom" constant="8" symbolic="YES" id="sNx-ag-Div"/>
-                            <constraint firstItem="3dR-z8-Frg" firstAttribute="leading" secondItem="TOv-BF-LOS" secondAttribute="leading" constant="54" id="vxd-0S-IIf"/>
-                            <constraint firstItem="dpj-Gb-GGh" firstAttribute="top" secondItem="ofD-3D-KWc" secondAttribute="bottom" constant="12" id="x3x-od-z3n"/>
-                            <constraint firstItem="ofD-3D-KWc" firstAttribute="leading" secondItem="dpj-Gb-GGh" secondAttribute="leading" id="xfJ-LE-OD2"/>
+                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mJ-wf-5mL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6F1-2Q-9Sn" secondAttribute="trailing" constant="20" id="LNa-DI-iMo"/>
+                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="6F1-2Q-9Sn" secondAttribute="bottom" constant="154" id="QKb-ZU-Kq6"/>
+                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hOy-sh-NiW"/>
+                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="mV3-hp-lVX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="TOv-BF-LOS"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="DateEntered" destination="x6b-ZR-zjS" id="Lak-sa-JqU"/>
-                        <outlet property="FoliageEntered" destination="dpj-Gb-GGh" id="HIl-94-tLc"/>
-                        <outlet property="FruitChoice" destination="ofD-3D-KWc" id="6gy-ix-Xol"/>
+                        <outlet property="GalleryButton" destination="5us-Cq-GNE" id="FSy-1Y-niJ"/>
+                        <outlet property="MenuButton" destination="USk-TV-lGz" id="h6D-Ub-cCn"/>
+                        <outlet property="PlantListButton" destination="GtB-hL-Jhw" id="USH-EA-XYL"/>
+                        <outlet property="ScannerButton" destination="OdV-4v-5LP" id="fNl-c1-tym"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yut-BD-3Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="1754" y="-1208"/>
+=======
+            <point key="canvasLocation" x="1198.5507246376812" y="592.63392857142856"/>
         </scene>
-        <!--Plant Info View Controller-->
-        <scene sceneID="HLe-oe-xsH">
+        <!--ScannerStoryboard-->
+        <scene sceneID="Uaq-ZS-Q1l">
             <objects>
+                <viewControllerPlaceholder storyboardName="scanner" referencedIdentifier="ScannerStoryboard" id="TZ2-Yq-KiY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1K-8B-c7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="1041"/>
+>>>>>>> chris-issue23
+        </scene>
+        <!--SignUpViewStoryboard-->
+        <scene sceneID="Uax-Fp-CYs">
+            <objects>
+<<<<<<< HEAD
                 <viewController id="JX5-Xp-8jh" customClass="PlantInfoViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K5o-O7-jub">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -555,10 +619,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EvN-P0-hq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1755" y="-453"/>
+=======
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpViewStoryboard" id="eJa-k7-5n9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtv-hb-Mw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="1041"/>
+>>>>>>> chris-issue23
         </scene>
-        <!--Scan Controller-->
-        <scene sceneID="xo7-eA-0ix">
+        <!--plantFormStoryboard-->
+        <scene sceneID="Mex-WW-6Zy">
             <objects>
+<<<<<<< HEAD
                 <viewController title="Scan Controller" id="mtr-Wa-wQd" customClass="QRScanner" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dgv-by-OoT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -603,8 +674,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anS-of-ji8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3xd-eW-t79" userLabel="Exit" sceneMemberID="exit"/>
+=======
+                <viewControllerPlaceholder storyboardName="PlantForm" referencedIdentifier="plantFormStoryboard" id="xmh-yQ-Rdu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydo-zQ-WzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-904" y="1047"/>
+            <point key="canvasLocation" x="1788" y="843"/>
+        </scene>
+        <!--GalleryStoryboard-->
+        <scene sceneID="GBN-4o-0iU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Gallery" referencedIdentifier="GalleryStoryboard" id="7nv-yX-YSX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOr-a7-OWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="1041"/>
+        </scene>
+        <!--StreamFormStorybord-->
+        <scene sceneID="UOA-gc-slO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StreamForm" referencedIdentifier="StreamFormStorybord" id="e9M-LM-Sgp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFe-ww-cIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="1041"/>
+        </scene>
+        <!--PlantListStoryboard-->
+        <scene sceneID="gDg-eG-KRD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlantList" referencedIdentifier="PlantListStoryboard" id="RH2-l7-vWy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ks-BP-Sgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+>>>>>>> chris-issue23
+            </objects>
+            <point key="canvasLocation" x="916" y="1041"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="COo-l2-vbu">
@@ -626,10 +725,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-App-76x76" width="60" height="60"/>
+        <image name="FONCF_TITLE" width="497.33334350585938" height="342.66665649414062"/>
+        <image name="ios_appBackground" width="414.33334350585938" height="736"/>
     </resources>
+<<<<<<< HEAD
     <inferredMetricsTieBreakers>
         <segue reference="1rJ-qP-Hxd"/>
         <segue reference="Gr0-n2-Bk6"/>
     </inferredMetricsTieBreakers>
+=======
+>>>>>>> chris-issue23
 </document>

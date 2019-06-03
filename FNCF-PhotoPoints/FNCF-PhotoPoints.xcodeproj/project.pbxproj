@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F02EFE32272BB050087715E /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02EFE22272BB050087715E /* ScanController.swift */; };
+		3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F248B862299F5400090F0F8 /* RoundButton.swift */; };
 		3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D222766C5400E077E5 /* PlantFormViewController.swift */; };
 		3F3004D722775F5300E077E5 /* StreamFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D622775F5300E077E5 /* StreamFormViewController.swift */; };
 		3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D82278B52E00E077E5 /* PlantListViewController.swift */; };
@@ -22,7 +23,7 @@
 		3FBAFB0A227815E1006820FE /* SubmissionMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */; };
 		3FBAFB0C22781B27006820FE /* SubmissionRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */; };
 		3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC785FF226FCBA500026CE0 /* AppDelegate.swift */; };
-		3FC78602226FCBA500026CE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* HomeViewController.swift */; };
+		3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78601226FCBA500026CE0 /* ViewController.swift */; };
 		3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78603226FCBA500026CE0 /* Main.storyboard */; };
 		3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */; };
 		3FC7860A226FCBA800026CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78609226FCBA800026CE0 /* Assets.xcassets */; };
@@ -32,6 +33,14 @@
 		3FC78631226FCBF500026CE0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78630226FCBF500026CE0 /* Plant.swift */; };
 		3FDEE39522823C77008D408A /* PlantManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEE39422823C77008D408A /* PlantManagerTest.swift */; };
 		3FDEE397228679E9008D408A /* PlantSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEE396228679E9008D408A /* PlantSubmission.swift */; };
+		3FE8EF5A2294BB38001CB4B9 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */; };
+		3FE8EF5C2294C6C4001CB4B9 /* scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF5B2294C6C4001CB4B9 /* scanner.storyboard */; };
+		3FE8EF5E2294CBBD001CB4B9 /* PlantList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF5D2294CBBD001CB4B9 /* PlantList.storyboard */; };
+		3FE8EF602294CFF4001CB4B9 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */; };
+		3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */; };
+		3FE8EF6422965AA3001CB4B9 /* PlantInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6322965AA3001CB4B9 /* PlantInfo.storyboard */; };
+		3FE8EF6622965EDE001CB4B9 /* PlantForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */; };
+		3FE8EF6822966326001CB4B9 /* StreamForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF6722966326001CB4B9 /* StreamForm.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		3F02EFE22272BB050087715E /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
+		3F248B862299F5400090F0F8 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3F3004D222766C5400E077E5 /* PlantFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFormViewController.swift; sourceTree = "<group>"; };
 		3F3004D622775F5300E077E5 /* StreamFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamFormViewController.swift; sourceTree = "<group>"; };
 		3F3004D82278B52E00E077E5 /* PlantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +78,7 @@
 		3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionRepo.swift; sourceTree = "<group>"; };
 		3FC785FC226FCBA500026CE0 /* FNCF-PhotoPoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FNCF-PhotoPoints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC785FF226FCBA500026CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FC78601226FCBA500026CE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3FC78601226FCBA500026CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FC78604226FCBA500026CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FC78607226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FNCF_PhotoPoints.xcdatamodel; sourceTree = "<group>"; };
 		3FC78609226FCBA800026CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +93,14 @@
 		3FC78630226FCBF500026CE0 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		3FDEE39422823C77008D408A /* PlantManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManagerTest.swift; sourceTree = "<group>"; };
 		3FDEE396228679E9008D408A /* PlantSubmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSubmission.swift; sourceTree = "<group>"; };
+		3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		3FE8EF5B2294C6C4001CB4B9 /* scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = scanner.storyboard; sourceTree = "<group>"; };
+		3FE8EF5D2294CBBD001CB4B9 /* PlantList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantList.storyboard; sourceTree = "<group>"; };
+		3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		3FE8EF6322965AA3001CB4B9 /* PlantInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantInfo.storyboard; sourceTree = "<group>"; };
+		3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantForm.storyboard; sourceTree = "<group>"; };
+		3FE8EF6722966326001CB4B9 /* StreamForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StreamForm.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				3F79FA37227F7D06005C71C4 /* DesignableView.swift */,
+				3F248B862299F5400090F0F8 /* RoundButton.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -165,19 +184,40 @@
 				3FBAFB0422781483006820FE /* SubmissionMock */,
 				3FC785FF226FCBA500026CE0 /* AppDelegate.swift */,
 				3FC78603226FCBA500026CE0 /* Main.storyboard */,
+<<<<<<< HEAD
 				3FC78601226FCBA500026CE0 /* HomeViewController.swift */,
 				3F3004D622775F5300E077E5 /* StreamFormViewController.swift */,
+=======
+				3FE8EF5D2294CBBD001CB4B9 /* PlantList.storyboard */,
+				3F3004D82278B52E00E077E5 /* PlantListViewController.swift */,
+				3FE8EF6722966326001CB4B9 /* StreamForm.storyboard */,
+				3F3004D622775F5300E077E5 /* StreamFormViewController.swift */,
+				3FC78601226FCBA500026CE0 /* ViewController.swift */,
+				3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */,
+>>>>>>> chris-issue23
 				3F3004D222766C5400E077E5 /* PlantFormViewController.swift */,
-				3FC78609226FCBA800026CE0 /* Assets.xcassets */,
 				3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */,
 				3FC7860E226FCBA800026CE0 /* Info.plist */,
 				3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */,
+<<<<<<< HEAD
 				3F79FA3922820392005C71C4 /* SignUpViewController.swift */,
 				3F02EFE22272BB050087715E /* ScanController.swift */,
 				3FC78630226FCBF500026CE0 /* Plant.swift */,
 				3FA4D7F32279045F00526ABB /* PlantManager.swift */,
 				3F3004D82278B52E00E077E5 /* PlantListViewController.swift */,
+=======
+				3FE8EF5B2294C6C4001CB4B9 /* scanner.storyboard */,
+				3F02EFE22272BB050087715E /* ScanController.swift */,
+				3FC78630226FCBF500026CE0 /* Plant.swift */,
+				3FA4D7F32279045F00526ABB /* PlantManager.swift */,
+				3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */,
+				3F79FA3922820392005C71C4 /* SignUpViewController.swift */,
+				3FE8EF6322965AA3001CB4B9 /* PlantInfo.storyboard */,
+>>>>>>> chris-issue23
 				3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */,
+				3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */,
+				3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */,
+				3FC78609226FCBA800026CE0 /* Assets.xcassets */,
 			);
 			path = "FNCF-PhotoPoints";
 			sourceTree = "<group>";
@@ -309,6 +349,13 @@
 			files = (
 				3FC7860D226FCBA800026CE0 /* LaunchScreen.storyboard in Resources */,
 				3FC7860A226FCBA800026CE0 /* Assets.xcassets in Resources */,
+				3FE8EF5A2294BB38001CB4B9 /* SignUp.storyboard in Resources */,
+				3FE8EF6622965EDE001CB4B9 /* PlantForm.storyboard in Resources */,
+				3FE8EF6822966326001CB4B9 /* StreamForm.storyboard in Resources */,
+				3FE8EF5C2294C6C4001CB4B9 /* scanner.storyboard in Resources */,
+				3FE8EF5E2294CBBD001CB4B9 /* PlantList.storyboard in Resources */,
+				3FE8EF602294CFF4001CB4B9 /* Gallery.storyboard in Resources */,
+				3FE8EF6422965AA3001CB4B9 /* PlantInfo.storyboard in Resources */,
 				3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,8 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
 				3FC78602226FCBA500026CE0 /* HomeViewController.swift in Sources */,
+=======
+				3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */,
+				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
+				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
+>>>>>>> chris-issue23
 				3F3004D92278B52E00E077E5 /* PlantListViewController.swift in Sources */,
 				3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */,
 				3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */,
@@ -530,13 +583,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = C49JYS4PJ2;
+=======
+				DEVELOPMENT_TEAM = 38V8Y67B3N;
+>>>>>>> chris-issue23
 				INFOPLIST_FILE = "FNCF-PhotoPoints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.FNCF-PhotoPoints";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cascadia.mobas.ncfphotopoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,13 +605,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = C49JYS4PJ2;
+=======
+				DEVELOPMENT_TEAM = 38V8Y67B3N;
+>>>>>>> chris-issue23
 				INFOPLIST_FILE = "FNCF-PhotoPoints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.FNCF-PhotoPoints";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cascadia.mobas.ncfphotopoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
