@@ -34,12 +34,12 @@ class ViewController: UIViewController {
         print(pm.getPlantByID(id: 4).desc)
         print(pm.getPlantByID(id: 5).desc)
     }
-    
+    //use if using constrants on menu buttons
     //override func viewDidLayoutSubviews() {
        
-     //   PlantListButton.center = MenuButton.center
-     //  GalleryButton.center = MenuButton.center
-     //   ScannerButton.center = MenuButton.center
+    //   PlantListButton.center = MenuButton.center
+    //  GalleryButton.center = MenuButton.center
+    //   ScannerButton.center = MenuButton.center
     // }
     
     @IBAction func MenuClicked(_ sender: RoundButton) {
