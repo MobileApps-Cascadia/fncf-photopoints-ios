@@ -15,15 +15,26 @@ class PlantInfoViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    var myPlant: Plant!
+    let plantManager = PlantManager()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let plantManager = PlantManager()
         
-        plantNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").name
+        if(myPlant == nil)
+        {
+            myPlant = Plant(plantID: -1, name: "failed to get plant", latinName: "failed to get plant", desc: "failed to get plant")
+        }
         
-        latinNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").latinName
+        plantNameLabel.text = myPlant.name
         
-        descriptionLabel.text = plantManager.getPlantByName(name: "Douglas Fir").desc
+        latinNameLabel.text = myPlant.latinName
+        
+        descriptionLabel.text = myPlant.desc
     }
 }

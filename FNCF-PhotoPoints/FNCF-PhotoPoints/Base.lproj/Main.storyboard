@@ -110,7 +110,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="xmh-yQ-Rdu" kind="show" id="mri-bw-9iB"/>
+                                    <segue destination="xmh-yQ-Rdu" kind="show" identifier="plantInfoSegue" id="mri-bw-9iB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USk-TV-lGz" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
