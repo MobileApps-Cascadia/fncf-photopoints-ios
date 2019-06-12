@@ -61,3 +61,5 @@ class PlantInfoViewController: UIViewController {
         descriptionLabel.text = plantManager.getPlantByName(name: "Douglas Fir").desc
     }
 }
+}
+
