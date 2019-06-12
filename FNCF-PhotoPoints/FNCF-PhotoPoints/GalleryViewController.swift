@@ -1,14 +1,14 @@
 //
-//  PlantListViewController.swift
+//  GalleryViewController.swift
 //  FNCF-PhotoPoints
 //
-//  Created by Student Account on 4/30/19.
+//  Created by Student Account on 5/22/19.
 //  Copyright © 2019 Cascadia-Mobile. All rights reserved.
 //
 
 import UIKit
 
-class PlantListViewController: UITableViewController {
+class GalleryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
