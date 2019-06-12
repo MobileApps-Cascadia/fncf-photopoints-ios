@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlantListViewController: UITableViewController {
+class PlantListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

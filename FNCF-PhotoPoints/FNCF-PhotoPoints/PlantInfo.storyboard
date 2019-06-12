@@ -46,6 +46,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYF-eK-d5f">
+                                        <rect key="frame" x="0.0" y="379" width="374" height="252"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </scrollView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="YHV-7Z-V47" secondAttribute="bottom" constant="610.5" id="6HG-N8-sgO"/>
@@ -74,13 +78,14 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="YHV-7Z-V47" id="ad3-bQ-PhM"/>
                         <outlet property="latinNameLabel" destination="ILx-sQ-Oh3" id="BIB-eo-iio"/>
+                        <outlet property="pictureScrollView" destination="iYF-eK-d5f" id="DT4-j1-86L"/>
                         <outlet property="plantNameLabel" destination="tgG-Za-fYS" id="giE-DE-bWq"/>
                         <outlet property="scrollView" destination="L2J-rS-wKh" id="pCV-Or-st5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Mp-8t-Du8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="-453"/>
+            <point key="canvasLocation" x="844.92753623188412" y="-453.34821428571428"/>
         </scene>
     </scenes>
 </document>
