@@ -120,6 +120,7 @@
                         <outlet property="DateEntered" destination="Zf0-Li-pGK" id="suH-IW-0dr"/>
                         <outlet property="FoliageEntered" destination="czg-kh-gCK" id="Y2u-GM-kXz"/>
                         <outlet property="FruitChoice" destination="3FE-UX-lPd" id="bgh-lf-2EI"/>
+                        <outlet property="ImageView" destination="jwa-n2-9CV" id="uwS-7V-YpF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EiC-rw-Ywg" userLabel="First Responder" sceneMemberID="firstResponder"/>
