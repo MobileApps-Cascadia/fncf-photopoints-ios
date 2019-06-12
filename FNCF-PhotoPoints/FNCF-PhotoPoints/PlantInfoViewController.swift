@@ -14,6 +14,7 @@ class PlantInfoViewController: UIViewController {
     @IBOutlet var latinNameLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var pictureScrollView: UIScrollView!
     
     var myPlant: Plant!
     let plantManager = PlantManager()
@@ -29,12 +30,36 @@ class PlantInfoViewController: UIViewController {
         if(myPlant == nil)
         {
             myPlant = Plant(plantID: -1, name: "failed to get plant", latinName: "failed to get plant", desc: "failed to get plant")
+        let plantManager = PlantManager()
+        var imageArray = [UIImage]()
+        
+        //view.addSubview(pictureScrollView)
+        imageArray = [#imageLiteral(resourceName: "DouglasFir"), #imageLiteral(resourceName: "DouglasFir_CloseUp")]
+        
+        func setupImages(_ images: [UIImage]){
+            
+            for i in 0..<images.count {
+                
+                let imageView = UIImageView()
+                imageView.image = imageArray[i]
+                let xPosition = UIScreen.main.bounds.width * CGFloat(i)
+                imageView.frame = CGRect(x: xPosition, y: 0, width: pictureScrollView.frame.width, height: pictureScrollView.frame.height)
+                imageView.contentMode = .scaleAspectFit
+                
+                pictureScrollView.contentSize.width = scrollView.frame.width * CGFloat(i + 1)
+                pictureScrollView.addSubview(imageView)
+                pictureScrollView.delegate = self as? UIScrollViewDelegate
+            }
         }
         
-        plantNameLabel.text = myPlant.name
+        setupImages(imageArray)
         
-        latinNameLabel.text = myPlant.latinName
+        plantNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").name
         
-        descriptionLabel.text = myPlant.desc
+        latinNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").latinName
+        
+        descriptionLabel.text = plantManager.getPlantByName(name: "Douglas Fir").desc
     }
 }
+}
+
