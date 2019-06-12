@@ -52,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="C4J-ar-NwJ" id="IIe-2L-csi"/>
+                        <segue destination="KYw-7h-vba" kind="show" identifier="plantInfoSegue" id="QmA-SU-hQI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfg-03-PHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,6 +67,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ln4-I8-X2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-330" y="861"/>
+        </scene>
+        <!--PlantInfoStoryboard-->
+        <scene sceneID="aRh-I9-Zcz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="KYw-7h-vba" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mp4-JE-0Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="968"/>
         </scene>
     </scenes>
 </document>
