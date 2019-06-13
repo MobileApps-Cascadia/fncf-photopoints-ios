@@ -30,7 +30,10 @@ class PlantInfoViewController: UIViewController {
         if(myPlant == nil)
         {
             myPlant = Plant(plantID: -1, name: "failed to get plant", latinName: "failed to get plant", desc: "failed to get plant")
-        let plantManager = PlantManager()
+        }
+        
+        if(myPlant.name == "Douglas Fir")
+        {
         var imageArray = [UIImage]()
         
         //view.addSubview(pictureScrollView)
@@ -59,7 +62,13 @@ class PlantInfoViewController: UIViewController {
         latinNameLabel.text = plantManager.getPlantByName(name: "Douglas Fir").latinName
         
         descriptionLabel.text = plantManager.getPlantByName(name: "Douglas Fir").desc
+        }
+        else{
+            plantNameLabel.text = myPlant.name;
+            latinNameLabel.text = myPlant.latinName;
+            descriptionLabel.text = myPlant.desc;
+        }
     }
 }
-}
+
 
