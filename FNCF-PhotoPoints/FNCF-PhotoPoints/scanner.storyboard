@@ -63,7 +63,7 @@
         <!--mainStoryboard-->
         <scene sceneID="jHj-Gm-gXA">
             <objects>
-                <viewControllerPlaceholder storyboardName="main" referencedIdentifier="mainStoryboard" id="5b0-1S-W2Z" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="mainStoryboard" id="5b0-1S-W2Z" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ln4-I8-X2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-330" y="861"/>

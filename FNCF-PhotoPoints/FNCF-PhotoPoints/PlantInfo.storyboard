@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--PlantListStoryboard-->
+        <scene sceneID="aWF-O7-0Rf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlantList" referencedIdentifier="PlantListStoryboard" id="lce-Gx-5mH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeC-Zj-oeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-620"/>
+        </scene>
         <!--Plant Info View Controller-->
         <scene sceneID="qkb-VV-8jp">
             <objects>
@@ -21,6 +29,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zk-uu-yiu">
                                 <rect key="frame" x="55" y="91" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="lce-Gx-5mH" kind="show" id="Xzt-qF-N8o"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-Za-fYS">
                                 <rect key="frame" x="69" y="155" width="77" height="36"/>
