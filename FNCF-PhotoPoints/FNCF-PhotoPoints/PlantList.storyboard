@@ -9,14 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PlantInfoStoryboard-->
-        <scene sceneID="1yY-ZN-yCy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="wcb-eI-8fu" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e8A-JX-t26" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2024" y="680"/>
-        </scene>
         <!--Plant Table View Controller-->
         <scene sceneID="1fS-fu-pAj">
             <objects>
@@ -44,7 +36,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="plantNameLbl" destination="2NN-Om-dJo" id="XCF-1n-7Wu"/>
-                                    <segue destination="wcb-eI-8fu" kind="show" identifier="plantInfoSegue" id="8sv-tm-zWq"/>
+                                    <segue destination="0f2-eI-cbS" kind="show" identifier="plantInfoSegue" id="MXg-09-Gyb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,7 +48,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6D-lz-2c1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1468.1159420289857" y="304.6875"/>
+            <point key="canvasLocation" x="-1426" y="292"/>
+        </scene>
+        <!--PlantInfoStoryboard-->
+        <scene sceneID="pcM-Qh-uEc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="0f2-eI-cbS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hV-2z-nvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-888" y="136"/>
         </scene>
     </scenes>
 </document>
