@@ -114,8 +114,15 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 {
                     //Plant was found
                     //Call segue to plant list
+                    guard let vc = UIStoryboard(name: "PlantInfoStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "PlantInfoStoryBoard") as?
+                        PlantInfoViewController else{
+                            print("Could not instantiate view controller with indentifier of type PlantInfoStoryBoard")
+                            return
+                    }
+                    /*
                     DispatchQueue.main.async {
                         self.performSegue(withIdentifier: "plantInfoSegue", sender: self.plant)
+ */
                     }
                 }
                 else{
@@ -127,6 +134,7 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             }
         }
     }
+/*
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "plantInfoSegue"){
@@ -134,6 +142,4 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             vc.myPlant = plant
         }
     }
-    
-}
-
+*/

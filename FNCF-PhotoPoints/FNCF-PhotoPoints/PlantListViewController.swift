@@ -2,7 +2,7 @@
 //  PlantListViewController.swift
 //  FNCF-PhotoPoints
 //
-//  Created by Student Account on 4/30/19.
+//  Created by Student Account on 6/12/19.
 //  Copyright © 2019 Cascadia-Mobile. All rights reserved.
 //
 
@@ -26,5 +26,4 @@ class PlantListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
