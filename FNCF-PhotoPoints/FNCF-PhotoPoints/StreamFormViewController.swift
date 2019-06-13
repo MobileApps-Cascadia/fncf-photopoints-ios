@@ -8,12 +8,20 @@
 
 import UIKit
 
-class StreamFormViewController: UIViewController {
+class StreamFormViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     var Submitter: PhotoRepository!
    
     
-    
+    public func addActionSheetForiPad(actionSheet: UIAlertController) {
+        
+        if let popoverPresentationController = actionSheet.popoverPresentationController {
+            popoverPresentationController.sourceView = self.view
+            popoverPresentationController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+            popoverPresentationController.permittedArrowDirections = []
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,23 +33,48 @@ class StreamFormViewController: UIViewController {
     @IBOutlet var Date: UITextField!
     @IBOutlet var StreamHeight: UITextField!
     @IBOutlet var Weather: UITextField!
-   
+
+    @IBOutlet weak var ImageView: UIImageView!
+    
     
     @IBAction func OpenCamera(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Submit a Photo", message: "Would you like to open the camera, or submit from gallery" , preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { ACTION in
-            self.Date.text = "You it worked"
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
+        let actionsheet = UIAlertController(title: "Photo Source", message: "choose a source", preferredStyle: .actionSheet)
+        
+        addActionSheetForiPad(actionSheet: actionsheet)
+        
+        actionsheet.addAction(UIAlertAction(title: "Camera", style: .default , handler: {(action:UIAlertAction) in
+            
+            imagePickerController.sourceType = .camera
+            self.present(imagePickerController,animated: true,completion: nil)
+            
         }))
         
-        alert.addAction(UIAlertAction(title: "Pull From Gallery", style: .default, handler: { ACTION in
-            self.StreamHeight.text = "You it worked"
+        actionsheet.addAction(UIAlertAction(title: "Photo Library", style: .default , handler: {(action:UIAlertAction) in
+            imagePickerController.sourceType = .photoLibrary
+            self.present(imagePickerController,animated: true,completion: nil)
         }))
         
+        actionsheet.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler: nil))
         
-        self.present(alert,animated: true)
-        
+        self.present(actionsheet, animated: true,completion: nil)
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        
+        ImageView.image = image
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+
     
     @IBAction func SubmitInfo(_ sender: Any) {
 
@@ -57,9 +90,18 @@ class StreamFormViewController: UIViewController {
         Date.text = " "
         Weather.text = " "
         StreamHeight.text = " "
-        
+        ImageView.image = nil
         
        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        
+        
+        let Confirmed = UIAlertController(title: "Information has been submitted", message: "Thank you for your submission" , preferredStyle: .actionSheet)
+        
+        addActionSheetForiPad(actionSheet: Confirmed)
+        
+        Confirmed.addAction(UIAlertAction(title: "Close", style: .default , handler: nil))
+        self.present(Confirmed, animated: true,completion: nil)
+
         
     }
     
