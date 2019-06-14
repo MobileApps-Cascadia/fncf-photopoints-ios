@@ -107,23 +107,84 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 
                 //get the plant by name from QR Code
                 //TODO: If QR Codes are not the plant name in "Xxxxx Xxxx" format then this logic needs to be changed
-                plant = pm.getPlantByName(name: metadataObj.stringValue!)
+                //NOTE: The following switch statement is for the URL based QR Code
+                var myString:String = ""
+                let urlID = metadataObj.stringValue?.suffix(5)
+                myString = String(urlID!)
+                let lastfour = (myString.suffix(53) as NSString).integerValue
+                
+                var plantId = -1;
+                
+                switch (lastfour) {
+                case 28092: plantId = 1; //Douglas Fir
+                break;
+                case 27710: plantId = 2; //Black Twinberry
+                break;
+                case 24480: plantId = 3; // Red-oiser Dogwood
+                break;
+                case 28062: plantId = 4; //Thimbleberry
+                break;
+                case 28067: plantId = 5; //Sitka Spruce
+                break;
+                case 28071: plantId = 6; //Slough Sedge
+                break;
+                case 28070: plantId = 7; //Clustered Rose
+                break;
+                case 28703: plantId = 8; //Western Redcedar
+                break;
+                case 27711: plantId = 9; //Red Flowering Currant
+                break;
+                case 28088: plantId = 10; //Small-fruited Bulrush
+                break;
+                case 28094: plantId = 11; //Low Oregon Grape
+                break;
+                case 28064: plantId = 12; //Tall Oregon Grape
+                break;
+                case 28063: plantId = 13; //Pacific Ninebark
+                break;
+                case 28075: plantId = 14; //Cascara
+                break;
+                case 28061: plantId = 15; //Mock Orange
+                break;
+                case 28097: plantId = 16; //Pacific Willow
+                break;
+                case 28086: plantId = 17; //Black Cottonwood
+                break;
+                case 28066: plantId = 18; //Paper Birch
+                break;
+                case 28217: plantId = 19; //Grand Fir
+                break;
+                case 28704: plantId = 20; //Red Alder
+                break;
+                case 28098: plantId = 21; //Red Elderberry
+                break;
+                default:
+                    plantId = -1
+                }
+                
+                plant = pm.getPlantByID(id: plantId)
+                
+                //plant = pm.getPlantByName(name: metadataObj.stringValue!)
                 
                 //check that the plant was found, if it wasnt then plant.id = -1
                 if(plant.plantID != -1)
                 {
                     //Plant was found
                     //Call segue to plant list
-                    guard let vc = UIStoryboard(name: "PlantInfoStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "PlantInfoStoryBoard") as?
+                    self.performSegue(withIdentifier: "plantInfoSegue", sender: self)
+                    /*guard let vc = UIStoryboard(name: "PlantInfo", bundle: nil).instantiateViewController(withIdentifier: "PlantInfoStoryboard") as?
                         PlantInfoViewController else{
-                            print("Could not instantiate view controller with indentifier of type PlantInfoStoryBoard")
+                            print("Could not instantiate view controller with indentifier of type PlantInfoStoryboard")
+ */
                             return
                     }
+                    
+                    //vc.myPlant = plant;
+                   // self.navigationController?.pushViewController(vc, animated: true)
                     /*
                     DispatchQueue.main.async {
                         self.performSegue(withIdentifier: "plantInfoSegue", sender: self.plant)
- */
-                    }
+                 }*/
                 }
                 else{
                     let alertController = UIAlertController(title: "Scan Error", message:
@@ -133,8 +194,8 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 }
             }
         }
-    }
-/*
+    
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "plantInfoSegue"){
@@ -142,4 +203,4 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             vc.myPlant = plant
         }
     }
-*/
+}
