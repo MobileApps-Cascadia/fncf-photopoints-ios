@@ -69,7 +69,7 @@ class PlantManager{
         var results = [String]()
         
         for plant in plantArray{
-            if(plant.name.contains(input)){
+            if(plant.name.lowercased().contains(input.lowercased())){
                 results.append(plant.name)
             }
         }

@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         //print(pm.getPlantByID(id: 4).desc)
         //print(pm.getPlantByID(id: 5).desc)
         
-        searchBar(textInput: "d")
+        searchBar(textInput: "Do")
     }
     
     //Search bar functionality
