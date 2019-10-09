@@ -24,10 +24,7 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search Plant List" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-2Q-9Sn">
-                                <rect key="frame" x="20" y="63" width="374" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="5CR-ze-ljP"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="63" width="295" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
@@ -179,12 +176,34 @@
                                     <segue destination="eJa-k7-5n9" kind="presentation" id="Onu-e1-OOW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcY-CE-Adu">
+                                <rect key="frame" x="335" y="76" width="57" height="30"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYQ-t6-gbh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVi-3b-aZB">
+                                <rect key="frame" x="-195" y="0.0" width="180" height="896"/>
+                                <color key="backgroundColor" red="0.27686929700000001" green="0.3397366107" blue="0.4000100493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="O8m-Dm-q4G"/>
+                                    <constraint firstAttribute="width" constant="180" id="k82-NA-7aS"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mJ-wf-5mL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6F1-2Q-9Sn" secondAttribute="trailing" constant="20" id="LNa-DI-iMo"/>
+                            <constraint firstItem="yVi-3b-aZB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BbI-Cp-kJb"/>
+                            <constraint firstItem="BcY-CE-Adu" firstAttribute="leading" secondItem="6F1-2Q-9Sn" secondAttribute="trailing" constant="20" id="EY4-0J-xxQ"/>
+                            <constraint firstItem="BcY-CE-Adu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="G3X-vp-S9l"/>
+                            <constraint firstItem="yVi-3b-aZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-195" id="J50-fA-6Lp"/>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="6F1-2Q-9Sn" secondAttribute="bottom" constant="154" id="QKb-ZU-Kq6"/>
+                            <constraint firstAttribute="bottom" secondItem="yVi-3b-aZB" secondAttribute="bottom" id="TkO-m3-B8k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BcY-CE-Adu" secondAttribute="trailing" constant="22" id="ecO-1f-5Qq"/>
                             <constraint firstItem="6F1-2Q-9Sn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hOy-sh-NiW"/>
                             <constraint firstItem="6F1-2Q-9Sn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="mV3-hp-lVX"/>
                         </constraints>
@@ -193,8 +212,10 @@
                     <connections>
                         <outlet property="GalleryButton" destination="5us-Cq-GNE" id="FSy-1Y-niJ"/>
                         <outlet property="MenuButton" destination="USk-TV-lGz" id="h6D-Ub-cCn"/>
+                        <outlet property="MenuView" destination="yVi-3b-aZB" id="hKm-dL-EXQ"/>
                         <outlet property="PlantListButton" destination="GtB-hL-Jhw" id="USH-EA-XYL"/>
                         <outlet property="ScannerButton" destination="OdV-4v-5LP" id="fNl-c1-tym"/>
+                        <outlet property="menuLeadingConstraint" destination="J50-fA-6Lp" id="1xB-dk-8id"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

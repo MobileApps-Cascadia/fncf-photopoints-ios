@@ -4,6 +4,10 @@ import UIKit
 
 class ViewController: UIViewController {
    
+    //for slide over
+    @IBOutlet weak var menuLeadingConstraint: NSLayoutConstraint!
+    var menuShowing = false
+    @IBOutlet weak var MenuView: UIView!
     
     @IBOutlet weak var PlantListButton: RoundButton!
     @IBOutlet weak var ScannerButton: RoundButton!
@@ -16,6 +20,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MenuView.layer.shadowOpacity = 1
+        MenuView.layer.shadowRadius = 5
         
         PlantListButtonCenter = PlantListButton.center
         GalleryButtonCenter = GalleryButton.center
@@ -34,6 +41,24 @@ class ViewController: UIViewController {
         print(pm.getPlantByID(id: 4).desc)
         print(pm.getPlantByID(id: 5).desc)
     }
+    
+    
+    //function that toggls menu open and closed
+    @IBAction func openMenu(_ sender: Any) {
+        
+        if(menuShowing){
+            menuLeadingConstraint.constant = -195
+        }else{
+            menuLeadingConstraint.constant = 0
+        }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
+        
+    }
+    
+    
     //use if using constrants on menu buttons
     //override func viewDidLayoutSubviews() {
        
