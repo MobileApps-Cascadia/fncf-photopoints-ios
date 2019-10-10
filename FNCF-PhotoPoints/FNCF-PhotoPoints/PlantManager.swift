@@ -64,4 +64,16 @@ class PlantManager{
     func getPlantList() -> [Plant]{
         return plantArray
     }
+    
+    func searchPlant(input: String) -> [String]{
+        var results = [String]()
+        
+        for plant in plantArray{
+            if(plant.name.lowercased().contains(input.lowercased())){
+                results.append(plant.name)
+            }
+        }
+        
+        return results
+    }
 }

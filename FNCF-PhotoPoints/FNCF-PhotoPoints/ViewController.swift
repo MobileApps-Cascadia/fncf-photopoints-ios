@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var PlantListButtonCenter: CGPoint!
     var ScannerButtonCenter: CGPoint!
     var GalleryButtonCenter: CGPoint!
+    let pm = PlantManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +27,28 @@ class ViewController: UIViewController {
         ScannerButton.center = MenuButton.center
         
         self.view.bringSubviewToFront(MenuButton)
+
+        // TEST CODE //  TEST CODE //  TEST CODE //
+        //print(pm.getPlantByName(name: "Douglas Fir").name)
+        //print(pm.getPlantByID(id: 2).latinName)
+        //print(pm.getPlantByID(id: 4).desc)
+        //print(pm.getPlantByID(id: 5).desc)
         
-        let pm = PlantManager()
+        searchBar(textInput: "Do")
+    }
+    
+    //Search bar functionality
+    func searchBar(textInput: String){
+        //search plants based on text input
+        let results = pm.searchPlant(input: textInput)
+        //autocomplete with most likely result
         
-        print(pm.getPlantByName(name: "Douglas Fir").name)
-        print(pm.getPlantByID(id: 2).latinName)
-        print(pm.getPlantByID(id: 4).desc)
-        print(pm.getPlantByID(id: 5).desc)
+        for r in results{
+            print(r)
+        }
+        print(results.count)
+        print("complete")
+
     }
     //use if using constrants on menu buttons
     //override func viewDidLayoutSubviews() {
