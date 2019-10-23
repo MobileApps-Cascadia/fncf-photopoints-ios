@@ -15,6 +15,8 @@
 		3F79FA38227F7D06005C71C4 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79FA37227F7D06005C71C4 /* DesignableView.swift */; };
 		3F79FA3A22820392005C71C4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79FA3922820392005C71C4 /* SignUpViewController.swift */; };
 		3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */; };
+		3F898BD0235AD8BE00F8B7C5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F898BCF235AD8BE00F8B7C5 /* TextField.swift */; };
+		3F898BD2235C25FB00F8B7C5 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F898BD1235C25FB00F8B7C5 /* TextView.swift */; };
 		3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */; };
 		3FA32F7E2294C84600A90754 /* PlantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */; };
 		3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4D7F32279045F00526ABB /* PlantManager.swift */; };
@@ -70,6 +72,8 @@
 		3F79FA37227F7D06005C71C4 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		3F79FA3922820392005C71C4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoViewController.swift; sourceTree = "<group>"; };
+		3F898BCF235AD8BE00F8B7C5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		3F898BD1235C25FB00F8B7C5 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewController.swift; sourceTree = "<group>"; };
 		3FA4D7F32279045F00526ABB /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				3F79FA37227F7D06005C71C4 /* DesignableView.swift */,
 				3F248B862299F5400090F0F8 /* RoundButton.swift */,
 				3F24DBAE2351054600474A9B /* imageBorder.swift */,
+				3F898BCF235AD8BE00F8B7C5 /* TextField.swift */,
+				3F898BD1235C25FB00F8B7C5 /* TextView.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 				3FF5EABB22B1C68E00391E0B /* PlantListViewController.swift in Sources */,
 				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
+				3F898BD0235AD8BE00F8B7C5 /* TextField.swift in Sources */,
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
 				3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */,
 				3F24DBAF2351054600474A9B /* imageBorder.swift in Sources */,
@@ -394,6 +401,7 @@
 				3FBAFB08227814BC006820FE /* Submission.swift in Sources */,
 				3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */,
 				3F79FA3A22820392005C71C4 /* SignUpViewController.swift in Sources */,
+				3F898BD2235C25FB00F8B7C5 /* TextView.swift in Sources */,
 				3FBAFB06227814A1006820FE /* SubmissionRepo.swift in Sources */,
 				3FA32F7E2294C84600A90754 /* PlantTableViewController.swift in Sources */,
 			);

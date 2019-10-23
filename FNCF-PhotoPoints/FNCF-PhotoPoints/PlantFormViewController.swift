@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlantFormViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+class PlantFormViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     var Submiter:PhotoRepository!
     
@@ -17,15 +17,25 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         super.viewDidLoad()
 
         Submiter = PhotoDataRepository();
-        // Do any additional setup after loading the view.
+        
+        
+        // chris: for dismising device keybord
+        DateEntered.delegate = self
+        FoliageEntered.delegate = self
+        FruitChoice.delegate = self
+        
+        
+        
     }
     
+    @IBOutlet weak var MoreInfo: TextView!
     @IBOutlet var FoliageEntered: UITextField!
     @IBOutlet var DateEntered: UITextField!
     @IBOutlet var FruitChoice: UITextField!
     @IBOutlet weak var ImageView: UIImageView!
     
-// @IBOutlet var AdditionalComments: UITextView!
+    @IBOutlet weak var btnImage: RoundButton!     // chris: added button outlet used mostly for setting propertys
+    // @IBOutlet var AdditionalComments: UITextView!
     
     
     public func addActionSheetForiPad(actionSheet: UIAlertController) {
@@ -36,11 +46,18 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
             popoverPresentationController.permittedArrowDirections = []
         }
     }
-
+    
+    
+    
+    //chris:
+    //Camera button Logic :TODO change code so that image
+    //view displays popover and when picture is selected still
+    // displayes in appropreat place. : Done**
     @IBAction func SubmitLogic(_ sender: Any) {
         
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
+        
         
         
         let actionsheet = UIAlertController(title: "Photo Source", message: "choose a source", preferredStyle: .actionSheet)
@@ -68,7 +85,8 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
-        ImageView.image = image
+        //ImageView.image = image
+        btnImage.setBackgroundImage(image, for: .normal) // set background image to button
         
         picker.dismiss(animated: true, completion: nil)
     }
@@ -128,4 +146,20 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     }
     */
 
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
+
+//chris:  to remove device keybord apon enter button press
+//extension ViewController : UITextFieldDelegate{
+    
+  //  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    //    textField.resignFirstResponder()
+      //  return true
+   // }
+
+//}
+

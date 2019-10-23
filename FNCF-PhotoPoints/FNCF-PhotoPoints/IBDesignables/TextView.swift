@@ -1,15 +1,15 @@
 //
-//  RoundButton.swift
+//  TextView.swift
 //  FNCF-PhotoPoints
 //
-//  Created by Student Account on 5/25/19.
+//  Created by Student Account on 10/19/19.
 //  Copyright © 2019 Cascadia-Mobile. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class RoundButton: UIButton {
+class TextView: UITextView {
 
     @IBInspectable var cornerRadius: CGFloat = 0{
         didSet {
@@ -26,6 +26,6 @@ class RoundButton: UIButton {
             self.layer.borderColor = borderColor.cgColor
         }
     }
-    
+  
 
 }
