@@ -23,14 +23,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search Plant List" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-2Q-9Sn">
-                                <rect key="frame" x="20" y="63" width="331" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="XtB-iW-ZvK"/>
-                                    <constraint firstAttribute="width" constant="331" id="fUh-jj-Jdn"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="58" y="627" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="7nv-yX-YSX" kind="show" id="tbb-fD-kFi"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FONCF_TITLE" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-gQ-6QB">
                                 <rect key="frame" x="22" y="273" width="370" height="218"/>
                                 <constraints>
@@ -291,41 +305,30 @@
                                     <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYQ-t6-gbh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="58" y="627" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Plants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-vQ-fWa">
+                                <rect key="frame" x="20" y="76" width="336" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="VWj-35-wpo"/>
+                                    <constraint firstAttribute="height" constant="30" id="f8U-fr-OKh"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Gallery">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="7nv-yX-YSX" kind="show" id="tbb-fD-kFi"/>
-                                </connections>
-                            </button>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BcY-CE-Adu" secondAttribute="trailing" constant="17" id="2tx-Nc-9lZ"/>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mJ-wf-5mL"/>
                             <constraint firstItem="yVi-3b-aZB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BbI-Cp-kJb"/>
-                            <constraint firstItem="BcY-CE-Adu" firstAttribute="leading" secondItem="6F1-2Q-9Sn" secondAttribute="trailing" constant="17" id="I8G-5l-ZQN"/>
+                            <constraint firstItem="5aC-vQ-fWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GMe-Mv-7Xc"/>
                             <constraint firstItem="yVi-3b-aZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-195" id="J50-fA-6Lp"/>
-                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="6F1-2Q-9Sn" secondAttribute="bottom" constant="154" id="QKb-ZU-Kq6"/>
+                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="5aC-vQ-fWa" secondAttribute="bottom" constant="167" id="KR9-lz-R4U"/>
                             <constraint firstAttribute="bottom" secondItem="yVi-3b-aZB" secondAttribute="bottom" id="TkO-m3-B8k"/>
                             <constraint firstItem="BcY-CE-Adu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Tss-N6-7RT"/>
-                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hOy-sh-NiW"/>
-                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="mV3-hp-lVX"/>
+                            <constraint firstItem="5aC-vQ-fWa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="aqT-Ud-UFz"/>
+                            <constraint firstItem="BcY-CE-Adu" firstAttribute="leading" secondItem="5aC-vQ-fWa" secondAttribute="trailing" constant="12" id="hFV-iw-qjh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -336,6 +339,8 @@
                         <outlet property="PlantListButton" destination="GtB-hL-Jhw" id="USH-EA-XYL"/>
                         <outlet property="ScannerButton" destination="OdV-4v-5LP" id="fNl-c1-tym"/>
                         <outlet property="menuLeadingConstraint" destination="J50-fA-6Lp" id="1xB-dk-8id"/>
+                        <outlet property="textField" destination="5aC-vQ-fWa" id="ZQs-0d-G8g"/>
+                        <segue destination="OxE-Zj-MYy" kind="show" identifier="plantInfoSegue" id="G2w-ky-D26"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -365,6 +370,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtv-hb-Mw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1199" y="1041"/>
+        </scene>
+        <!--PlantInfoStoryboard-->
+        <scene sceneID="jh9-qQ-yt7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="OxE-Zj-MYy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7x-jy-hVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="674"/>
         </scene>
         <!--plantFormStoryboard-->
         <scene sceneID="Mex-WW-6Zy">
