@@ -31,6 +31,9 @@
 		3FC78618226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78617226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift */; };
 		3FC78623226FCBA800026CE0 /* FNCF_PhotoPointsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78622226FCBA800026CE0 /* FNCF_PhotoPointsUITests.swift */; };
 		3FC78631226FCBF500026CE0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78630226FCBF500026CE0 /* Plant.swift */; };
+		3FC97F00235FDEFD008EE9CE /* DbOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC97EFF235FDEFD008EE9CE /* DbOperations.swift */; };
+		3FC97F04235FF4C8008EE9CE /* DbOpsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC97F03235FF4C8008EE9CE /* DbOpsTest.swift */; };
+		3FC97F06235FF6EC008EE9CE /* UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC97F05235FF6EC008EE9CE /* UserTest.swift */; };
 		3FDEE39522823C77008D408A /* PlantManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEE39422823C77008D408A /* PlantManagerTest.swift */; };
 		3FDEE397228679E9008D408A /* PlantSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEE396228679E9008D408A /* PlantSubmission.swift */; };
 		3FE8EF5A2294BB38001CB4B9 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */; };
@@ -92,6 +95,9 @@
 		3FC78622226FCBA800026CE0 /* FNCF_PhotoPointsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNCF_PhotoPointsUITests.swift; sourceTree = "<group>"; };
 		3FC78624226FCBA800026CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FC78630226FCBF500026CE0 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		3FC97EFF235FDEFD008EE9CE /* DbOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbOperations.swift; sourceTree = "<group>"; };
+		3FC97F03235FF4C8008EE9CE /* DbOpsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbOpsTest.swift; sourceTree = "<group>"; };
+		3FC97F05235FF6EC008EE9CE /* UserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTest.swift; sourceTree = "<group>"; };
 		3FDEE39422823C77008D408A /* PlantManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManagerTest.swift; sourceTree = "<group>"; };
 		3FDEE396228679E9008D408A /* PlantSubmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSubmission.swift; sourceTree = "<group>"; };
 		3FE8EF592294BB38001CB4B9 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
@@ -152,9 +158,11 @@
 		3FBAFB0422781483006820FE /* SubmissionMock */ = {
 			isa = PBXGroup;
 			children = (
+				3FC97EFF235FDEFD008EE9CE /* DbOperations.swift */,
 				3FBAFB05227814A1006820FE /* SubmissionRepo.swift */,
 				3FBAFB07227814BC006820FE /* Submission.swift */,
 				3FDEE396228679E9008D408A /* PlantSubmission.swift */,
+				3FC97F05235FF6EC008EE9CE /* UserTest.swift */,
 			);
 			path = SubmissionMock;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */,
 				3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */,
 				3FDEE39422823C77008D408A /* PlantManagerTest.swift */,
+				3FC97F03235FF4C8008EE9CE /* DbOpsTest.swift */,
 			);
 			path = "FNCF-PhotoPointsTests";
 			sourceTree = "<group>";
@@ -387,7 +396,9 @@
 				3FC78631226FCBF500026CE0 /* Plant.swift in Sources */,
 				3F02EFE32272BB050087715E /* ScanController.swift in Sources */,
 				3FDEE397228679E9008D408A /* PlantSubmission.swift in Sources */,
+				3FC97F06235FF6EC008EE9CE /* UserTest.swift in Sources */,
 				3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */,
+				3FC97F00235FDEFD008EE9CE /* DbOperations.swift in Sources */,
 				3FC78600226FCBA500026CE0 /* AppDelegate.swift in Sources */,
 				3F79FA38227F7D06005C71C4 /* DesignableView.swift in Sources */,
 				3FBAFB08227814BC006820FE /* Submission.swift in Sources */,
@@ -405,6 +416,7 @@
 			files = (
 				3FC78618226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift in Sources */,
 				3FBAFB0C22781B27006820FE /* SubmissionRepo.swift in Sources */,
+				3FC97F04235FF4C8008EE9CE /* DbOpsTest.swift in Sources */,
 				3FBAFB0A227815E1006820FE /* SubmissionMockTest.swift in Sources */,
 				3FDEE39522823C77008D408A /* PlantManagerTest.swift in Sources */,
 			);
