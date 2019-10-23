@@ -23,13 +23,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search Plant List" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-2Q-9Sn">
-                                <rect key="frame" x="20" y="63" width="374" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="5CR-ze-ljP"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="58" y="627" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -179,14 +172,25 @@
                                     <segue destination="eJa-k7-5n9" kind="presentation" id="Onu-e1-OOW"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-Ou-c30" userLabel="textField">
+                                <rect key="frame" x="20" y="63" width="374" height="56"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="EVe-YP-AY8"/>
+                                    <constraint firstAttribute="width" constant="374" id="vgW-kL-h9d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mJ-wf-5mL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6F1-2Q-9Sn" secondAttribute="trailing" constant="20" id="LNa-DI-iMo"/>
-                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="6F1-2Q-9Sn" secondAttribute="bottom" constant="154" id="QKb-ZU-Kq6"/>
-                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hOy-sh-NiW"/>
-                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="mV3-hp-lVX"/>
+                            <constraint firstItem="uBT-Ou-c30" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="Lds-y6-7z9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uBT-Ou-c30" secondAttribute="trailing" constant="20" id="UrI-HQ-uDl"/>
+                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="uBT-Ou-c30" secondAttribute="bottom" constant="154" id="cDn-fg-3zN"/>
+                            <constraint firstItem="uBT-Ou-c30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zEX-49-Xmy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -195,11 +199,21 @@
                         <outlet property="MenuButton" destination="USk-TV-lGz" id="h6D-Ub-cCn"/>
                         <outlet property="PlantListButton" destination="GtB-hL-Jhw" id="USH-EA-XYL"/>
                         <outlet property="ScannerButton" destination="OdV-4v-5LP" id="fNl-c1-tym"/>
+                        <outlet property="textField" destination="uBT-Ou-c30" id="Jxo-Gs-odw"/>
+                        <segue destination="hnX-Wd-XU1" kind="show" identifier="plantInfoSegue" id="1TC-uK-GrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="592.63392857142856"/>
+        </scene>
+        <!--PlantInfoStoryboard-->
+        <scene sceneID="pJK-oZ-Ct8">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PlantInfo" storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="hnX-Wd-XU1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7t-GG-eL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818" y="494"/>
         </scene>
         <!--ScannerStoryboard-->
         <scene sceneID="Uaq-ZS-Q1l">
