@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F02EFE32272BB050087715E /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02EFE22272BB050087715E /* ScanController.swift */; };
 		3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F248B862299F5400090F0F8 /* RoundButton.swift */; };
+		3F24DBAF2351054600474A9B /* imageBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24DBAE2351054600474A9B /* imageBorder.swift */; };
 		3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D222766C5400E077E5 /* PlantFormViewController.swift */; };
 		3F3004D722775F5300E077E5 /* StreamFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D622775F5300E077E5 /* StreamFormViewController.swift */; };
 		3F79FA38227F7D06005C71C4 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79FA37227F7D06005C71C4 /* DesignableView.swift */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		3F02EFE22272BB050087715E /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		3F248B862299F5400090F0F8 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		3F24DBAE2351054600474A9B /* imageBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageBorder.swift; sourceTree = "<group>"; };
 		3F3004D222766C5400E077E5 /* PlantFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFormViewController.swift; sourceTree = "<group>"; };
 		3F3004D622775F5300E077E5 /* StreamFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamFormViewController.swift; sourceTree = "<group>"; };
 		3F79FA37227F7D06005C71C4 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				3F79FA37227F7D06005C71C4 /* DesignableView.swift */,
 				3F248B862299F5400090F0F8 /* RoundButton.swift */,
+				3F24DBAE2351054600474A9B /* imageBorder.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
 				3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */,
+				3F24DBAF2351054600474A9B /* imageBorder.swift in Sources */,
 				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
 				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
 				3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */,

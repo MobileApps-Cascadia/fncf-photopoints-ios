@@ -4,6 +4,10 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
    
+    //for slide over
+    @IBOutlet weak var menuLeadingConstraint: NSLayoutConstraint!
+    var menuShowing = false
+    @IBOutlet weak var MenuView: UIView!
     
     @IBOutlet weak var PlantListButton: RoundButton!
     @IBOutlet weak var ScannerButton: RoundButton!
@@ -24,7 +28,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        MenuView.layer.shadowOpacity = 1
+        MenuView.layer.shadowRadius = 5
+        
         PlantListButtonCenter = PlantListButton.center
         GalleryButtonCenter = GalleryButton.center
         ScannerButtonCenter = ScannerButton.center
@@ -101,6 +108,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         print(suggestions.count)
         print("complete")
+
+    }
+    
+    
+    //function that toggls menu open and closed
+    @IBAction func openMenu(_ sender: Any) {
+        
+        if(menuShowing){
+            menuLeadingConstraint.constant = -195
+        }else{
+            menuLeadingConstraint.constant = 0
     }
     
     func putColorFormattedTextInTextField(autocompleteResult: String, userQuery: String){
@@ -115,6 +133,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         let selectedRange: UITextRange? = textField.selectedTextRange
         textField.offset(from: textField.beginningOfDocument, to: (selectedRange?.start)!)
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
+        
     }
     
     func formatAutoCompleteResult(substring: String, possibleMatches: [String]) -> String {
@@ -184,4 +207,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 }
+
 
