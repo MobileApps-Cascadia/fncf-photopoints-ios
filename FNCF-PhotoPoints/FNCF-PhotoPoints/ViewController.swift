@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
     
     
-    //Variables for Search"
+    //Variables for Search
     var timer = Timer()
     var autoCompleteCharacterCount = 0
     var plant = Plant(plantID: -1, name: "void", latinName: "void", desc: "void")
