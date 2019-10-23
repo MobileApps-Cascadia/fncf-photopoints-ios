@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zf0-Li-pGK" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="35" y="199" width="344" height="60"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zf0-Li-pGK" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="35" y="199" width="342" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="342" id="DAY-7b-Tmc"/>
                                     <constraint firstAttribute="height" constant="60" id="r8U-KZ-z82"/>
@@ -42,12 +42,12 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="value" white="1" alpha="0.48443001760563381" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-PR-yTV" customClass="TextView" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="35" y="403" width="344" height="205"/>
+                                <rect key="frame" x="35" y="403" width="342" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="155" id="5fD-PK-lJE"/>
                                     <constraint firstAttribute="width" constant="219" id="9L5-Zv-EAv"/>
@@ -92,7 +92,7 @@
                                 </variation>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant Information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3Z-L6-uN7">
-                                <rect key="frame" x="0.0" y="151" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="151" width="412" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="0GF-I7-zC7"/>
                                     <constraint firstAttribute="height" constant="41" id="K2F-Xc-QKJ"/>
@@ -125,8 +125,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Foliage?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czg-kh-gCK" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="35" y="335" width="344" height="60"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Is there foliage?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czg-kh-gCK" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="35" y="335" width="342" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="342" id="GvS-Er-0jq"/>
                                     <constraint firstAttribute="width" constant="89" id="Jam-jm-W0x"/>
@@ -135,7 +135,7 @@
                                     <constraint firstAttribute="width" constant="89" id="hVI-ws-PPJ"/>
                                     <constraint firstAttribute="height" constant="30" id="hgJ-Tb-WTW"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
@@ -149,7 +149,7 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -221,8 +221,8 @@
                                     <segue destination="sGN-W5-SLL" kind="show" id="Uej-SD-qfG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fruit?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-UX-lPd" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="35" y="267" width="344" height="60"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Is there fruit?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-UX-lPd" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="35" y="267" width="342" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7e9-LG-DDA"/>
                                     <constraint firstAttribute="height" constant="30" id="8FJ-iV-x5H"/>
@@ -245,7 +245,7 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -270,7 +270,7 @@
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnT-of-e2Y" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="35" y="616" width="344" height="202"/>
+                                <rect key="frame" x="35" y="616" width="342" height="202"/>
                                 <color key="backgroundColor" red="0.254196107" green="0.33404923250000002" blue="0.50496454960000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="HPD-7A-9LW"/>
@@ -322,7 +322,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdn-Fg-xbe" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="277" y="59" width="102" height="40"/>
+                                <rect key="frame" x="277" y="59" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.254196107" green="0.33404923250000002" blue="0.50496454960000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="6oY-52-SSv"/>
