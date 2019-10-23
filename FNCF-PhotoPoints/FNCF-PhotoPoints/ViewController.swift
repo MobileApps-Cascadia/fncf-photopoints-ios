@@ -108,7 +108,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         print(suggestions.count)
         print("complete")
-
     }
     
     
@@ -119,6 +118,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             menuLeadingConstraint.constant = -195
         }else{
             menuLeadingConstraint.constant = 0
+    }
     }
     
     func putColorFormattedTextInTextField(autocompleteResult: String, userQuery: String){
