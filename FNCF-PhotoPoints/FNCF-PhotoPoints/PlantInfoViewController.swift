@@ -45,7 +45,7 @@ class PlantInfoViewController: UIViewController {
                 
                 let imageView = UIImageView()
                 imageView.image = imageArray[i]
-                let xPosition = UIScreen.main.bounds.width * CGFloat(i)
+                let xPosition = UIScreen.main.bounds.width + CGFloat(i)
                 imageView.frame = CGRect(x: xPosition, y: 0, width: pictureScrollView.frame.width, height: pictureScrollView.frame.height)
                 imageView.contentMode = .scaleAspectFit
                 

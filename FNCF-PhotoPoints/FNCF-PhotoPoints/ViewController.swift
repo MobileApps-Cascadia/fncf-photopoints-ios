@@ -123,7 +123,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func putColorFormattedTextInTextField(autocompleteResult: String, userQuery: String){
         let coloredString: NSMutableAttributedString = NSMutableAttributedString(string: userQuery + autocompleteResult)
-        coloredString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.green,  range: NSRange(location: userQuery.count, length: autocompleteResult.count))
+        coloredString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black,  range: NSRange(location: userQuery.count, length: autocompleteResult.count))
         self.textField.attributedText = coloredString
     }
     
