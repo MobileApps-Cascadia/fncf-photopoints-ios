@@ -21,21 +21,30 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
             popoverPresentationController.permittedArrowDirections = []
         }
     }
-
+    
+    var myStream: Int?
+    
+    @IBOutlet var Date: UITextField!
+    @IBOutlet var StreamHeight: UITextField!
+    @IBOutlet var Weather: UITextField!
+    @IBOutlet weak var StreamLabel: UILabel!
+    @IBOutlet weak var ImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Submitter = PhotoDataRepository()
         
         // Do any additional setup after loading the view.
+        
+        //QR scanning and segue logic
+        if(myStream != nil){
+            var temp = String(StreamLabel.text!)
+            let streamId = myStream! as NSNumber
+            temp += " - Stream #" + streamId.stringValue
+            StreamLabel.text = temp
+        }
     }
-    
-    @IBOutlet var Date: UITextField!
-    @IBOutlet var StreamHeight: UITextField!
-    @IBOutlet var Weather: UITextField!
-
-    @IBOutlet weak var ImageView: UIImageView!
-    
     
     @IBAction func OpenCamera(_ sender: Any) {
         
