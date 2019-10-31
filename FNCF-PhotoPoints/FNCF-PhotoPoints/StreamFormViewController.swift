@@ -41,7 +41,7 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         if(myStream != nil){
             var temp = String(StreamLabel.text!)
             let streamId = myStream! as NSNumber
-            temp += " - Stream #" + streamId.stringValue
+            temp = "#" + streamId.stringValue
             StreamLabel.text = temp
         }
     }
