@@ -11,22 +11,9 @@ import UIKit
 class PlantFormViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     var Submiter:PhotoRepository!
+    var streamId: Int!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        Submiter = PhotoDataRepository();
-        
-        
-        // chris: for dismising device keybord
-        DateEntered.delegate = self
-        FoliageEntered.delegate = self
-        FruitChoice.delegate = self
-        
-        
-        
-    }
     
     @IBOutlet weak var MoreInfo: TextView!
     @IBOutlet var FoliageEntered: UITextField!
@@ -37,7 +24,17 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     @IBOutlet weak var btnImage: RoundButton!     // chris: added button outlet used mostly for setting propertys
     // @IBOutlet var AdditionalComments: UITextView!
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Submiter = PhotoDataRepository();
+        
+        
+        // chris: for dismising device keybord
+        DateEntered.delegate = self
+        FoliageEntered.delegate = self
+        FruitChoice.delegate = self
+    }
     public func addActionSheetForiPad(actionSheet: UIAlertController) {
         
         if let popoverPresentationController = actionSheet.popoverPresentationController {
