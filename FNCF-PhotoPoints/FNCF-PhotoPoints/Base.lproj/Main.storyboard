@@ -316,6 +316,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-kw-DXO">
+                                <rect key="frame" x="41" y="854" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Account"/>
+                                <connections>
+                                    <segue destination="q2p-kJ-Hbo" kind="presentation" id="47b-Sd-Ocz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -346,6 +354,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="592.63392857142856"/>
+        </scene>
+        <!--AccountCreationStoryboard-->
+        <scene sceneID="vuc-Tx-xg5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AccountCreation" referencedIdentifier="AccountCreationStoryboard" id="q2p-kJ-Hbo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06g-EA-DzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="842"/>
         </scene>
         <!--ScannerStoryboard-->
         <scene sceneID="Uaq-ZS-Q1l">

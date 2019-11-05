@@ -14,6 +14,8 @@
 		3F79FA38227F7D06005C71C4 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79FA37227F7D06005C71C4 /* DesignableView.swift */; };
 		3F79FA3A22820392005C71C4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79FA3922820392005C71C4 /* SignUpViewController.swift */; };
 		3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */; };
+		3F8068E2236A513D00F78951 /* AccountCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8068E1236A513D00F78951 /* AccountCreation.storyboard */; };
+		3F8069082371ED3700F78951 /* AccountCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8069072371ED3700F78951 /* AccountCreationViewController.swift */; };
 		3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */; };
 		3FA32F7E2294C84600A90754 /* PlantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */; };
 		3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4D7F32279045F00526ABB /* PlantManager.swift */; };
@@ -73,6 +75,8 @@
 		3F79FA37227F7D06005C71C4 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		3F79FA3922820392005C71C4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoViewController.swift; sourceTree = "<group>"; };
+		3F8068E1236A513D00F78951 /* AccountCreation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountCreation.storyboard; sourceTree = "<group>"; };
+		3F8069072371ED3700F78951 /* AccountCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationViewController.swift; sourceTree = "<group>"; };
 		3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewController.swift; sourceTree = "<group>"; };
 		3FA4D7F32279045F00526ABB /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */,
 				3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */,
 				3FC78609226FCBA800026CE0 /* Assets.xcassets */,
+				3F8068E1236A513D00F78951 /* AccountCreation.storyboard */,
+				3F8069072371ED3700F78951 /* AccountCreationViewController.swift */,
 			);
 			path = "FNCF-PhotoPoints";
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 				3FE8EF5C2294C6C4001CB4B9 /* scanner.storyboard in Resources */,
 				3FE8EF5E2294CBBD001CB4B9 /* PlantList.storyboard in Resources */,
 				3FE8EF602294CFF4001CB4B9 /* Gallery.storyboard in Resources */,
+				3F8068E2236A513D00F78951 /* AccountCreation.storyboard in Resources */,
 				3FE8EF6422965AA3001CB4B9 /* PlantInfo.storyboard in Resources */,
 				3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */,
 			);
@@ -390,6 +397,7 @@
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
 				3FE0094223610D47009EF86A /* UserTest.swift in Sources */,
+				3F8069082371ED3700F78951 /* AccountCreationViewController.swift in Sources */,
 				3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */,
 				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
 				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
