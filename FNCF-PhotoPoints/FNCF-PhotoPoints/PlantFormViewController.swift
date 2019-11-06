@@ -15,7 +15,7 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     
     
     
-    @IBOutlet weak var MoreInfo: TextView!
+    //@IBOutlet weak var MoreInfo: TextView!
     @IBOutlet var FoliageEntered: UITextField!
     @IBOutlet var DateEntered: UITextField!
     @IBOutlet var FruitChoice: UITextField!

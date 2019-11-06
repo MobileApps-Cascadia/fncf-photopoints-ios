@@ -16,8 +16,8 @@ protocol SubmissionOps {
     func addStream(newStream: StreamOBJ )
     func addPlant(newPlant: PlantOBJ )
     
-    func getStream(indentifier: Int) -> String
-    func getPlant(indentifier: Int) -> String
+    func getStream(indentifier: Int) -> Int
+    func getPlant(indentifier: Int) -> Int
     
      // will implement these later
    // func ModifyStream(identifier: String, content: String) -> String
@@ -92,7 +92,7 @@ public class DataOperations: SubmissionOps{
     }
     
     
-    func getStream(indentifier: Int) -> String {
+    func getStream(indentifier: Int) -> Int {
         
             let appDelegate = UIApplication.shared.delegate as? AppDelegate
             let managedContext = appDelegate?.persistentContainer.viewContext
@@ -100,23 +100,23 @@ public class DataOperations: SubmissionOps{
             
             // will predicate the users so to return One user
             fetchRequest.fetchLimit = 1
-            fetchRequest.predicate = NSPredicate(format: "streamid = %@", indentifier)
+            fetchRequest.predicate = NSPredicate(format: "streamid = %i", indentifier)
             fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "streamid", ascending: false)]
             
             do{
                 let result = try managedContext?.fetch(fetchRequest)
                 for data in result as! [NSManagedObject]{
-                    return (data.value(forKey: "streamid") as! String)
+                    return (data.value(forKey: "streamid") as! Int)
                 }
             } catch {
                 print( "failed" )
             }
-            return "User Not Found"
+            return -1
         }
         
     
     
-    func getPlant(indentifier: Int) -> String {
+    func getPlant(indentifier: Int) -> Int {
         
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         let managedContext = appDelegate?.persistentContainer.viewContext
@@ -124,36 +124,38 @@ public class DataOperations: SubmissionOps{
         
         // will predicate the users so to return One user
         fetchRequest.fetchLimit = 1
-        fetchRequest.predicate = NSPredicate(format: "plantid = %@", indentifier)
+        fetchRequest.predicate = NSPredicate(format: "plantid = %i", indentifier)
         fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "plantid", ascending: false)]
         
         do{
             let result = try managedContext?.fetch(fetchRequest)
             for data in result as! [NSManagedObject]{
-                return (data.value(forKey: "plantid") as! String)
+                return (data.value(forKey: "plantid") as! Int)
             }
         } catch {
             print( "failed" )
         }
-        return "User Not Found"
+        return -1
     
     }
     
     
     func DeleteStream(identifier: Int) {
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        let managedContext = appDelegate?.persistentContainer.viewContext
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "StreamData")
         
-        fetchRequest.predicate = NSPredicate(format: "streamid = %@", identifier)
+        fetchRequest.predicate = NSPredicate(format: "streamid = %i", identifier)
         
         do{
-            let test = try managedContext?.fetch(fetchRequest)
+            let test = try managedContext.fetch(fetchRequest)
             
-            let objectDeleted = test![0] as! NSManagedObject
-            managedContext?.delete(objectDeleted)
+            let objectDeleted = test[0] as! NSManagedObject
+            managedContext.delete(objectDeleted)
             do{
-                try managedContext?.save()
+                try managedContext.save()
             }catch{
                 print(error)
             }
@@ -167,7 +169,7 @@ public class DataOperations: SubmissionOps{
         let managedContext = appDelegate?.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PlantData")
         
-        fetchRequest.predicate = NSPredicate(format: "plantid = %@", identifier)
+        fetchRequest.predicate = NSPredicate(format: "plantid = %i", identifier)
         
         do{
             let test = try managedContext?.fetch(fetchRequest)

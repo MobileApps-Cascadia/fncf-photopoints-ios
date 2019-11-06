@@ -21,12 +21,16 @@ import XCTest
 class DataOperationsTest: XCTestCase {
     
     
-    var testable = DbOperations()
+   // var testable = DbOperations()
+    
+    var testing = DataOperations()
+    
+    let Streamtest1 = StreamOBJ(date: Date.distantPast, weather: "cloudy", streamheight: 0.5 , streamid: 1)
+    let Streamtest2 = StreamOBJ(date: Date.distantPast, weather: "clear", streamheight: 0.53 , streamid: 2)
     
     
-    let testUser1 = BuildingUser(FirstName: "robert", LastName: "ramirez", Email: "v-roram@microsoft.com", Password: "robeary", Username: "Robear92")
-    
-    let testUser2 = BuildingUser(FirstName: "robert2", LastName: "ramirez2", Email: "v-roramies@microsoft.com", Password: "roobeary", Username: "Robearar")
+    let PlantTest1 = PlantOBJ(date: Date.distantFuture, foliage: true, fruit: false, plantid: 1, comments: "lots of foliage")
+    let PlantTest2 = PlantOBJ(date: Date.distantFuture, foliage: false, fruit: true, plantid: 2, comments: "lots of berries")
     
     
     override func setUp() {
@@ -49,43 +53,69 @@ class DataOperationsTest: XCTestCase {
         }
     }
     
-    func test_addUser(){
-        
-        testable.add(firstName: testUser1.firstName, lastName: testUser1.lastName, email: testUser1.email, password: testUser1.password, userName: testUser1.username)
+    func test_addPlant(){
         
         
-        XCTAssertEqual(testable.get(indentifier: testUser1.email), testUser1.email)
+        
+        testing.addPlant(newPlant: PlantTest1)
+        
+        XCTAssertEqual(testing.getPlant(indentifier: 1), PlantTest1.PlantID)
+      
         
         //var MyPlant = PlantManager.getPlantByName(name: "Paper Birch");
         
     }
     
-    
-    func test_getUser() {
-        let testing = testable.get(indentifier: testUser1.email)
+    func test_addStream(){
+     
+       testing.addStream(newStream: Streamtest1)
         
-        XCTAssertEqual(testing, testUser1.email)
+       XCTAssertEqual(testing.getStream(indentifier: 1), Streamtest1.StreamID)
+        
+    }
+
+    func test_GetStream() {
+        testing.addStream(newStream: Streamtest1)
+        
+        XCTAssertEqual(testing.getStream(indentifier: 1), Streamtest1.StreamID)
+        
     }
     
-    func test_delete(){
+    func test_GetPlant() {
+        testing.addPlant(newPlant: PlantTest1)
         
-        let duplicate = testUser2
+        XCTAssertEqual(testing.getPlant(indentifier: 1), PlantTest1.PlantID)
         
-        testable.add(firstName: testUser2.firstName, lastName: testUser2.lastName, email: testUser2.email, password: testUser2.password, userName: testUser2.username)
-        
-        testable.Delete(identifier: testUser2.email)
-        
-        XCTAssertNotEqual(testable.get(indentifier: testUser2.email), duplicate.email)
     }
+    
+    func test_DeleteStream() {
+        
+        testing.addStream(newStream: Streamtest2)
+        testing.DeleteStream(identifier: 2)
+
+        XCTAssertEqual(testing.getStream(indentifier: 2), -1)
+        
+        
+    }
+    
+    func test_DeletePlant() {
+        
+        testing.addPlant(newPlant: PlantTest2)
+        testing.DeletePlant(identifier: 2)
+     
+        XCTAssertEqual(testing.getPlant(indentifier: 2), -1)
+    
+    }
+    
     
     func test_modify(){
-        
+      /*
         testable.add(firstName: testUser2.firstName, lastName: testUser2.lastName, email: testUser2.email, password: testUser2.password, userName: testUser2.username)
         
         let val = testable.Modifyuser(Email: testUser2.email, Password: "changed")
         
         XCTAssertEqual(val, "changed")
         
-        
+        */
     }
 }
