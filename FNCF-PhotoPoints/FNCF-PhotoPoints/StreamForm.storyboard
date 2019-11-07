@@ -383,9 +383,9 @@
                                 <exclude reference="LCS-XS-6UI"/>
                                 <exclude reference="eGU-6F-nmt"/>
                                 <exclude reference="xPj-Fc-Va7"/>
-                                <exclude reference="9jZ-Zq-vBw"/>
                                 <exclude reference="gPm-Qm-Lwq"/>
                                 <exclude reference="lJL-WK-wgp"/>
+                                <exclude reference="9jZ-Zq-vBw"/>
                                 <exclude reference="9ZH-Xa-d8Y"/>
                                 <exclude reference="Ihp-RO-TeA"/>
                                 <exclude reference="OaS-g3-9xJ"/>
@@ -406,8 +406,8 @@
                                 <include reference="rz6-EY-cHm"/>
                                 <include reference="ECn-Bf-6Ot"/>
                                 <include reference="xPj-Fc-Va7"/>
-                                <include reference="9jZ-Zq-vBw"/>
                                 <include reference="gPm-Qm-Lwq"/>
+                                <include reference="9jZ-Zq-vBw"/>
                                 <include reference="9ZH-Xa-d8Y"/>
                                 <include reference="b7Z-is-qyf"/>
                                 <include reference="iq4-ra-Oug"/>
@@ -433,6 +433,7 @@
                     </view>
                     <connections>
                         <outlet property="StreamHeight" destination="Nsd-D0-AWT" id="igy-h7-hQf"/>
+                        <outlet property="StreamLabel" destination="BWa-br-1u9" id="gW0-LH-nVb"/>
                         <outlet property="Weather" destination="M6c-cH-PDa" id="R32-9W-Dfq"/>
                         <outlet property="btnImage" destination="QHy-J6-kXZ" id="QHr-GA-JWu"/>
                         <outlet property="datePicker" destination="Mx5-aV-Jpn" id="NBH-WL-fxR"/>

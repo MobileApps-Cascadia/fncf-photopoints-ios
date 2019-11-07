@@ -52,7 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="C4J-ar-NwJ" id="IIe-2L-csi"/>
-                        <segue destination="KYw-7h-vba" kind="show" identifier="plantInfoSegue" id="QmA-SU-hQI"/>
+                        <segue destination="KYw-7h-vba" kind="show" identifier="plantFormSegue" id="QmA-SU-hQI"/>
                         <segue destination="4Fg-XI-aqs" kind="show" identifier="streamFormSegue" id="bz4-eS-Kgv"/>
                     </connections>
                 </viewController>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="-330" y="861"/>
         </scene>
-        <!--PlantInfoStoryboard-->
+        <!--plantFormStoryboard-->
         <scene sceneID="aRh-I9-Zcz">
             <objects>
-                <viewControllerPlaceholder storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="KYw-7h-vba" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="PlantForm" referencedIdentifier="plantFormStoryboard" id="KYw-7h-vba" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mp4-JE-0Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-270" y="968"/>

@@ -11,13 +11,10 @@ import UIKit
 class PlantFormViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     var Submiter:PhotoRepository!
-    var streamId: Int!
-    
-    
-    
-    
+    var myPlant: Plant!
 
     
+    @IBOutlet weak var PlantInfo: UILabel!
     @IBOutlet weak var MoreInfo: UITextView!
     @IBOutlet var FoliageEntered: UITextField!
     @IBOutlet var DateEntered: UITextField!
@@ -29,6 +26,13 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(myPlant == nil)
+        {
+            myPlant = Plant(plantID: -1, name: "failed to get plant", latinName: "failed to get plant", desc: "failed to get plant")
+        }
+        
+        PlantInfo.text = myPlant.name + "Form"
         
         Submiter = PhotoDataRepository();
         

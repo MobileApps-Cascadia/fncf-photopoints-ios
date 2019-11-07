@@ -406,6 +406,7 @@
                     </view>
                     <connections>
                         <outlet property="MoreInfo" destination="NYi-PR-yTV" id="wlI-Ij-fu9"/>
+                        <outlet property="PlantInfo" destination="L3Z-L6-uN7" id="rko-Ji-osJ"/>
                         <outlet property="btnImage" destination="xnT-of-e2Y" id="DHB-aa-iTh"/>
                         <outlet property="datePicker" destination="Bwd-MC-ZyT" id="GTo-nx-ymT"/>
                         <outlet property="moreInfo" destination="NYi-PR-yTV" id="xa3-d2-UEf"/>
