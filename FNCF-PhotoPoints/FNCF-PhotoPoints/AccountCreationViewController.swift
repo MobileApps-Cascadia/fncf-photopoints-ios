@@ -39,7 +39,7 @@ class AccountCreationViewController: UIViewController, UITextFieldDelegate {
         
         User.add(firstName: FirstName, lastName: LastName, email: Email, password: Password, userName: Username)
         
-        
+        //Printing name here
         print(FirstName + " is stored" )
         
         FirstNameSubmit.text = " "
