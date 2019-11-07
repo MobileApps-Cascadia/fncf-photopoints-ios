@@ -15,7 +15,10 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     
     
     
-    //@IBOutlet weak var MoreInfo: TextView!
+    
+
+    
+    @IBOutlet weak var MoreInfo: UITextView!
     @IBOutlet var FoliageEntered: UITextField!
     @IBOutlet var DateEntered: UITextField!
     @IBOutlet var FruitChoice: UITextField!
@@ -40,13 +43,13 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         
     }
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var MoreInfo: TextView!
-    @IBOutlet var FoliageEntered: UITextField!
-    @IBOutlet var DateEntered: UITextField!
-    @IBOutlet var FruitChoice: UITextField!
-    @IBOutlet weak var ImageView: UIImageView!
+    //@IBOutlet weak var MoreInfo: TextView!
+    //@IBOutlet var FoliageEntered: UITextField!
+    //@IBOutlet var DateEntered: UITextField!
+    //@IBOutlet var FruitChoice: UITextField!
+    //@IBOutlet weak var ImageView: UIImageView!
     
-    @IBOutlet weak var btnImage: RoundButton!     // chris: for adding image to button background
+    //@IBOutlet weak var btnImage: RoundButton!     // chris: for adding image to button background
     // @IBOutlet var AdditionalComments: UITextView!
     
     

@@ -22,16 +22,7 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        Submitter = PhotoDataRepository()
-        
-        
-        datePicker.setValue(UIColor.white, forKeyPath: "textColor")  // set datpicker text color
-        datePicker.setValue(false, forKeyPath: "highlightsToday")
-        // Do any additional setup after loading the view.
-    }
+   
     
     var myStream: Int?
     
@@ -50,6 +41,9 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         Submitter = PhotoDataRepository()
         
         // Do any additional setup after loading the view.
+        
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")  // set datpicker text color
+        datePicker.setValue(false, forKeyPath: "highlightsToday")
         
         //QR scanning and segue logic
         if(myStream != nil){

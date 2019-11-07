@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-PR-yTV" customClass="TextView" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-PR-yTV">
                                 <rect key="frame" x="35" y="403" width="342" height="205"/>
                                 <color key="backgroundColor" red="0.3104871796" green="0.37016303439999998" blue="0.50496454960000003" alpha="0.22403169010000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -405,9 +405,10 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="MoreInfo" destination="NYi-PR-yTV" id="skh-aL-jUM"/>
+                        <outlet property="MoreInfo" destination="NYi-PR-yTV" id="wlI-Ij-fu9"/>
                         <outlet property="btnImage" destination="xnT-of-e2Y" id="DHB-aa-iTh"/>
                         <outlet property="datePicker" destination="Bwd-MC-ZyT" id="GTo-nx-ymT"/>
+                        <outlet property="moreInfo" destination="NYi-PR-yTV" id="xa3-d2-UEf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EiC-rw-Ywg" userLabel="First Responder" sceneMemberID="firstResponder"/>
