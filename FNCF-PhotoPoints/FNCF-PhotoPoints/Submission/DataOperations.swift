@@ -20,8 +20,9 @@ protocol SubmissionOps {
     func getPlant(indentifier: Int) -> Int
     
      // will implement these later
-   // func ModifyStream(identifier: String, content: String) -> String
-   // func ModifyPlant(identifier: String, content: String) -> String
+    func ModifyStream(identifier: Int, stream: StreamOBJ) -> Int
+    func ModifyPlant(identifier: Int, plant: PlantOBJ) -> Int
+   
     //func addImages(username: String, images: UIImage)
     
     
@@ -31,6 +32,80 @@ protocol SubmissionOps {
 }
 
 public class DataOperations: SubmissionOps{
+    
+    func ModifyStream(identifier: Int, stream: StreamOBJ) -> Int {
+     
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        let managedContext = appDelegate?.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "StreamData")
+        
+        fetchRequest.predicate = NSPredicate(format: "streamid = %i", identifier)
+        
+        do{
+            let test = try managedContext?.fetch(fetchRequest)
+            
+            let UpdatedUser = test![0] as! NSManagedObject
+            
+            UpdatedUser.setValue(stream.Date, forKey: "date")
+            UpdatedUser.setValue(stream.StreamHeight, forKey: "streamheight")
+            UpdatedUser.setValue(stream.StreamID, forKey: "streamid")
+            UpdatedUser.setValue(stream.Weather, forKey: "weather")
+            
+            
+            
+            do{
+                try managedContext?.save()
+                return UpdatedUser.value(forKey: "streamid") as! Int
+            }
+            catch{
+                print("error")
+            }
+        }
+        catch{
+            print("error")
+        }
+        return -1
+    }
+    
+    func ModifyPlant(identifier: Int, plant: PlantOBJ) -> Int {
+       
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        let managedContext = appDelegate?.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PlantData")
+        
+        fetchRequest.predicate = NSPredicate(format: "plantid = %i", identifier)
+        
+        do{
+            let test = try managedContext?.fetch(fetchRequest)
+            
+            let UpdatedUser = test![0] as! NSManagedObject
+            
+            UpdatedUser.setValue(plant.Date, forKey: "date")
+            UpdatedUser.setValue(plant.Comments, forKey: "comments")
+            UpdatedUser.setValue(plant.Foliage, forKey: "foliage")
+            UpdatedUser.setValue(plant.Fruit, forKey: "fruit")
+            UpdatedUser.setValue(plant.PlantID, forKey: "plantid")
+            
+            
+            
+            do{
+                try managedContext?.save()
+                return UpdatedUser.value(forKey: "plantid") as! Int
+            }
+            catch{
+                print("error")
+            }
+        }
+        catch{
+            print("error")
+        }
+        return -1
+    }
+    
+
+    
+   
+    
 
     
     func addStream(newStream: StreamOBJ) {
@@ -124,6 +199,7 @@ public class DataOperations: SubmissionOps{
         
         // will predicate the users so to return One user
         fetchRequest.fetchLimit = 1
+        // using the plant id we are able to set the predicate %i where i is the Int
         fetchRequest.predicate = NSPredicate(format: "plantid = %i", indentifier)
         fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "plantid", ascending: false)]
         

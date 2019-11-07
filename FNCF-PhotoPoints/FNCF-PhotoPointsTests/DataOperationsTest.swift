@@ -91,12 +91,13 @@ class DataOperationsTest: XCTestCase {
     func test_DeleteStream() {
         
         testing.addStream(newStream: Streamtest2)
-        testing.DeleteStream(identifier: 2)
+        testing.DeleteStream(identifier: 1)
 
+      
         XCTAssertEqual(testing.getStream(indentifier: 2), -1)
         
-        
     }
+    
     
     func test_DeletePlant() {
         
@@ -106,16 +107,38 @@ class DataOperationsTest: XCTestCase {
         XCTAssertEqual(testing.getPlant(indentifier: 2), -1)
     
     }
+
+    
+    func test_modifyplant(){
+        
+         
+        testing.addPlant(newPlant: PlantTest1)
+        
+        
+    
+        testing.ModifyPlant(identifier: 1, plant: PlantTest2)
+        
+        XCTAssertNotEqual(testing.getPlant(indentifier: 1), 1)
+        
+        
+        
+       // XCTAssertEqual()
+         
+        // XCTAssertEqual(val, "changed")
+    
+    }
     
     
-    func test_modify(){
-      /*
-        testable.add(firstName: testUser2.firstName, lastName: testUser2.lastName, email: testUser2.email, password: testUser2.password, userName: testUser2.username)
+    func test_modifyStream(){
+     
+        testing.addStream(newStream: Streamtest1)
         
-        let val = testable.Modifyuser(Email: testUser2.email, Password: "changed")
         
-        XCTAssertEqual(val, "changed")
         
-        */
+        testing.ModifyStream(identifier: 1, stream: Streamtest2)
+        
+        XCTAssertNotEqual(testing.getStream(indentifier: 1), 1)
+        
+    
     }
 }
