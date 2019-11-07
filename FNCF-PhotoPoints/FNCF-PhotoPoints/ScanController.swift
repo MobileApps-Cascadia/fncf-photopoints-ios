@@ -19,6 +19,7 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     let pm = PlantManager()
     var plant: Plant!
+    var streamId: Int!
     
     @IBOutlet var messageLabel:UILabel!
     
@@ -106,16 +107,45 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 messageLabel.text = metadataObj.stringValue
                 
                 //get the plant by name from QR Code
-                //TODO: If QR Codes are not the plant name in "Xxxxx Xxxx" format then this logic needs to be changed
                 //NOTE: The following switch statement is for the URL based QR Code
+                // Example of QR code for Plants "https://www.plantsmap.com/organizations/24477/plants/28066"
+                // Examp of QR code for Streams "STREAM/00001"
                 var myString:String = ""
                 let urlID = metadataObj.stringValue?.suffix(5)
                 myString = String(urlID!)
-                let lastfour = (myString.suffix(53) as NSString).integerValue
+                let lastFive = (myString.suffix(53) as NSString).integerValue
                 
                 var plantId = -1;
+                streamId = -1;
                 
-                switch (lastfour) {
+                switch (lastFive) {
+                //Stream Cases
+                case 00001: streamId = 1; //Stream point 1
+                break;
+                case 00002: streamId = 2; //Stream point 2
+                break;
+                case 00003: streamId = 3; //Stream point 3
+                break;
+                case 00004: streamId = 4; //Stream point 4
+                break;
+                case 00005: streamId = 5; //Stream point 5
+                break;
+                case 00006: streamId = 6; //Stream point 6
+                break;
+                case 00007: streamId = 7; //Stream point 7
+                break;
+                case 00008: streamId = 8; //Stream point 8
+                break;
+                case 00009: streamId = 9; //Stream point 9
+                break;
+                case 00010: streamId = 10; //Stream point 10
+                break;
+                case 00011: streamId = 11; //Stream point 11
+                break;
+                case 00012: streamId = 12; //Stream point 12
+                break;
+                    
+                //Plant Cases
                 case 28092: plantId = 1; //Douglas Fir
                 break;
                 case 27710: plantId = 2; //Black Twinberry
@@ -160,6 +190,7 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 break;
                 default:
                     plantId = -1
+                    streamId = -1
                 }
                 
                 plant = pm.getPlantByID(id: plantId)
@@ -167,17 +198,19 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 //plant = pm.getPlantByName(name: metadataObj.stringValue!)
                 
                 //check that the plant was found, if it wasnt then plant.id = -1
-                if(plant.plantID != -1)
-                {
+                if(plant.plantID != -1){
                     //Plant was found
                     //Call segue to plant list
                     self.performSegue(withIdentifier: "plantInfoSegue", sender: self)
                     /*guard let vc = UIStoryboard(name: "PlantInfo", bundle: nil).instantiateViewController(withIdentifier: "PlantInfoStoryboard") as?
                         PlantInfoViewController else{
-                            print("Could not instantiate view controller with indentifier of type PlantInfoStoryboard")
- */
-                            return
-                    }
+                            print("Could not instantiate view controller with indentifier of type PlantInfoStoryboard")*/
+                    return
+                }
+                    
+                else if(streamId != -1){
+                    self.performSegue(withIdentifier: "streamFormSegue", sender: self)
+                }
                     
                     //vc.myPlant = plant;
                    // self.navigationController?.pushViewController(vc, animated: true)
@@ -195,12 +228,15 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             }
         }
     
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "plantInfoSegue"){
             let vc = segue.destination as! PlantInfoViewController
             vc.myPlant = plant
+        }
+        
+        if(segue.identifier == "streamFormSegue"){
+            let vc = segue.destination as! StreamFormViewController
+            vc.myStream = streamId
         }
     }
 }

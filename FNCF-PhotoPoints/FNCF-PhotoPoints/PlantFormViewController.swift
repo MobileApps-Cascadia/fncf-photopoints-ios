@@ -11,11 +11,22 @@ import UIKit
 class PlantFormViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     var Submiter:PhotoRepository!
-   
+    var streamId: Int!
+    
+    
+    
+    //@IBOutlet weak var MoreInfo: TextView!
+    @IBOutlet var FoliageEntered: UITextField!
+    @IBOutlet var DateEntered: UITextField!
+    @IBOutlet var FruitChoice: UITextField!
+    @IBOutlet weak var ImageView: UIImageView!
+    
+    @IBOutlet weak var btnImage: RoundButton!     // chris: added button outlet used mostly for setting propertys
+    // @IBOutlet var AdditionalComments: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         Submiter = PhotoDataRepository();
         
         datePicker.setValue(UIColor.white, forKeyPath: "textColor")

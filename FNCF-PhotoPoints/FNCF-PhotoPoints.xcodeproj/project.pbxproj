@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F02EFE32272BB050087715E /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02EFE22272BB050087715E /* ScanController.swift */; };
+		3F118A82237333EA00D97C46 /* BuildingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F118A81237333EA00D97C46 /* BuildingData.swift */; };
+		3F118A842373363E00D97C46 /* DataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F118A832373363E00D97C46 /* DataOperations.swift */; };
 		3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F248B862299F5400090F0F8 /* RoundButton.swift */; };
 		3F24DBAF2351054600474A9B /* imageBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24DBAE2351054600474A9B /* imageBorder.swift */; };
 		3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3004D222766C5400E077E5 /* PlantFormViewController.swift */; };
@@ -15,11 +17,10 @@
 		3F79FA38227F7D06005C71C4 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79FA37227F7D06005C71C4 /* DesignableView.swift */; };
 		3F79FA3A22820392005C71C4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79FA3922820392005C71C4 /* SignUpViewController.swift */; };
 		3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */; };
-		3F898BD0235AD8BE00F8B7C5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F898BCF235AD8BE00F8B7C5 /* TextField.swift */; };
-		3F898BD2235C25FB00F8B7C5 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F898BD1235C25FB00F8B7C5 /* TextView.swift */; };
 		3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */; };
 		3FA32F7E2294C84600A90754 /* PlantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */; };
 		3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4D7F32279045F00526ABB /* PlantManager.swift */; };
+		3FAEAA36237330E700C60CE7 /* DataOperationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAEAA35237330E700C60CE7 /* DataOperationsTest.swift */; };
 		3FBAFB06227814A1006820FE /* SubmissionRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB05227814A1006820FE /* SubmissionRepo.swift */; };
 		3FBAFB08227814BC006820FE /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB07227814BC006820FE /* Submission.swift */; };
 		3FBAFB0A227815E1006820FE /* SubmissionMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */; };
@@ -68,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		3F02EFE22272BB050087715E /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
+		3F118A81237333EA00D97C46 /* BuildingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingData.swift; sourceTree = "<group>"; };
+		3F118A832373363E00D97C46 /* DataOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperations.swift; sourceTree = "<group>"; };
 		3F248B862299F5400090F0F8 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3F24DBAE2351054600474A9B /* imageBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageBorder.swift; sourceTree = "<group>"; };
 		3F3004D222766C5400E077E5 /* PlantFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFormViewController.swift; sourceTree = "<group>"; };
@@ -75,11 +78,10 @@
 		3F79FA37227F7D06005C71C4 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		3F79FA3922820392005C71C4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoViewController.swift; sourceTree = "<group>"; };
-		3F898BCF235AD8BE00F8B7C5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		3F898BD1235C25FB00F8B7C5 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		3FA32F7B2294C53900A90754 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		3FA32F7D2294C84600A90754 /* PlantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewController.swift; sourceTree = "<group>"; };
 		3FA4D7F32279045F00526ABB /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
+		3FAEAA35237330E700C60CE7 /* DataOperationsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationsTest.swift; sourceTree = "<group>"; };
 		3FBAFB05227814A1006820FE /* SubmissionRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionRepo.swift; sourceTree = "<group>"; };
 		3FBAFB07227814BC006820FE /* Submission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submission.swift; sourceTree = "<group>"; };
 		3FBAFB09227815E1006820FE /* SubmissionMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionMockTest.swift; sourceTree = "<group>"; };
@@ -140,14 +142,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F118A80237333CB00D97C46 /* Submission */ = {
+			isa = PBXGroup;
+			children = (
+				3F118A81237333EA00D97C46 /* BuildingData.swift */,
+				3F118A832373363E00D97C46 /* DataOperations.swift */,
+			);
+			path = Submission;
+			sourceTree = "<group>";
+		};
 		3F79FA36227F7C6E005C71C4 /* IBDesignables */ = {
 			isa = PBXGroup;
 			children = (
 				3F79FA37227F7D06005C71C4 /* DesignableView.swift */,
 				3F248B862299F5400090F0F8 /* RoundButton.swift */,
 				3F24DBAE2351054600474A9B /* imageBorder.swift */,
-				3F898BCF235AD8BE00F8B7C5 /* TextField.swift */,
-				3F898BD1235C25FB00F8B7C5 /* TextView.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 		3FC785FE226FCBA500026CE0 /* FNCF-PhotoPoints */ = {
 			isa = PBXGroup;
 			children = (
+				3F118A80237333CB00D97C46 /* Submission */,
 				3FA32F7F22A0C10100A90754 /* UiTableView */,
 				3F79FA36227F7C6E005C71C4 /* IBDesignables */,
 				3FBAFB0422781483006820FE /* SubmissionMock */,
@@ -235,6 +245,7 @@
 				3FBAFB0B22781B27006820FE /* SubmissionRepo.swift */,
 				3FDEE39422823C77008D408A /* PlantManagerTest.swift */,
 				3FC97F03235FF4C8008EE9CE /* DbOpsTest.swift */,
+				3FAEAA35237330E700C60CE7 /* DataOperationsTest.swift */,
 			);
 			path = "FNCF-PhotoPointsTests";
 			sourceTree = "<group>";
@@ -391,17 +402,18 @@
 				3FF5EABB22B1C68E00391E0B /* PlantListViewController.swift in Sources */,
 				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
-				3F898BD0235AD8BE00F8B7C5 /* TextField.swift in Sources */,
 				3FA32F7C2294C53900A90754 /* PlantTableViewCell.swift in Sources */,
 				3F248B872299F5400090F0F8 /* RoundButton.swift in Sources */,
 				3F24DBAF2351054600474A9B /* imageBorder.swift in Sources */,
 				3FC78602226FCBA500026CE0 /* ViewController.swift in Sources */,
+				3F118A82237333EA00D97C46 /* BuildingData.swift in Sources */,
 				3FE8EF6222965960001CB4B9 /* GalleryViewController.swift in Sources */,
 				3F7D621F227BB5CC004A5F24 /* PlantInfoViewController.swift in Sources */,
 				3F3004D322766C5400E077E5 /* PlantFormViewController.swift in Sources */,
 				3F3004D722775F5300E077E5 /* StreamFormViewController.swift in Sources */,
 				3FC78631226FCBF500026CE0 /* Plant.swift in Sources */,
 				3F02EFE32272BB050087715E /* ScanController.swift in Sources */,
+				3F118A842373363E00D97C46 /* DataOperations.swift in Sources */,
 				3FDEE397228679E9008D408A /* PlantSubmission.swift in Sources */,
 				3FC97F06235FF6EC008EE9CE /* UserTest.swift in Sources */,
 				3FA4D7F42279045F00526ABB /* PlantManager.swift in Sources */,
@@ -412,7 +424,6 @@
 				3FBAFB08227814BC006820FE /* Submission.swift in Sources */,
 				3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */,
 				3F79FA3A22820392005C71C4 /* SignUpViewController.swift in Sources */,
-				3F898BD2235C25FB00F8B7C5 /* TextView.swift in Sources */,
 				3FBAFB06227814A1006820FE /* SubmissionRepo.swift in Sources */,
 				3FA32F7E2294C84600A90754 /* PlantTableViewController.swift in Sources */,
 			);
@@ -425,6 +436,7 @@
 				3FC78618226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift in Sources */,
 				3FBAFB0C22781B27006820FE /* SubmissionRepo.swift in Sources */,
 				3FC97F04235FF4C8008EE9CE /* DbOpsTest.swift in Sources */,
+				3FAEAA36237330E700C60CE7 /* DataOperationsTest.swift in Sources */,
 				3FBAFB0A227815E1006820FE /* SubmissionMockTest.swift in Sources */,
 				3FDEE39522823C77008D408A /* PlantManagerTest.swift in Sources */,
 			);

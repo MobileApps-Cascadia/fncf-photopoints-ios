@@ -33,15 +33,32 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         // Do any additional setup after loading the view.
     }
     
+    var myStream: Int?
+    
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBOutlet var Date: UITextField!
     @IBOutlet var StreamHeight: UITextField!
     @IBOutlet var Weather: UITextField!
-
+    @IBOutlet weak var StreamLabel: UILabel!
     @IBOutlet weak var ImageView: UIImageView!
     
     @IBOutlet weak var btnImage: RoundButton!  //chris: for adding image to button background
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Submitter = PhotoDataRepository()
+        
+        // Do any additional setup after loading the view.
+        
+        //QR scanning and segue logic
+        if(myStream != nil){
+            var temp = String(StreamLabel.text!)
+            let streamId = myStream! as NSNumber
+            temp = "#" + streamId.stringValue
+            StreamLabel.text = temp
+        }
+    }
     
     @IBAction func OpenCamera(_ sender: Any) {
         
