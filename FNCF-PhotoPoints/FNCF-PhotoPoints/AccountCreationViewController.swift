@@ -8,17 +8,46 @@
 
 import UIKit
 
-class AccountCreationViewController: UIViewController {
+class AccountCreationViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    var User = DbOperations()
+    
+   
+    @IBOutlet weak var FirstNameSubmit: UITextField!
+    
+    @IBOutlet var LastNameSubmit: UITextField!
+    
+    
+    @IBOutlet weak var EmailSubmit: UITextField!
+    @IBOutlet weak var UsernameSubmit: UITextField!
+    @IBOutlet weak var PasswordSubmit: UITextField!
+    
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func ACSubmit(_ sender: Any) {
-        //Put logic here
+        
+        let FirstName = FirstNameSubmit.text!
+        let LastName = LastNameSubmit.text!
+        let Email = EmailSubmit.text!
+        let Username = UsernameSubmit.text!
+        let Password = PasswordSubmit.text!
+        
+        User.add(firstName: FirstName, lastName: LastName, email: Email, password: Password, userName: Username)
+        
+        
+        print(FirstName + " is stored" )
+        
+        FirstNameSubmit.text = " "
+        LastNameSubmit.text = " "
+        EmailSubmit.text = " "
+        UsernameSubmit.text = " "
+        PasswordSubmit.text = " "
+        
         dismiss(animated: true, completion: nil)
     }
 }

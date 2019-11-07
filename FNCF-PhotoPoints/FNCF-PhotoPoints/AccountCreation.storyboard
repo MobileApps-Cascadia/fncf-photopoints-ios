@@ -64,6 +64,13 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-ht-293">
+                                            <rect key="frame" x="8" y="215" width="220" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRu-6t-NNx">
                                             <rect key="frame" x="126" y="266" width="49" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,13 +79,6 @@
                                                 <action selector="ACSubmit:" destination="odW-6h-4ht" eventType="touchUpInside" id="4wV-30-bY5"/>
                                             </connections>
                                         </button>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-ht-293">
-                                            <rect key="frame" x="8" y="215" width="220" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -103,6 +103,13 @@
                         </view>
                         <blurEffect style="light"/>
                     </visualEffectView>
+                    <connections>
+                        <outlet property="EmailSubmit" destination="eci-VH-gIa" id="ZUQ-lX-r5w"/>
+                        <outlet property="FirstNameSubmit" destination="ehB-rs-yMS" id="gDf-Ne-2oO"/>
+                        <outlet property="LastNameSubmit" destination="EYc-wn-k0V" id="bAN-Lt-LYz"/>
+                        <outlet property="PasswordSubmit" destination="AuX-ht-293" id="cAL-db-Yoy"/>
+                        <outlet property="UsernameSubmit" destination="CD5-Mq-PBX" id="cLS-nt-ASh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bR-Ud-rCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
