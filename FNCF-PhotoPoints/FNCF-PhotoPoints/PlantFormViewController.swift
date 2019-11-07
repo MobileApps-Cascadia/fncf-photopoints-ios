@@ -15,7 +15,10 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     
     
     
-    //@IBOutlet weak var MoreInfo: TextView!
+    
+
+    
+    @IBOutlet weak var MoreInfo: UITextView!
     @IBOutlet var FoliageEntered: UITextField!
     @IBOutlet var DateEntered: UITextField!
     @IBOutlet var FruitChoice: UITextField!
@@ -29,12 +32,27 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         
         Submiter = PhotoDataRepository();
         
-        
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
+        datePicker.setValue(false, forKeyPath: "highlightsToday")
         // chris: for dismising device keybord
-        DateEntered.delegate = self
-        FoliageEntered.delegate = self
-        FruitChoice.delegate = self
+       // DateEntered.delegate = self
+        //FoliageEntered.delegate = self
+        //FruitChoice.delegate = self
+        
+        
+        
     }
+    @IBOutlet weak var datePicker: UIDatePicker!
+    //@IBOutlet weak var MoreInfo: TextView!
+    //@IBOutlet var FoliageEntered: UITextField!
+    //@IBOutlet var DateEntered: UITextField!
+    //@IBOutlet var FruitChoice: UITextField!
+    //@IBOutlet weak var ImageView: UIImageView!
+    
+    //@IBOutlet weak var btnImage: RoundButton!     // chris: for adding image to button background
+    // @IBOutlet var AdditionalComments: UITextView!
+    
+    
     public func addActionSheetForiPad(actionSheet: UIAlertController) {
         
         if let popoverPresentationController = actionSheet.popoverPresentationController {
@@ -133,6 +151,19 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         self.present(Confirmed, animated: true,completion: nil)
     
     }
+    
+    @IBAction func FoliageCheckbox(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveLinear, animations: {
+            sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            
+        }) { (success) in
+            sender.isSelected = !sender.isSelected
+            UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveLinear, animations: {
+                sender.transform = .identity
+            }, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
