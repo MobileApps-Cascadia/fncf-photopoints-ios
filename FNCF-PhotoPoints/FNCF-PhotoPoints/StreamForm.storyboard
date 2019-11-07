@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="landscape">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,12 +14,12 @@
         <scene sceneID="O80-eK-eUS">
             <objects>
                 <viewController storyboardIdentifier="StreamFormStorybord" title="StreamForm" id="ABd-WC-4gM" customClass="StreamFormViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="iS3-US-gEZ">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                    <view key="view" contentMode="scaleToFill" id="iS3-US-gEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-gW-2jb">
-                                <rect key="frame" x="64" y="144" width="142" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-gW-2jb">
+                                <rect key="frame" x="29" y="144" width="142" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9h2-gb-OgK"/>
                                     <constraint firstAttribute="width" constant="142" id="FFS-d7-IAZ"/>
@@ -60,8 +60,8 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-cH-PDa">
-                                <rect key="frame" x="64" y="192" width="283" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-cH-PDa">
+                                <rect key="frame" x="29" y="192" width="283" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4NP-WG-OFN"/>
                                     <constraint firstAttribute="width" constant="283" id="ETy-ua-VfA"/>
@@ -102,8 +102,8 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stream height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-D0-AWT">
-                                <rect key="frame" x="64" y="241" width="278" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stream height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-D0-AWT">
+                                <rect key="frame" x="29" y="241" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="278" id="8a6-Xa-MJa"/>
                                     <constraint firstAttribute="width" constant="278" id="KpK-S3-YRQ"/>
@@ -144,8 +144,8 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-FD-V3Q">
-                                <rect key="frame" x="354" y="764" width="188" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-FD-V3Q">
+                                <rect key="frame" x="29" y="764" width="188" height="60"/>
                                 <color key="backgroundColor" red="0.2669210434" green="0.34485399719999998" blue="0.50590217110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="188" id="2PI-sE-mh8"/>
@@ -234,8 +234,8 @@
                                     <segue destination="EPR-Da-yad" kind="show" id="sja-nG-YdQ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYG-W9-gI6">
-                                <rect key="frame" x="532" y="358" width="263" height="181"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bYG-W9-gI6">
+                                <rect key="frame" x="29" y="358" width="263" height="181"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="263" id="4ZC-oD-GJQ"/>
                                     <constraint firstAttribute="height" constant="181" id="8qX-Tc-L7V"/>
@@ -273,50 +273,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream Submisson Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWa-br-1u9">
-                                <rect key="frame" x="224" y="44" width="356" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="356" id="JyE-Cf-Wrd"/>
-                                    <constraint firstAttribute="height" constant="41" id="OfD-Wm-1WD"/>
-                                    <constraint firstAttribute="width" constant="356" id="TyB-va-ISs"/>
-                                    <constraint firstAttribute="width" constant="356" id="eL0-vx-aS6"/>
-                                    <constraint firstAttribute="height" constant="66" id="lmM-1d-NRE"/>
-                                    <constraint firstAttribute="height" constant="66" id="snF-Rs-Yun"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JyE-Cf-Wrd"/>
-                                        <exclude reference="OfD-Wm-1WD"/>
-                                        <exclude reference="TyB-va-ISs"/>
-                                        <exclude reference="eL0-vx-aS6"/>
-                                        <exclude reference="lmM-1d-NRE"/>
-                                        <exclude reference="snF-Rs-Yun"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="OfD-Wm-1WD"/>
-                                        <include reference="TyB-va-ISs"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="eL0-vx-aS6"/>
-                                        <include reference="lmM-1d-NRE"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="JyE-Cf-Wrd"/>
-                                        <include reference="snF-Rs-Yun"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHy-J6-kXZ">
-                                <rect key="frame" x="64" y="606" width="128" height="103"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHy-J6-kXZ">
+                                <rect key="frame" x="29" y="606" width="128" height="103"/>
                                 <color key="backgroundColor" red="0.2669210434" green="0.34485399719999998" blue="0.50590217110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="103" id="Qia-ID-h1d"/>
@@ -368,6 +326,48 @@
                                     <action selector="OpenCamera:" destination="ABd-WC-4gM" eventType="touchUpInside" id="v0d-0O-r6Q"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream Submisson Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWa-br-1u9">
+                                <rect key="frame" x="29" y="70" width="356" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="356" id="JyE-Cf-Wrd"/>
+                                    <constraint firstAttribute="height" constant="41" id="OfD-Wm-1WD"/>
+                                    <constraint firstAttribute="width" constant="356" id="TyB-va-ISs"/>
+                                    <constraint firstAttribute="width" constant="356" id="eL0-vx-aS6"/>
+                                    <constraint firstAttribute="height" constant="66" id="lmM-1d-NRE"/>
+                                    <constraint firstAttribute="height" constant="66" id="snF-Rs-Yun"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JyE-Cf-Wrd"/>
+                                        <exclude reference="OfD-Wm-1WD"/>
+                                        <exclude reference="TyB-va-ISs"/>
+                                        <exclude reference="eL0-vx-aS6"/>
+                                        <exclude reference="lmM-1d-NRE"/>
+                                        <exclude reference="snF-Rs-Yun"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="OfD-Wm-1WD"/>
+                                        <include reference="TyB-va-ISs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="eL0-vx-aS6"/>
+                                        <include reference="lmM-1d-NRE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="JyE-Cf-Wrd"/>
+                                        <include reference="snF-Rs-Yun"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -544,6 +544,7 @@
                         <outlet property="Date" destination="Jg4-gW-2jb" id="ng8-vb-AQw"/>
                         <outlet property="ImageView" destination="bYG-W9-gI6" id="BV4-QP-6D2"/>
                         <outlet property="StreamHeight" destination="Nsd-D0-AWT" id="igy-h7-hQf"/>
+                        <outlet property="StreamLabel" destination="BWa-br-1u9" id="tcK-sK-g2D"/>
                         <outlet property="Weather" destination="M6c-cH-PDa" id="R32-9W-Dfq"/>
                     </connections>
                 </viewController>

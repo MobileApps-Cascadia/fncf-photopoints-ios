@@ -15,7 +15,7 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         Submiter = PhotoDataRepository();
         
         
@@ -23,21 +23,7 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         DateEntered.delegate = self
         FoliageEntered.delegate = self
         FruitChoice.delegate = self
-        
-        
-        
     }
-    
-    @IBOutlet weak var MoreInfo: TextView!
-    @IBOutlet var FoliageEntered: UITextField!
-    @IBOutlet var DateEntered: UITextField!
-    @IBOutlet var FruitChoice: UITextField!
-    @IBOutlet weak var ImageView: UIImageView!
-    
-    @IBOutlet weak var btnImage: RoundButton!     // chris: added button outlet used mostly for setting propertys
-    // @IBOutlet var AdditionalComments: UITextView!
-    
-    
     public func addActionSheetForiPad(actionSheet: UIAlertController) {
         
         if let popoverPresentationController = actionSheet.popoverPresentationController {
