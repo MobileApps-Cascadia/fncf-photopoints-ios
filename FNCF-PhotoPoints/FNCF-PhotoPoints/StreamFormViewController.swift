@@ -21,8 +21,12 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
             popoverPresentationController.permittedArrowDirections = []
         }
     }
+
+   
     
     var myStream: Int?
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBOutlet var Date: UITextField!
     @IBOutlet var StreamHeight: UITextField!
@@ -30,12 +34,16 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
     @IBOutlet weak var StreamLabel: UILabel!
     @IBOutlet weak var ImageView: UIImageView!
     
+    @IBOutlet weak var btnImage: RoundButton!  //chris: for adding image to button background
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Submitter = PhotoDataRepository()
         
         // Do any additional setup after loading the view.
+        
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")  // set datpicker text color
+        datePicker.setValue(false, forKeyPath: "highlightsToday")
         
         //QR scanning and segue logic
         if(myStream != nil){
@@ -76,7 +84,8 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
-        ImageView.image = image
+        //ImageView.image = image
+        btnImage.setImage(image, for: .normal)   //set button background image
         
         picker.dismiss(animated: true, completion: nil)
     }
