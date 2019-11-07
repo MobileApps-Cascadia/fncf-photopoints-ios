@@ -27,8 +27,13 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         
         Submitter = PhotoDataRepository()
         
+        
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")  // set datpicker text color
+        datePicker.setValue(false, forKeyPath: "highlightsToday")
         // Do any additional setup after loading the view.
     }
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBOutlet var Date: UITextField!
     @IBOutlet var StreamHeight: UITextField!
@@ -36,6 +41,7 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
 
     @IBOutlet weak var ImageView: UIImageView!
     
+    @IBOutlet weak var btnImage: RoundButton!  //chris: for adding image to button background
     
     @IBAction func OpenCamera(_ sender: Any) {
         
@@ -67,7 +73,8 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
-        ImageView.image = image
+        //ImageView.image = image
+        btnImage.setImage(image, for: .normal)   //set button background image
         
         picker.dismiss(animated: true, completion: nil)
     }
