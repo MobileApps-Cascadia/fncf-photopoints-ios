@@ -324,12 +324,28 @@
                                     <segue destination="q2p-kJ-Hbo" kind="presentation" id="47b-Sd-Ocz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urE-nv-4J5">
+                                <rect key="frame" x="138" y="193" width="168" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="gJA-aa-ZSv"/>
+                                    <constraint firstAttribute="height" constant="30" id="qnI-Ie-9cR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="openURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3EW-uT-3eR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BcY-CE-Adu" secondAttribute="trailing" constant="17" id="2tx-Nc-9lZ"/>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mJ-wf-5mL"/>
                             <constraint firstItem="yVi-3b-aZB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BbI-Cp-kJb"/>
+                            <constraint firstItem="urE-nv-4J5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="Bw7-Hl-S3H"/>
                             <constraint firstItem="5aC-vQ-fWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GMe-Mv-7Xc"/>
                             <constraint firstItem="yVi-3b-aZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-195" id="J50-fA-6Lp"/>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="5aC-vQ-fWa" secondAttribute="bottom" constant="167" id="KR9-lz-R4U"/>
@@ -337,6 +353,8 @@
                             <constraint firstItem="BcY-CE-Adu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Tss-N6-7RT"/>
                             <constraint firstItem="5aC-vQ-fWa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="aqT-Ud-UFz"/>
                             <constraint firstItem="BcY-CE-Adu" firstAttribute="leading" secondItem="5aC-vQ-fWa" secondAttribute="trailing" constant="12" id="hFV-iw-qjh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="urE-nv-4J5" secondAttribute="trailing" constant="108" id="jRX-0Q-BbC"/>
+                            <constraint firstItem="urE-nv-4J5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="rEZ-0R-d6p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

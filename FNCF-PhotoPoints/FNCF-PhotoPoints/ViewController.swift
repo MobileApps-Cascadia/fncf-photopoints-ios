@@ -1,8 +1,9 @@
 
 
 import UIKit
+import SafariServices
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, SFSafariViewControllerDelegate {
    
     //for slide over
     @IBOutlet weak var menuLeadingConstraint: NSLayoutConstraint!
@@ -52,6 +53,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //print(pm.getPlantByID(id: 2).latinName)
         //print(pm.getPlantByID(id: 4).desc)
         //print(pm.getPlantByID(id: 5).desc)
+        
+        /**let url = URL(string: "https://www.friendsnorthcreekforest.org/")
+        let svc = SFSafariViewController(url: url!)
+        svc.delegate = self
+        present(svc, animated: true, completion: nil) **/
+    }
+    
+    @IBAction func openURL(_ sender: Any) {
+        // check if website exists
+        guard let url = URL(string: "https://www.friendsnorthcreekforest.org/") else {
+            return
+        }
+        
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     //called when user presses return
@@ -118,7 +138,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             menuLeadingConstraint.constant = -195
         }else{
             menuLeadingConstraint.constant = 0
-    }
+        }
+        menuShowing = !menuShowing
     }
     
     func putColorFormattedTextInTextField(autocompleteResult: String, userQuery: String){
