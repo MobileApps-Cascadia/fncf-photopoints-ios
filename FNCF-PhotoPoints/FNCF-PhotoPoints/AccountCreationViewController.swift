@@ -23,7 +23,6 @@ class AccountCreationViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var EmailSubmit: UITextField!
-    @IBOutlet weak var UsernameSubmit: UITextField!
     @IBOutlet weak var PasswordSubmit: UITextField!
     
     @IBAction func dismiss(_ sender: UIButton) {
@@ -34,10 +33,9 @@ class AccountCreationViewController: UIViewController, UITextFieldDelegate {
         let FirstName = FirstNameSubmit.text!
         let LastName = LastNameSubmit.text!
         let Email = EmailSubmit.text!
-        let Username = UsernameSubmit.text!
         let Password = PasswordSubmit.text!
         
-        User.add(firstName: FirstName, lastName: LastName, email: Email, password: Password, userName: Username)
+        //User.add(firstName: FirstName, lastName: LastName, email: Email, password: Password)
         
         //Printing name here
         print(FirstName + " is stored" )
@@ -45,7 +43,6 @@ class AccountCreationViewController: UIViewController, UITextFieldDelegate {
         FirstNameSubmit.text = " "
         LastNameSubmit.text = " "
         EmailSubmit.text = " "
-        UsernameSubmit.text = " "
         PasswordSubmit.text = " "
         
         dismiss(animated: true, completion: nil)
