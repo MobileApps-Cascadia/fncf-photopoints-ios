@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AccountCreationViewController: UIViewController, UITextFieldDelegate {
     
@@ -15,19 +16,16 @@ class AccountCreationViewController: UIViewController, UITextFieldDelegate {
     }
     
     var User = DbOperations()
-    
    
     @IBOutlet weak var FirstNameSubmit: UITextField!
-    
     @IBOutlet var LastNameSubmit: UITextField!
-    
-    
     @IBOutlet weak var EmailSubmit: UITextField!
     @IBOutlet weak var PasswordSubmit: UITextField!
     
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func ACSubmit(_ sender: Any) {
         
         let FirstName = FirstNameSubmit.text!
@@ -35,10 +33,10 @@ class AccountCreationViewController: UIViewController, UITextFieldDelegate {
         let Email = EmailSubmit.text!
         let Password = PasswordSubmit.text!
         
-        //User.add(firstName: FirstName, lastName: LastName, email: Email, password: Password)
+        User.add(firstName: FirstName, lastName: LastName, email: Email, password: Password)
         
         //Printing name here
-        print(FirstName + " is stored" )
+        //print(FirstName + " is stored")
         
         FirstNameSubmit.text = " "
         LastNameSubmit.text = " "

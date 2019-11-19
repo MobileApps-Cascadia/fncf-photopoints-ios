@@ -30,8 +30,8 @@ import UIKit
  */
 protocol DbOps {
   
-    
-    func add(firstName: String, lastName:String, email:String, password:String, userName:String)
+    //Removed userName:String -emilio
+    func add(firstName: String, lastName:String, email:String, password:String)
     func Modifyuser(Email: String, Password: String) -> String
     
    // will implement this later
@@ -73,8 +73,8 @@ public class DbOperations: DbOps{
     
     
    
-    
-    func add(firstName: String, lastName: String, email: String, password: String, userName: String) {
+    //Removed userName: String -emilio
+    func add(firstName: String, lastName: String, email: String, password: String) {
       
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
@@ -91,7 +91,7 @@ public class DbOperations: DbOps{
         newUser.setValue(lastName, forKey: "lastName")
         newUser.setValue(email, forKey: "email")
         newUser.setValue(password, forKey: "password")
-        newUser.setValue(userName, forKey: "userName")
+        //newUser.setValue(userName, forKey: "userName")
         
         
         do{
