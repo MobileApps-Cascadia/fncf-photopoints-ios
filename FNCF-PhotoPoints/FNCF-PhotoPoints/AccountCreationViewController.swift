@@ -35,13 +35,15 @@ class AccountCreationViewController: UIViewController, UITextFieldDelegate {
         
         User.add(firstName: FirstName, lastName: LastName, email: Email, password: Password)
         
-        //Printing name here
-        //print(FirstName + " is stored")
+        let test = User.get(indentifier: Email)
         
-        FirstNameSubmit.text = " "
-        LastNameSubmit.text = " "
-        EmailSubmit.text = " "
-        PasswordSubmit.text = " "
+        print(test!)
+        
+        //May need this to check user unique device string
+        /*if let uuid = UIDevice.current.identifierForVendor?.uuidString {
+        print(uuid)
+    }
+        */
         
         dismiss(animated: true, completion: nil)
     }
