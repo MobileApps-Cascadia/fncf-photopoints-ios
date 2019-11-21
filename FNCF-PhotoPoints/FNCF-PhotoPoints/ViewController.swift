@@ -119,7 +119,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }else{
             menuLeadingConstraint.constant = 0
     }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        
+        menuShowing = !menuShowing
     }
+    
     
     func putColorFormattedTextInTextField(autocompleteResult: String, userQuery: String){
         let coloredString: NSMutableAttributedString = NSMutableAttributedString(string: userQuery + autocompleteResult)
@@ -133,10 +139,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         let selectedRange: UITextRange? = textField.selectedTextRange
         textField.offset(from: textField.beginningOfDocument, to: (selectedRange?.start)!)
-        UIView.animate(withDuration: 0.3, animations: {
-            self.view.layoutIfNeeded()
-        })
-        menuShowing = !menuShowing
+        
+        
         
     }
     
