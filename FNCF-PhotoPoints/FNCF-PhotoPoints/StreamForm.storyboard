@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What Is The Weather?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-cH-PDa" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What Is The Weather?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-cH-PDa" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="36" y="384" width="342" height="55"/>
                                 <color key="backgroundColor" red="0.18221443891525269" green="0.2726438045501709" blue="0.36247467994689941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -71,60 +71,6 @@
                                     <mask key="constraints">
                                         <include reference="R4O-an-cEG"/>
                                         <include reference="hci-o4-Sip"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Stream height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-D0-AWT" customClass="TextField" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="36" y="473" width="342" height="55"/>
-                                <color key="backgroundColor" red="0.1822144389" green="0.27264380459999998" blue="0.36247467989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="278" id="8a6-Xa-MJa"/>
-                                    <constraint firstAttribute="width" constant="278" id="KpK-S3-YRQ"/>
-                                    <constraint firstAttribute="height" constant="30" id="ZxB-PJ-5UX"/>
-                                    <constraint firstAttribute="width" constant="342" id="bWA-k1-4r8"/>
-                                    <constraint firstAttribute="height" constant="55" id="hLs-y9-6WZ"/>
-                                    <constraint firstAttribute="height" constant="30" id="kdq-la-9mn"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.14999999999999999"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8a6-Xa-MJa"/>
-                                        <exclude reference="KpK-S3-YRQ"/>
-                                        <exclude reference="ZxB-PJ-5UX"/>
-                                        <exclude reference="bWA-k1-4r8"/>
-                                        <exclude reference="hLs-y9-6WZ"/>
-                                        <exclude reference="kdq-la-9mn"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="8a6-Xa-MJa"/>
-                                        <include reference="kdq-la-9mn"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="bWA-k1-4r8"/>
-                                        <include reference="hLs-y9-6WZ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="KpK-S3-YRQ"/>
-                                        <include reference="ZxB-PJ-5UX"/>
                                     </mask>
                                 </variation>
                             </textField>
@@ -331,46 +277,56 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zR6-Jr-Fcr" userLabel="Stream Height Picker">
+                                <rect key="frame" x="289" y="462" width="89" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Igw-4H-zxR"/>
+                                    <constraint firstAttribute="width" constant="89" id="sng-u9-2Tk"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Stream Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDn-Rh-urX">
+                                <rect key="frame" x="36" y="462" width="245" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Nsd-D0-AWT" firstAttribute="top" secondItem="M6c-cH-PDa" secondAttribute="bottom" constant="34" id="0JO-aF-Uvy"/>
                             <constraint firstItem="BWa-br-1u9" firstAttribute="top" secondItem="xY3-FD-V3Q" secondAttribute="bottom" constant="101" id="2uu-z4-JVZ"/>
+                            <constraint firstItem="QHy-J6-kXZ" firstAttribute="top" secondItem="fDn-Rh-urX" secondAttribute="bottom" constant="23" id="3hA-FK-z9R"/>
                             <constraint firstItem="NRg-3m-hgm" firstAttribute="trailing" secondItem="xY3-FD-V3Q" secondAttribute="trailing" constant="54" id="5nF-PZ-tPh"/>
                             <constraint firstItem="NRg-3m-hgm" firstAttribute="trailing" secondItem="M6c-cH-PDa" secondAttribute="trailing" constant="36" id="5qm-h7-N0x"/>
-                            <constraint firstItem="QHy-J6-kXZ" firstAttribute="top" secondItem="Nsd-D0-AWT" secondAttribute="bottom" constant="83" id="76H-4b-h1P"/>
+                            <constraint firstItem="fDn-Rh-urX" firstAttribute="top" secondItem="M6c-cH-PDa" secondAttribute="bottom" constant="23" id="7Sk-kk-bO6"/>
                             <constraint firstItem="NRg-3m-hgm" firstAttribute="bottom" secondItem="xY3-FD-V3Q" secondAttribute="bottom" constant="10" id="7Vd-kg-1lJ"/>
                             <constraint firstItem="QHy-J6-kXZ" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="20" id="8nb-s5-svT"/>
                             <constraint firstItem="M6c-cH-PDa" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="20" id="9ZH-Xa-d8Y"/>
                             <constraint firstItem="xY3-FD-V3Q" firstAttribute="leading" secondItem="QHy-J6-kXZ" secondAttribute="trailing" constant="162" id="9jZ-Zq-vBw"/>
+                            <constraint firstItem="NRg-3m-hgm" firstAttribute="trailing" secondItem="zR6-Jr-Fcr" secondAttribute="trailing" constant="36" id="Dcl-K1-vKz"/>
                             <constraint firstItem="w4K-fV-eQI" firstAttribute="top" secondItem="NRg-3m-hgm" secondAttribute="top" constant="44" id="ECn-Bf-6Ot"/>
                             <constraint firstItem="BWa-br-1u9" firstAttribute="top" secondItem="w4K-fV-eQI" secondAttribute="bottom" constant="106" id="G9Z-da-b4k"/>
                             <constraint firstItem="M6c-cH-PDa" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="68" id="Ihp-RO-TeA"/>
                             <constraint firstItem="w4K-fV-eQI" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="29" id="LCS-XS-6UI"/>
-                            <constraint firstItem="NRg-3m-hgm" firstAttribute="trailing" secondItem="Nsd-D0-AWT" secondAttribute="trailing" constant="36" id="NEq-aJ-qrw"/>
-                            <constraint firstItem="Nsd-D0-AWT" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="68" id="OaS-g3-9xJ"/>
                             <constraint firstAttribute="bottom" secondItem="QHy-J6-kXZ" secondAttribute="bottom" constant="9" id="Pcu-1x-IEo"/>
-                            <constraint firstItem="QHy-J6-kXZ" firstAttribute="top" secondItem="Nsd-D0-AWT" secondAttribute="bottom" constant="36" id="Pxf-wZ-VQZ"/>
                             <constraint firstItem="M6c-cH-PDa" firstAttribute="top" secondItem="Mx5-aV-Jpn" secondAttribute="bottom" constant="34" id="Qg8-7W-pKh"/>
                             <constraint firstItem="Mx5-aV-Jpn" firstAttribute="top" secondItem="BWa-br-1u9" secondAttribute="bottom" constant="21" id="REN-tQ-fyr"/>
                             <constraint firstItem="NRg-3m-hgm" firstAttribute="bottom" secondItem="QHy-J6-kXZ" secondAttribute="bottom" constant="100" id="SfI-QA-pCc"/>
-                            <constraint firstItem="QHy-J6-kXZ" firstAttribute="top" secondItem="Nsd-D0-AWT" secondAttribute="bottom" constant="34" id="TKd-ft-59B"/>
                             <constraint firstItem="M6c-cH-PDa" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="36" id="TXd-Jd-hPp"/>
-                            <constraint firstItem="Nsd-D0-AWT" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="36" id="UhI-gN-MV3"/>
                             <constraint firstItem="w4K-fV-eQI" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="29" id="X0d-Jj-wey"/>
-                            <constraint firstItem="Nsd-D0-AWT" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="20" id="b7Z-is-qyf"/>
+                            <constraint firstItem="zR6-Jr-Fcr" firstAttribute="leading" secondItem="fDn-Rh-urX" secondAttribute="trailing" constant="8" id="Xot-rv-gO4"/>
                             <constraint firstItem="Mx5-aV-Jpn" firstAttribute="centerX" secondItem="iS3-US-gEZ" secondAttribute="centerX" id="cBk-IE-1s3"/>
+                            <constraint firstItem="fDn-Rh-urX" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="36" id="drp-Sb-4dl"/>
                             <constraint firstItem="w4K-fV-eQI" firstAttribute="top" secondItem="NRg-3m-hgm" secondAttribute="top" constant="20" id="eGU-6F-nmt"/>
                             <constraint firstItem="BWa-br-1u9" firstAttribute="centerX" secondItem="iS3-US-gEZ" secondAttribute="centerX" id="eUn-5Y-cVe"/>
                             <constraint firstItem="QHy-J6-kXZ" firstAttribute="leading" secondItem="iS3-US-gEZ" secondAttribute="leading" constant="71" id="egh-fU-6xd"/>
                             <constraint firstItem="QHy-J6-kXZ" firstAttribute="centerX" secondItem="iS3-US-gEZ" secondAttribute="centerX" id="fiz-vx-unf"/>
                             <constraint firstItem="BWa-br-1u9" firstAttribute="top" secondItem="NRg-3m-hgm" secondAttribute="top" constant="44" id="gPm-Qm-Lwq"/>
-                            <constraint firstItem="Nsd-D0-AWT" firstAttribute="top" secondItem="M6c-cH-PDa" secondAttribute="bottom" constant="19" id="iq4-ra-Oug"/>
                             <constraint firstItem="BWa-br-1u9" firstAttribute="top" secondItem="NRg-3m-hgm" secondAttribute="top" constant="8" id="lJL-WK-wgp"/>
                             <constraint firstItem="NRg-3m-hgm" firstAttribute="bottom" secondItem="xY3-FD-V3Q" secondAttribute="bottom" constant="20" id="n6N-5j-bbY"/>
+                            <constraint firstItem="QHy-J6-kXZ" firstAttribute="top" secondItem="zR6-Jr-Fcr" secondAttribute="bottom" constant="23" id="nWo-er-461"/>
+                            <constraint firstItem="zR6-Jr-Fcr" firstAttribute="top" secondItem="M6c-cH-PDa" secondAttribute="bottom" constant="23" id="q8K-gJ-mpZ"/>
                             <constraint firstItem="NRg-3m-hgm" firstAttribute="trailing" secondItem="BWa-br-1u9" secondAttribute="trailing" constant="272" id="rz6-EY-cHm"/>
                             <constraint firstItem="QHy-J6-kXZ" firstAttribute="leading" secondItem="NRg-3m-hgm" secondAttribute="leading" constant="68" id="unB-ud-qss"/>
-                            <constraint firstItem="Nsd-D0-AWT" firstAttribute="top" secondItem="M6c-cH-PDa" secondAttribute="bottom" constant="46" id="v4d-5U-yAp"/>
                             <constraint firstItem="w4K-fV-eQI" firstAttribute="leading" secondItem="iS3-US-gEZ" secondAttribute="leading" constant="29" id="xPj-Fc-Va7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NRg-3m-hgm"/>
@@ -388,14 +344,8 @@
                                 <exclude reference="9jZ-Zq-vBw"/>
                                 <exclude reference="9ZH-Xa-d8Y"/>
                                 <exclude reference="Ihp-RO-TeA"/>
-                                <exclude reference="OaS-g3-9xJ"/>
-                                <exclude reference="b7Z-is-qyf"/>
-                                <exclude reference="iq4-ra-Oug"/>
-                                <exclude reference="v4d-5U-yAp"/>
-                                <exclude reference="76H-4b-h1P"/>
                                 <exclude reference="8nb-s5-svT"/>
                                 <exclude reference="Pcu-1x-IEo"/>
-                                <exclude reference="Pxf-wZ-VQZ"/>
                                 <exclude reference="egh-fU-6xd"/>
                                 <exclude reference="unB-ud-qss"/>
                             </mask>
@@ -409,11 +359,8 @@
                                 <include reference="gPm-Qm-Lwq"/>
                                 <include reference="9jZ-Zq-vBw"/>
                                 <include reference="9ZH-Xa-d8Y"/>
-                                <include reference="b7Z-is-qyf"/>
-                                <include reference="iq4-ra-Oug"/>
                                 <include reference="8nb-s5-svT"/>
                                 <include reference="Pcu-1x-IEo"/>
-                                <include reference="Pxf-wZ-VQZ"/>
                                 <include reference="egh-fU-6xd"/>
                             </mask>
                         </variation>
@@ -424,19 +371,16 @@
                                 <include reference="eGU-6F-nmt"/>
                                 <include reference="lJL-WK-wgp"/>
                                 <include reference="Ihp-RO-TeA"/>
-                                <include reference="OaS-g3-9xJ"/>
-                                <include reference="v4d-5U-yAp"/>
-                                <include reference="76H-4b-h1P"/>
                                 <include reference="unB-ud-qss"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="StreamHeight" destination="Nsd-D0-AWT" id="igy-h7-hQf"/>
                         <outlet property="StreamLabel" destination="BWa-br-1u9" id="gW0-LH-nVb"/>
                         <outlet property="Weather" destination="M6c-cH-PDa" id="R32-9W-Dfq"/>
                         <outlet property="btnImage" destination="QHy-J6-kXZ" id="QHr-GA-JWu"/>
                         <outlet property="datePicker" destination="Mx5-aV-Jpn" id="NBH-WL-fxR"/>
+                        <outlet property="streamHeightPicker" destination="zR6-Jr-Fcr" id="kjq-iM-VhU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnu-1z-0oW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -453,6 +397,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PlantFormBackground" width="626.5" height="1109"/>
+        <image name="PlantFormBackground" width="417.66665649414062" height="739.33331298828125"/>
     </resources>
 </document>
