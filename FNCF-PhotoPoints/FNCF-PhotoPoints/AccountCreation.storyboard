@@ -27,7 +27,7 @@
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohj-eP-OCR" customClass="DesignableView" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                    <rect key="frame" x="57" y="263" width="300" height="320"/>
+                                    <rect key="frame" x="57" y="263" width="300" height="288"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehB-rs-yMS">
                                             <rect key="frame" x="8" y="68" width="135" height="30"/>
@@ -57,22 +57,15 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD5-Mq-PBX">
-                                            <rect key="frame" x="8" y="167" width="220" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-ht-293">
-                                            <rect key="frame" x="8" y="215" width="220" height="30"/>
+                                            <rect key="frame" x="8" y="174" width="220" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRu-6t-NNx">
-                                            <rect key="frame" x="126" y="266" width="49" height="30"/>
+                                            <rect key="frame" x="126" y="238" width="49" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Submit"/>
                                             <connections>
@@ -82,7 +75,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="320" id="8IL-xN-CUj"/>
+                                        <constraint firstAttribute="height" constant="288" id="8IL-xN-CUj"/>
                                         <constraint firstAttribute="width" constant="300" id="DdN-SB-2nH"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
@@ -93,7 +86,7 @@
                                 </view>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="Ohj-eP-OCR" firstAttribute="centerY" secondItem="l2p-Gt-m8U" secondAttribute="centerY" constant="-25" id="7vF-7j-5Ek"/>
+                                <constraint firstItem="Ohj-eP-OCR" firstAttribute="centerY" secondItem="l2p-Gt-m8U" secondAttribute="centerY" constant="-41" id="7vF-7j-5Ek"/>
                                 <constraint firstAttribute="bottom" secondItem="sQy-iG-Slm" secondAttribute="bottom" id="FA5-h7-4fO"/>
                                 <constraint firstAttribute="trailing" secondItem="sQy-iG-Slm" secondAttribute="trailing" id="GOF-mL-dSg"/>
                                 <constraint firstItem="sQy-iG-Slm" firstAttribute="leading" secondItem="l2p-Gt-m8U" secondAttribute="leading" id="Zcm-z9-Mp5"/>
@@ -108,7 +101,6 @@
                         <outlet property="FirstNameSubmit" destination="ehB-rs-yMS" id="gDf-Ne-2oO"/>
                         <outlet property="LastNameSubmit" destination="EYc-wn-k0V" id="bAN-Lt-LYz"/>
                         <outlet property="PasswordSubmit" destination="AuX-ht-293" id="cAL-db-Yoy"/>
-                        <outlet property="UsernameSubmit" destination="CD5-Mq-PBX" id="cLS-nt-ASh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bR-Ud-rCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
