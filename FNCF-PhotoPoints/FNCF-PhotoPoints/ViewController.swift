@@ -69,6 +69,7 @@ class ViewController: UIViewController, UITextFieldDelegate, SFSafariViewControl
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
     }
+    @IBOutlet weak var openURL: UIImageView!
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)

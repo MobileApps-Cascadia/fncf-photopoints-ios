@@ -234,10 +234,10 @@
 				3FE8EF6322965AA3001CB4B9 /* PlantInfo.storyboard */,
 				3F7D621E227BB5CC004A5F24 /* PlantInfoViewController.swift */,
 				3FE8EF5F2294CFF4001CB4B9 /* Gallery.storyboard */,
-				3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */,
 				3FC78609226FCBA800026CE0 /* Assets.xcassets */,
 				3F8068E1236A513D00F78951 /* AccountCreation.storyboard */,
 				3F8069072371ED3700F78951 /* AccountCreationViewController.swift */,
+				3FE8EF6122965960001CB4B9 /* GalleryViewController.swift */,
 			);
 			path = "FNCF-PhotoPoints";
 			sourceTree = "<group>";
