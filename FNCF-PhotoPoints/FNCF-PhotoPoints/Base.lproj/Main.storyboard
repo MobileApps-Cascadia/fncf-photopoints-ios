@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,17 +14,17 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="mainStoryboard" title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ios_appBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ckY-QJ-LnA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="58" y="627" width="80" height="80"/>
+                                <rect key="frame" x="58" y="504" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Gallery">
@@ -45,8 +45,8 @@
                                     <segue destination="7nv-yX-YSX" kind="show" id="tbb-fD-kFi"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FONCF_TITLE" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-gQ-6QB">
-                                <rect key="frame" x="22" y="273" width="370" height="218"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FONCF_TITLE" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-gQ-6QB">
+                                <rect key="frame" x="22" y="249" width="370" height="218"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" link="YES" image="YES"/>
                                 </accessibility>
@@ -55,12 +55,9 @@
                                     <constraint firstAttribute="height" constant="218" id="bMc-Vu-rh8"/>
                                     <constraint firstAttribute="width" constant="370" id="yfq-tH-2Tr"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="qzF-kR-gR5" appends="YES" id="tg2-ny-tWc"/>
-                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-xD-WUP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="816" width="138" height="30"/>
+                                <rect key="frame" x="0.0" y="665" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scanner">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-od-DGG" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="138" y="816" width="138" height="30"/>
+                                <rect key="frame" x="138" y="665" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="StreamForm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +93,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-lV-NtJ" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="276" y="816" width="138" height="30"/>
+                                <rect key="frame" x="276" y="665" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PlantForm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,7 +111,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USk-TV-lGz" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="167" y="689" width="80" height="80"/>
+                                <rect key="frame" x="167" y="554" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="menu">
@@ -135,9 +132,8 @@
                                     <action selector="MenuClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnM-59-LiO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-hL-Jhw" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="167" y="551" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-hL-Jhw" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="168" y="582" width="80" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Plant List">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,7 +154,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-4v-5LP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="276" y="627" width="80" height="80"/>
+                                <rect key="frame" x="276" y="504" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Scanner">
@@ -304,7 +300,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcY-CE-Adu">
-                                <rect key="frame" x="368" y="77" width="29" height="29"/>
+                                <rect key="frame" x="368" y="53" width="29" height="29"/>
                                 <state key="normal" image="Gear-29x29">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -313,7 +309,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Plants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-vQ-fWa">
-                                <rect key="frame" x="20" y="76" width="336" height="30"/>
+                                <rect key="frame" x="20" y="52" width="336" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="0.54536201584507038" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="336" id="VWj-35-wpo"/>
@@ -339,6 +335,17 @@
                                     <segue destination="eJa-k7-5n9" kind="presentation" id="F78-kr-3UQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzX-6x-BXD">
+                                <rect key="frame" x="22" y="249" width="370" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="51b-rO-2N8"/>
+                                    <constraint firstAttribute="height" constant="218" id="pUM-X5-cAc"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="FONCF_TITLE"/>
+                                <connections>
+                                    <action selector="openURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uej-qL-55u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -348,9 +355,12 @@
                             <constraint firstItem="5aC-vQ-fWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GMe-Mv-7Xc"/>
                             <constraint firstItem="yVi-3b-aZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-195" id="J50-fA-6Lp"/>
                             <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="5aC-vQ-fWa" secondAttribute="bottom" constant="167" id="KR9-lz-R4U"/>
+                            <constraint firstItem="ZzX-6x-BXD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SIF-QX-oUO"/>
                             <constraint firstAttribute="bottom" secondItem="yVi-3b-aZB" secondAttribute="bottom" id="TkO-m3-B8k"/>
                             <constraint firstItem="BcY-CE-Adu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Tss-N6-7RT"/>
                             <constraint firstItem="5aC-vQ-fWa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="aqT-Ud-UFz"/>
+                            <constraint firstItem="ZzX-6x-BXD" firstAttribute="top" secondItem="BcY-CE-Adu" secondAttribute="bottom" constant="167" id="bC4-2e-ibM"/>
+                            <constraint firstItem="GtB-hL-Jhw" firstAttribute="top" secondItem="ZzX-6x-BXD" secondAttribute="bottom" constant="58" id="c9A-by-sKp"/>
                             <constraint firstItem="BcY-CE-Adu" firstAttribute="leading" secondItem="5aC-vQ-fWa" secondAttribute="trailing" constant="12" id="hFV-iw-qjh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -367,11 +377,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="qzF-kR-gR5">
-                    <connections>
-                        <action selector="openURL:" destination="BYZ-38-t0r" id="crG-Sv-lPR"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="592.63392857142856"/>
         </scene>
