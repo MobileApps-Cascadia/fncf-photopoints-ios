@@ -6,15 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
+      "filename" : "PlantFormBackground-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "PlantFormBackground.png",
+      "filename" : "PlantFormBackground-2.png",
       "scale" : "3x"
     }
   ],
