@@ -42,7 +42,7 @@ class dbOpsTest: XCTestCase {
     
     func test_addUser(){
         
-  testable.add(firstName: testUser1.firstName, lastName: testUser1.lastName, email: testUser1.email, password: testUser1.password, userName: testUser1.username)
+  testable.add(firstName: testUser1.firstName, lastName: testUser1.lastName, email: testUser1.email, password: testUser1.password/*, userName: testUser1.username*/)
         
        
         XCTAssertEqual(testable.get(indentifier: testUser1.email), testUser1.email)
@@ -63,7 +63,7 @@ class dbOpsTest: XCTestCase {
         
         let duplicate = testUser2
         
-        testable.add(firstName: testUser2.firstName, lastName: testUser2.lastName, email: testUser2.email, password: testUser2.password, userName: testUser2.username)
+        testable.add(firstName: testUser2.firstName, lastName: testUser2.lastName, email: testUser2.email, password: testUser2.password/*, userName: testUser2.username*/)
         
         testable.Delete(identifier: testUser2.email)
         
@@ -72,7 +72,7 @@ class dbOpsTest: XCTestCase {
     
     func test_modify(){
         
-        testable.add(firstName: testUser2.firstName, lastName: testUser2.lastName, email: testUser2.email, password: testUser2.password, userName: testUser2.username)
+        testable.add(firstName: testUser2.firstName, lastName: testUser2.lastName, email: testUser2.email, password: testUser2.password /*userName: testUser2.username */)
         
      let val = testable.Modifyuser(Email: testUser2.email, Password: "changed")
 
