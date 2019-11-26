@@ -70,6 +70,7 @@
                                             <state key="normal" title="Submit"/>
                                             <connections>
                                                 <action selector="ACSubmit:" destination="odW-6h-4ht" eventType="touchUpInside" id="4wV-30-bY5"/>
+                                                <segue destination="77s-8p-1PF" kind="presentation" id="g7T-c1-arh"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -106,6 +107,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bR-Ud-rCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-168.11594202898553" y="73.660714285714278"/>
+        </scene>
+        <!--SignUpViewStoryboard-->
+        <scene sceneID="IgM-p4-xIH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpViewStoryboard" id="77s-8p-1PF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wse-hs-ovP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="220"/>
         </scene>
     </scenes>
 </document>

@@ -44,20 +44,24 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U05-iH-A9g">
-                                                    <rect key="frame" x="0.0" y="100" width="280" height="30"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPY-vo-Ijt">
-                                                    <rect key="frame" x="0.0" y="150" width="280" height="30"/>
+                                                    <rect key="frame" x="0.0" y="100" width="280" height="30"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.096858494719999993" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Submit">
                                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="submitBtn:" destination="24F-YJ-ZjS" eventType="touchUpInside" id="PUH-WQ-14j"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51O-c2-4vz">
+                                                    <rect key="frame" x="0.0" y="150" width="280" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.096858494719999993" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Create Account">
+                                                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="mMq-uc-fBo" kind="presentation" id="8O7-a0-6xr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -146,6 +150,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lg1-Ar-BCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-104" y="316"/>
+        </scene>
+        <!--AccountCreationStoryboard-->
+        <scene sceneID="mWl-pL-yxe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AccountCreation" referencedIdentifier="AccountCreationStoryboard" id="mMq-uc-fBo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gj1-3V-Z6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="518"/>
         </scene>
     </scenes>
     <resources>
