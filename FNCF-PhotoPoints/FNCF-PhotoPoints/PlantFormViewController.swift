@@ -38,6 +38,8 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         
         datePicker.setValue(UIColor.white, forKeyPath: "textColor")
         datePicker.setValue(false, forKeyPath: "highlightsToday")
+        
+        
         // chris: for dismising device keybord
        // DateEntered.delegate = self
         //FoliageEntered.delegate = self
