@@ -12,7 +12,7 @@
         <!--Account Creation View Controller-->
         <scene sceneID="6H5-TS-smW">
             <objects>
-                <viewController storyboardIdentifier="AccountCreationStoryboard" id="odW-6h-4ht" customClass="AccountCreationViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountCreationStoryboard" modalPresentationStyle="overCurrentContext" id="odW-6h-4ht" customClass="AccountCreationViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="Nkv-cR-UOf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,6 +95,7 @@
                                 <constraint firstItem="Ohj-eP-OCR" firstAttribute="centerX" secondItem="l2p-Gt-m8U" secondAttribute="centerX" id="r4x-37-N5c"/>
                             </constraints>
                         </view>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <blurEffect style="light"/>
                     </visualEffectView>
                     <connections>
