@@ -37,7 +37,8 @@ class PlantInfoViewController: UIViewController {
         var imageArray = [UIImage]()
         
         //view.addSubview(pictureScrollView)
-        imageArray = [#imageLiteral(resourceName: "DouglasFir"), #imageLiteral(resourceName: "DouglasFir_CloseUp")]
+            
+        imageArray = [#imageLiteral(resourceName: "DouglasFir_CloseUp"), #imageLiteral(resourceName: "DouglasFir")]
         
         func setupImages(_ images: [UIImage]){
             
@@ -45,7 +46,7 @@ class PlantInfoViewController: UIViewController {
                 
                 let imageView = UIImageView()
                 imageView.image = imageArray[i]
-                let xPosition = UIScreen.main.bounds.width + CGFloat(i)
+                let xPosition = UIScreen.main.bounds.width * CGFloat(i)
                 imageView.frame = CGRect(x: xPosition, y: 0, width: pictureScrollView.frame.width, height: pictureScrollView.frame.height)
                 imageView.contentMode = .scaleAspectFit
                 
