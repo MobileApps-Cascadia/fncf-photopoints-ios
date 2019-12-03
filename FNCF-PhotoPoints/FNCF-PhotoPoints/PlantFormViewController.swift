@@ -29,7 +29,7 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         
         if(myPlant == nil)
         {
-            myPlant = Plant(plantID: -1, name: "failed to get plant", latinName: "failed to get plant", desc: "failed to get plant")
+            myPlant = Plant(plantID: -1, name: "Plant", latinName: "Plant", desc: "Plant")
         }
         
         PlantInfo.text = myPlant.name + "Form"
