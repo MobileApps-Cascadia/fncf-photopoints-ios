@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlantFormBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4SQ-BT-WLR" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="Epc-8A-TjL">
                                 <rect key="frame" x="87.5" y="80" width="239" height="30"/>
@@ -570,21 +570,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvt-Ns-8ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1229" y="165"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qOI-PT-BsL">
-            <objects>
-                <viewController id="Ox7-It-uIL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BH4-GX-55z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ijh-4e-nYN"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7bv-4D-vB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="408" y="-286"/>
         </scene>
     </scenes>
     <resources>

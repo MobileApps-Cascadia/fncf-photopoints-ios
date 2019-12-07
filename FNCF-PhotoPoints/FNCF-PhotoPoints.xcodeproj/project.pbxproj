@@ -32,7 +32,6 @@
 		3FC78605226FCBA500026CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78603226FCBA500026CE0 /* Main.storyboard */; };
 		3FC78608226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */; };
 		3FC7860A226FCBA800026CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC78609226FCBA800026CE0 /* Assets.xcassets */; };
-		3FC7860D226FCBA800026CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */; };
 		3FC78618226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78617226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift */; };
 		3FC78623226FCBA800026CE0 /* FNCF_PhotoPointsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78622226FCBA800026CE0 /* FNCF_PhotoPointsUITests.swift */; };
 		3FC78631226FCBF500026CE0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC78630226FCBF500026CE0 /* Plant.swift */; };
@@ -96,7 +95,6 @@
 		3FC78604226FCBA500026CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FC78607226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FNCF_PhotoPoints.xcdatamodel; sourceTree = "<group>"; };
 		3FC78609226FCBA800026CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FC7860C226FCBA800026CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FC7860E226FCBA800026CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FC78613226FCBA800026CE0 /* FNCF-PhotoPointsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FNCF-PhotoPointsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC78617226FCBA800026CE0 /* FNCF_PhotoPointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNCF_PhotoPointsTests.swift; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 				3F3004D622775F5300E077E5 /* StreamFormViewController.swift */,
 				3FE8EF6522965EDE001CB4B9 /* PlantForm.storyboard */,
 				3F3004D222766C5400E077E5 /* PlantFormViewController.swift */,
-				3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */,
 				3FC7860E226FCBA800026CE0 /* Info.plist */,
 				3FC78606226FCBA500026CE0 /* FNCF_PhotoPoints.xcdatamodeld */,
 				3FE8EF5B2294C6C4001CB4B9 /* scanner.storyboard */,
@@ -369,7 +366,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC7860D226FCBA800026CE0 /* LaunchScreen.storyboard in Resources */,
 				3FC7860A226FCBA800026CE0 /* Assets.xcassets in Resources */,
 				3FE8EF5A2294BB38001CB4B9 /* SignUp.storyboard in Resources */,
 				3FE8EF6622965EDE001CB4B9 /* PlantForm.storyboard in Resources */,
@@ -480,14 +476,6 @@
 				3FC78604226FCBA500026CE0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3FC7860B226FCBA800026CE0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FC7860C226FCBA800026CE0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
