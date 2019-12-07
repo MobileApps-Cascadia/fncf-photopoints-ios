@@ -8,7 +8,9 @@
 
 import UIKit
 
-class StreamFormViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class StreamFormViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
 
     var Submitter: PhotoRepository!
    
@@ -22,20 +24,54 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         }
     }
 
+   
+    
+    var myStream: Int?
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    @IBOutlet weak var streamHeightPicker: UIPickerView!
+    var streamHeightPickerData:[String] = [String]()
+    
+    @IBOutlet var Date: UITextField!
+    //@IBOutlet var StreamHeight: UITextField!
+    @IBOutlet var Weather: UITextField!
+    @IBOutlet weak var StreamLabel: UILabel!
+    @IBOutlet weak var ImageView: UIImageView!
+    
+    @IBOutlet weak var btnImage: RoundButton!  //chris: for adding image to button background
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Submitter = PhotoDataRepository()
         
-        // Do any additional setup after loading the view.
+        
+        // connect data for stream height picker
+        self.streamHeightPicker.delegate = self
+        self.streamHeightPicker.dataSource = self
+        
+        
+        
+        // input data into streamHeightPickerData array
+        streamHeightPickerData = ["1in " , "2in" , "3in" , "4in" , "5in" , "6in" , "7in" , "8in" , "9in" , "10in" , "11in" , "12in" , "13in" , "14in" , "15in" , "16in" , "17in" , "18in"]
+        
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")  // set datpicker text color
+        datePicker.setValue(false, forKeyPath: "highlightsToday")
+        
+        
+        
+        streamHeightPicker.setValue(UIColor.white, forKeyPath : "textColor")
+        //streamHeightPicker.setValue(false, forKeyPath: "highlightsToday")
+        
+        //QR scanning and segue logic
+        if(myStream != nil){
+            var temp = String(StreamLabel.text!)
+            let streamId = myStream! as NSNumber
+            temp = "#" + streamId.stringValue
+            StreamLabel.text = temp
+        }
     }
-    
-    @IBOutlet var Date: UITextField!
-    @IBOutlet var StreamHeight: UITextField!
-    @IBOutlet var Weather: UITextField!
-
-    @IBOutlet weak var ImageView: UIImageView!
-    
     
     @IBAction func OpenCamera(_ sender: Any) {
         
@@ -67,7 +103,8 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
-        ImageView.image = image
+        //ImageView.image = image
+        btnImage.setImage(image, for: .normal)   //set button background image
         
         picker.dismiss(animated: true, completion: nil)
     }
@@ -80,16 +117,16 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
 
         let DateSubmit = Date.text!;
         let WeatherSubmit = Weather.text!;
-        let HeightSubmit = StreamHeight.text!;
+        let HeightSubmit = streamHeightPicker.dataSource;
         
         
-        let SubmitData = StreamSubmission(Date: DateSubmit, Weather: WeatherSubmit, StreamHeight: HeightSubmit)
+        let SubmitData = StreamSubmission(Date: DateSubmit, Weather: WeatherSubmit, StreamHeight: HeightSubmit as! String)
         
         Submitter.add(newPhoto: SubmitData);
         
         Date.text = " "
         Weather.text = " "
-        StreamHeight.text = " "
+        streamHeightPicker.dataSource = " " as? UIPickerViewDataSource
         ImageView.image = nil
         
        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
@@ -104,6 +141,20 @@ class StreamFormViewController: UIViewController,UINavigationControllerDelegate,
 
         
     }
+    
+    // stream height picker num columns
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    // stream height picker num rows
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return streamHeightPickerData.count
+    }
+    //data to return for the row and the column thats being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return streamHeightPickerData[row]
+    }
+    
     
     
     /*

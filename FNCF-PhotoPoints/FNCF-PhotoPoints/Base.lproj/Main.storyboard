@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,7 +14,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="mainStoryboard" title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="FNCF_PhotoPoints" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -23,96 +23,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search Plant List" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-2Q-9Sn">
-                                <rect key="frame" x="20" y="63" width="374" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="5CR-ze-ljP"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="58" y="627" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Gallery">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="7nv-yX-YSX" kind="show" id="tbb-fD-kFi"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FONCF_TITLE" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-gQ-6QB">
-                                <rect key="frame" x="22" y="273" width="370" height="218"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="218" id="bMc-Vu-rh8"/>
-                                    <constraint firstAttribute="width" constant="370" id="yfq-tH-2Tr"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-xD-WUP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="816" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scanner">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="TZ2-Yq-KiY" kind="show" id="IAL-JV-J5g"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-od-DGG" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="138" y="816" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="StreamForm">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="e9M-LM-Sgp" kind="show" id="UZz-82-C0p"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-lV-NtJ" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
-                                <rect key="frame" x="276" y="816" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PlantForm">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="xmh-yQ-Rdu" kind="show" id="mri-bw-9iB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USk-TV-lGz" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
                                 <rect key="frame" x="167" y="689" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -133,6 +43,28 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="MenuClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnM-59-LiO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Cq-GNE" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                <rect key="frame" x="58" y="627" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="7nv-yX-YSX" kind="show" id="tbb-fD-kFi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-hL-Jhw" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
@@ -179,27 +111,285 @@
                                     <segue destination="eJa-k7-5n9" kind="presentation" id="Onu-e1-OOW"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ZCe-gU-gXO">
+                                <rect key="frame" x="0.0" y="64" width="414" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Plants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-vQ-fWa">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.54536201584507038" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="f8U-fr-OKh"/>
+                                            <constraint firstAttribute="width" constant="300" id="zvE-ud-RCM"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="zvE-ud-RCM"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="zvE-ud-RCM"/>
+                                            </mask>
+                                        </variation>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcY-CE-Adu">
+                                        <rect key="frame" x="384" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="D3M-lf-EnV"/>
+                                            <constraint firstAttribute="height" constant="30" id="bxH-Hj-Mtc"/>
+                                        </constraints>
+                                        <state key="normal" image="Gear-29x29">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYQ-t6-gbh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="widthClass=compact" spacing="21"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FONCF_TITLE" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-gQ-6QB">
+                                <rect key="frame" x="20" y="119" width="374" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="aNM-35-TB3"/>
+                                    <constraint firstAttribute="height" constant="218" id="bXl-CY-Oj2"/>
+                                    <constraint firstAttribute="width" constant="374" id="hjW-73-TDW"/>
+                                    <constraint firstAttribute="width" constant="374" id="j35-Yq-d6d"/>
+                                    <constraint firstAttribute="height" constant="218" id="rfp-Q4-v9Y"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aNM-35-TB3"/>
+                                        <exclude reference="bXl-CY-Oj2"/>
+                                        <exclude reference="hjW-73-TDW"/>
+                                        <exclude reference="j35-Yq-d6d"/>
+                                        <exclude reference="rfp-Q4-v9Y"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="aNM-35-TB3"/>
+                                        <include reference="hjW-73-TDW"/>
+                                        <include reference="rfp-Q4-v9Y"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="bXl-CY-Oj2"/>
+                                        <include reference="j35-Yq-d6d"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVi-3b-aZB">
+                                <rect key="frame" x="-195" y="0.0" width="180" height="1366"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eWf-Al-FTx" userLabel="MenuStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="352"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZO-47-PaL">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="176"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-App-76x76" translatesAutoresizingMaskIntoConstraints="NO" id="BCb-f6-MvJ" customClass="imageBorder" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                                        <rect key="frame" x="65" y="63" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.049990475177764893" green="0.13274657726287842" blue="0.15686771273612976" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="176" id="kke-cV-Glr"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="J7M-Dr-mA4" userLabel="MenuItem Stack">
+                                                <rect key="frame" x="0.0" y="186" width="180" height="166"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5M-jP-qRr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="mvG-JS-hh8"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Sign in">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="eJa-k7-5n9" kind="presentation" id="F78-kr-3UQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO8-od-DGG" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="34" width="180" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="nE1-1u-q4m"/>
+                                                        </constraints>
+                                                        <state key="normal" title="StreamForm">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="e9M-LM-Sgp" kind="show" id="UZz-82-C0p"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-xD-WUP" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="68" width="180" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="VWK-u6-iSF"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Scanner">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="TZ2-Yq-KiY" kind="show" id="IAL-JV-J5g"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-kw-DXO">
+                                                        <rect key="frame" x="0.0" y="102" width="180" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="FWT-w1-yDT"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Account">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="q2p-kJ-Hbo" kind="presentation" id="47b-Sd-Ocz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-lV-NtJ" customClass="RoundButton" customModule="FNCF_PhotoPoints" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="136" width="180" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="nxu-Hi-CMW"/>
+                                                        </constraints>
+                                                        <state key="normal" title="PlantForm">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="xmh-yQ-Rdu" kind="show" id="mri-bw-9iB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.028881255875373289" green="0.077299970961898695" blue="0.092778497409326421" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1194" id="DbB-aK-vXF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1112" id="Yce-bR-rhY"/>
+                                    <constraint firstAttribute="width" constant="180" id="k82-NA-7aS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DbB-aK-vXF"/>
+                                        <exclude reference="Yce-bR-rhY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Yce-bR-rhY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="DbB-aK-vXF"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mJ-wf-5mL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6F1-2Q-9Sn" secondAttribute="trailing" constant="20" id="LNa-DI-iMo"/>
-                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="6F1-2Q-9Sn" secondAttribute="bottom" constant="154" id="QKb-ZU-Kq6"/>
-                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hOy-sh-NiW"/>
-                            <constraint firstItem="6F1-2Q-9Sn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="mV3-hp-lVX"/>
+                            <constraint firstItem="ZCe-gU-gXO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6z1-bn-PE8"/>
+                            <constraint firstItem="yVi-3b-aZB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BbI-Cp-kJb"/>
+                            <constraint firstItem="yVi-3b-aZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-195" id="J50-fA-6Lp">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-195"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="yVi-3b-aZB" secondAttribute="bottom" id="TkO-m3-B8k"/>
+                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="ZCe-gU-gXO" secondAttribute="bottom" constant="25" id="TxM-y1-j5I"/>
+                            <constraint firstAttribute="trailing" secondItem="ZCe-gU-gXO" secondAttribute="trailing" id="UGy-t7-cRa"/>
+                            <constraint firstItem="ZCe-gU-gXO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iUD-h3-L70"/>
+                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ieS-C7-tcX"/>
+                            <constraint firstItem="z6j-gQ-6QB" firstAttribute="top" secondItem="ZCe-gU-gXO" secondAttribute="bottom" constant="200" id="jID-gk-pYh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UGy-t7-cRa"/>
+                                <exclude reference="TxM-y1-j5I"/>
+                                <exclude reference="jID-gk-pYh"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="UGy-t7-cRa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="TxM-y1-j5I"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="jID-gk-pYh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="GalleryButton" destination="5us-Cq-GNE" id="FSy-1Y-niJ"/>
                         <outlet property="MenuButton" destination="USk-TV-lGz" id="h6D-Ub-cCn"/>
+                        <outlet property="MenuView" destination="yVi-3b-aZB" id="hKm-dL-EXQ"/>
                         <outlet property="PlantListButton" destination="GtB-hL-Jhw" id="USH-EA-XYL"/>
                         <outlet property="ScannerButton" destination="OdV-4v-5LP" id="fNl-c1-tym"/>
+                        <outlet property="menuLeadingConstraint" destination="J50-fA-6Lp" id="1xB-dk-8id"/>
+                        <outlet property="textField" destination="5aC-vQ-fWa" id="ZQs-0d-G8g"/>
+                        <segue destination="OxE-Zj-MYy" kind="show" identifier="plantInfoSegue" id="G2w-ky-D26"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198.5507246376812" y="592.63392857142856"/>
+            <point key="canvasLocation" x="1193.5546875" y="589.45827232796478"/>
+        </scene>
+        <!--AccountCreationStoryboard-->
+        <scene sceneID="vuc-Tx-xg5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AccountCreation" referencedIdentifier="AccountCreationStoryboard" id="q2p-kJ-Hbo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06g-EA-DzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="842"/>
         </scene>
         <!--ScannerStoryboard-->
         <scene sceneID="Uaq-ZS-Q1l">
@@ -224,6 +414,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtv-hb-Mw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1199" y="1041"/>
+        </scene>
+        <!--PlantInfoStoryboard-->
+        <scene sceneID="jh9-qQ-yt7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="OxE-Zj-MYy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7x-jy-hVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="674"/>
         </scene>
         <!--plantFormStoryboard-->
         <scene sceneID="Mex-WW-6Zy">
@@ -251,7 +449,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FONCF_TITLE" width="497.33334350585938" height="342.66665649414062"/>
-        <image name="ios_appBackground" width="414.33334350585938" height="736"/>
+        <image name="FONCF_TITLE" width="746" height="514"/>
+        <image name="Gear-29x29" width="29" height="29"/>
+        <image name="Icon-App-76x76" width="60" height="60"/>
+        <image name="ios_appBackground" width="621.5" height="1104"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Onu-e1-OOW"/>
+    </inferredMetricsTieBreakers>
 </document>

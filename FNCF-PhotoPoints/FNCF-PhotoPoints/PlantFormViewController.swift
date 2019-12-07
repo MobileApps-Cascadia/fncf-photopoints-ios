@@ -8,24 +8,55 @@
 
 import UIKit
 
-class PlantFormViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+class PlantFormViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     var Submiter:PhotoRepository!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var myPlant: Plant!
 
-        Submiter = PhotoDataRepository();
-        // Do any additional setup after loading the view.
-    }
     
+    @IBOutlet weak var PlantInfo: UILabel!
+    @IBOutlet weak var MoreInfo: UITextView!
     @IBOutlet var FoliageEntered: UITextField!
     @IBOutlet var DateEntered: UITextField!
     @IBOutlet var FruitChoice: UITextField!
     @IBOutlet weak var ImageView: UIImageView!
     
-// @IBOutlet var AdditionalComments: UITextView!
+    @IBOutlet weak var btnImage: RoundButton!     // chris: added button outlet used mostly for setting propertys
+    // @IBOutlet var AdditionalComments: UITextView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if(myPlant == nil)
+        {
+            myPlant = Plant(plantID: -1, name: "Plant", latinName: "Plant", desc: "Plant")
+        }
+        
+        PlantInfo.text = myPlant.name + "Form"
+        
+        Submiter = PhotoDataRepository();
+        
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
+        datePicker.setValue(false, forKeyPath: "highlightsToday")
+        
+        
+        // chris: for dismising device keybord
+       // DateEntered.delegate = self
+        //FoliageEntered.delegate = self
+        //FruitChoice.delegate = self
+        
+        
+        
+    }
+    @IBOutlet weak var datePicker: UIDatePicker!
+    //@IBOutlet weak var MoreInfo: TextView!
+    //@IBOutlet var FoliageEntered: UITextField!
+    //@IBOutlet var DateEntered: UITextField!
+    //@IBOutlet var FruitChoice: UITextField!
+    //@IBOutlet weak var ImageView: UIImageView!
+    
+    //@IBOutlet weak var btnImage: RoundButton!     // chris: for adding image to button background
+    // @IBOutlet var AdditionalComments: UITextView!
     
     
     public func addActionSheetForiPad(actionSheet: UIAlertController) {
@@ -36,11 +67,18 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
             popoverPresentationController.permittedArrowDirections = []
         }
     }
-
+    
+    
+    
+    //chris:
+    //Camera button Logic :TODO change code so that image
+    //view displays popover and when picture is selected still
+    // displayes in appropreat place. : Done**
     @IBAction func SubmitLogic(_ sender: Any) {
         
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
+        
         
         
         let actionsheet = UIAlertController(title: "Photo Source", message: "choose a source", preferredStyle: .actionSheet)
@@ -68,7 +106,8 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
-        ImageView.image = image
+        //ImageView.image = image
+        btnImage.setBackgroundImage(image, for: .normal) // set background image to button
         
         picker.dismiss(animated: true, completion: nil)
     }
@@ -118,6 +157,19 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
         self.present(Confirmed, animated: true,completion: nil)
     
     }
+    
+    @IBAction func FoliageCheckbox(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveLinear, animations: {
+            sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            
+        }) { (success) in
+            sender.isSelected = !sender.isSelected
+            UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveLinear, animations: {
+                sender.transform = .identity
+            }, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -128,4 +180,20 @@ class PlantFormViewController: UIViewController ,UINavigationControllerDelegate,
     }
     */
 
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
+
+//chris:  to remove device keybord apon enter button press
+//extension ViewController : UITextFieldDelegate{
+    
+  //  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    //    textField.resignFirstResponder()
+      //  return true
+   // }
+
+//}
+

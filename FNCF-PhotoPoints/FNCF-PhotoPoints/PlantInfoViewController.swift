@@ -37,7 +37,8 @@ class PlantInfoViewController: UIViewController {
         var imageArray = [UIImage]()
         
         //view.addSubview(pictureScrollView)
-        imageArray = [#imageLiteral(resourceName: "DouglasFir"), #imageLiteral(resourceName: "DouglasFir_CloseUp")]
+            
+        imageArray = [#imageLiteral(resourceName: "DouglasFir_CloseUp"), #imageLiteral(resourceName: "DouglasFir")]
         
         func setupImages(_ images: [UIImage]){
             

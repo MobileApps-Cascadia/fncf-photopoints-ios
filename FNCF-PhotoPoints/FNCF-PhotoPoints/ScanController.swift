@@ -19,6 +19,7 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     let pm = PlantManager()
     var plant: Plant!
+    var streamId: Int!
     
     @IBOutlet var messageLabel:UILabel!
     
@@ -106,24 +107,117 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 messageLabel.text = metadataObj.stringValue
                 
                 //get the plant by name from QR Code
-                //TODO: If QR Codes are not the plant name in "Xxxxx Xxxx" format then this logic needs to be changed
-                plant = pm.getPlantByName(name: metadataObj.stringValue!)
+                //NOTE: The following switch statement is for the URL based QR Code
+                // Example of QR code for Plants "https://www.plantsmap.com/organizations/24477/plants/28066"
+                // Examp of QR code for Streams "STREAM/00001"
+                var myString:String = ""
+                let urlID = metadataObj.stringValue?.suffix(5)
+                myString = String(urlID!)
+                let lastFive = (myString.suffix(53) as NSString).integerValue
+                
+                var plantId = -1;
+                streamId = -1;
+                
+                switch (lastFive) {
+                //Stream Cases
+                case 00001: streamId = 1; //Stream point 1
+                break;
+                case 00002: streamId = 2; //Stream point 2
+                break;
+                case 00003: streamId = 3; //Stream point 3
+                break;
+                case 00004: streamId = 4; //Stream point 4
+                break;
+                case 00005: streamId = 5; //Stream point 5
+                break;
+                case 00006: streamId = 6; //Stream point 6
+                break;
+                case 00007: streamId = 7; //Stream point 7
+                break;
+                case 00008: streamId = 8; //Stream point 8
+                break;
+                case 00009: streamId = 9; //Stream point 9
+                break;
+                case 00010: streamId = 10; //Stream point 10
+                break;
+                case 00011: streamId = 11; //Stream point 11
+                break;
+                case 00012: streamId = 12; //Stream point 12
+                break;
+                    
+                //Plant Cases
+                case 28092: plantId = 1; //Douglas Fir
+                break;
+                case 27710: plantId = 2; //Black Twinberry
+                break;
+                case 24480: plantId = 3; // Red-oiser Dogwood
+                break;
+                case 28062: plantId = 4; //Thimbleberry
+                break;
+                case 28067: plantId = 5; //Sitka Spruce
+                break;
+                case 28071: plantId = 6; //Slough Sedge
+                break;
+                case 28070: plantId = 7; //Clustered Rose
+                break;
+                case 28703: plantId = 8; //Western Redcedar
+                break;
+                case 27711: plantId = 9; //Red Flowering Currant
+                break;
+                case 28088: plantId = 10; //Small-fruited Bulrush
+                break;
+                case 28094: plantId = 11; //Low Oregon Grape
+                break;
+                case 28064: plantId = 12; //Tall Oregon Grape
+                break;
+                case 28063: plantId = 13; //Pacific Ninebark
+                break;
+                case 28075: plantId = 14; //Cascara
+                break;
+                case 28061: plantId = 15; //Mock Orange
+                break;
+                case 28097: plantId = 16; //Pacific Willow
+                break;
+                case 28086: plantId = 17; //Black Cottonwood
+                break;
+                case 28066: plantId = 18; //Paper Birch
+                break;
+                case 28217: plantId = 19; //Grand Fir
+                break;
+                case 28704: plantId = 20; //Red Alder
+                break;
+                case 28098: plantId = 21; //Red Elderberry
+                break;
+                default:
+                    plantId = -1
+                    streamId = -1
+                }
+                
+                plant = pm.getPlantByID(id: plantId)
+                
+                //plant = pm.getPlantByName(name: metadataObj.stringValue!)
                 
                 //check that the plant was found, if it wasnt then plant.id = -1
-                if(plant.plantID != -1)
-                {
+                if(plant.plantID != -1){
                     //Plant was found
                     //Call segue to plant list
-                    guard let vc = UIStoryboard(name: "PlantInfoStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "PlantInfoStoryBoard") as?
+                    self.performSegue(withIdentifier: "plantFormSegue", sender: self)
+                    /*guard let vc = UIStoryboard(name: "PlantInfo", bundle: nil).instantiateViewController(withIdentifier: "PlantInfoStoryboard") as?
                         PlantInfoViewController else{
-                            print("Could not instantiate view controller with indentifier of type PlantInfoStoryBoard")
-                            return
-                    }
+                            print("Could not instantiate view controller with indentifier of type PlantInfoStoryboard")*/
+                    return
+                }
+                    
+                else if(streamId != -1){
+                    self.performSegue(withIdentifier: "streamFormSegue", sender: self)
+                }
+                    
+                    //vc.myPlant = plant;
+                   // self.navigationController?.pushViewController(vc, animated: true)
                     /*
                     DispatchQueue.main.async {
                         self.performSegue(withIdentifier: "plantInfoSegue", sender: self.plant)
- */
-                    }
+                 }*/
                 }
                 else{
                     let alertController = UIAlertController(title: "Scan Error", message:
@@ -133,13 +227,16 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 }
             }
         }
-    }
-/*
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "plantInfoSegue"){
-            let vc = segue.destination as! PlantInfoViewController
+        if(segue.identifier == "plantFormSegue"){
+            let vc = segue.destination as! PlantFormViewController
             vc.myPlant = plant
         }
+        
+        if(segue.identifier == "streamFormSegue"){
+            let vc = segue.destination as! StreamFormViewController
+            vc.myStream = streamId
+        }
     }
-*/
+}

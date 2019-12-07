@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Scan" id="Lmc-pU-GLC">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="07z-bW-6A4">
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="07z-bW-6A4">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="59V-nm-VoT">
                                                 <rect key="frame" x="20" y="7" width="92" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,7 +52,8 @@
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="C4J-ar-NwJ" id="IIe-2L-csi"/>
-                        <segue destination="KYw-7h-vba" kind="show" identifier="plantInfoSegue" id="QmA-SU-hQI"/>
+                        <segue destination="KYw-7h-vba" kind="show" identifier="plantFormSegue" id="QmA-SU-hQI"/>
+                        <segue destination="4Fg-XI-aqs" kind="show" identifier="streamFormSegue" id="bz4-eS-Kgv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfg-03-PHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,13 +69,21 @@
             </objects>
             <point key="canvasLocation" x="-330" y="861"/>
         </scene>
-        <!--PlantInfoStoryboard-->
+        <!--plantFormStoryboard-->
         <scene sceneID="aRh-I9-Zcz">
             <objects>
-                <viewControllerPlaceholder storyboardName="PlantInfo" referencedIdentifier="PlantInfoStoryboard" id="KYw-7h-vba" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="PlantForm" referencedIdentifier="plantFormStoryboard" id="KYw-7h-vba" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mp4-JE-0Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-270" y="968"/>
+        </scene>
+        <!--StreamFormStorybord-->
+        <scene sceneID="OxY-fh-4oG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StreamForm" referencedIdentifier="StreamFormStorybord" id="4Fg-XI-aqs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1b-Yq-DdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-256" y="1051"/>
         </scene>
     </scenes>
 </document>
